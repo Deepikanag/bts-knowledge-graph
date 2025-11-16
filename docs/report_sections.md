@@ -188,3 +188,107 @@
         - Every bts:Award has exactly one bts:awardYear.
 
     These constraints help ensure that the knowledge graph can reliably answer time-based and value-based competency questions (for example, “Which albums were released in 2020?” or “What is the total amount donated by BTS in a given year?”).
+
+6.  CSV Data for Uplift
+    To satisfy the requirement that at least one third of instance data must be uplifted from a CSV file using RML, a comprehensive donation dataset was constructed. The CSV contains curated records of philanthropic donations made by BTS and individual BTS members between 2015 and 2025, based on publicly reported information in English and Korean media, UNICEF announcements, Korean charity reports, and fan-organized documentation of member philanthropy.
+
+    The dataset does not aim to be perfectly exhaustive, but instead provides a representative, semantically rich cross-section of BTS’s philanthropic activity suitable for knowledge graph modelling.
+
+    The CSV file is stored in the project folder:
+    data/csv/bts_donations.csv
+
+    Each row corresponds to a single donation event and includes details about the donor (individual or group), the organization receiving the donation, the amount donated (in both KRW and USD where applicable), the targeted social issue, the associated campaign (e.g., UNICEF “Love Myself”), and the region impacted by the donation.
+
+    6.1. CSV Schema
+
+        The CSV has the following columns:
+
+        | Column name        | Description                                                                                                                                |
+        | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
+        | **donation_id**    | Unique identifier for each donation event. Used to construct IRIs for `bts:Donation` instances.                                            |
+        | **donor_label**    | Name of the donor (e.g., “RM”, “Suga”, “BTS”, “BTS+BigHit”).                                                                               |
+        | **donor_type**     | Indicates whether the donor is a `Member` or the `Group`.                                                                                  |
+        | **donation_label** | Short human-readable description of the donation event.                                                                                    |
+        | **amount_krw**     | Donation amount in Korean won (KRW), if publicly reported.                                                                                 |
+        | **amount_usd**     | Approximate equivalent in USD for normalization (0 if unknown).                                                                            |
+        | **donation_date**  | Date of the donation (ISO format `YYYY-MM-DD`; approximated to month/day when reports gave only month/year).                               |
+        | **org_name**       | Name of the organization receiving the donation.                                                                                           |
+        | **org_type**       | Broad classification of the organization (`UN Agency`, `Charity`, `NGO`, `Government`, `Hospital`).                                        |
+        | **issue_key**      | The social issue addressed (e.g., `health`, `education`, `anti-violence`, `anti-racism`, `disaster-relief`, `children-rights`, `culture`). |
+        | **campaign_label** | Name of the campaign associated with the donation (e.g., “Love Myself”), or blank if none.                                                 |
+        | **country**        | Country or region associated with the donation’s impact.                                                                                   |
+
+        This structure ensures the CSV is rich enough to generate multiple interconnected RDF entities and triples per row.
+
+    6.2. Rationale for CSV Design
+
+        The CSV was intentionally designed to avoid simple one-to-one column-to-property mapping, supporting the requirement for meaningful RML uplift:
+
+            6.2.1. One row → many semantic entities
+
+            Each donation record generates:
+                - A bts:Donation instance
+                - A bts:Member or bts:Group donor link
+                - A bts:Organization instance
+                - A bts:SocialIssue instance
+                - Optionally a bts:Campaign instance
+                - Literal data properties (amount, date, labels)
+            This results in 5–7 RDF triples per row, greatly increasing instance complexity.
+
+            6.2.2. Column names differ from ontology properties
+
+            The CSV uses practical, human-friendly names such as:
+                - donor_label
+                - amount_krw
+                - issue_key
+
+            The ontology uses semantic properties like:
+                - bts:madeBy
+                - bts:donationAmount
+                - bts:addressesIssue
+            This ensures the RML mapping must perform explicit semantic transformation, not trivial copying.
+
+            6.2.3. Variety of entity types
+
+            By spanning donations from group-level contributions (e.g., UNICEF Love Myself) to individual member philanthropy (e.g., Suga’s Daegu donations, Jimin’s education funds, Jungkook’s hospital support), the CSV supports modelling across:
+
+                - Members
+                - Organizations
+                - Social issues
+                - Campaigns
+                - Countries
+                - Years
+
+            This enables richer SPARQL queries across multiple domains (philanthropy, geography, campaigns, etc.).
+
+            6.2.4. Representative timeframe (2015–2025)
+            Although BTS debuted in 2013, public reporting on donations becomes consistent from 2015 onward.
+
+            The dataset therefore covers:
+                - Early philanthropic contributions (2015–2016)
+                - The start and growth of the UNICEF Love Myself campaign (2017–2023)
+                - Major global events (COVID-19, Turkey/Syria earthquakes)
+                - Ongoing member donations throughout BTS’s military service period (2023–2025)
+            This shows temporal depth and supports time-based SPARQL queries.
+
+    6.3 Example Donations Included in the CSV
+
+        The CSV contains representative examples such as:
+            - BTS + BigHit’s ₩500M pledge to UNICEF (2017)
+            - Group’s $1M donation to Black Lives Matter (2020)
+            - Multiple Suga birthday donations (Daegu, cancer patients, wildfire relief)
+            - Jimin’s education-focused donations (Busan, Jeollanam-do, scholarships)
+            - J-Hope’s ChildFund contributions supporting Tanzanian children
+            - Jungkook’s ₩1B children’s hospital donation in 2023
+            - Post-2023 military service donations (e.g., Suga, RM in 2025)
+
+        These provide realistic, verifiable events while remaining manageable for RML processing.
+
+    6.4 Suitability for RML Uplift
+
+        The CSV is ideal for RML because:
+            - It contains multiple entity types per row
+            - It connects members, organizations, issues, campaigns, and countries
+            - It supports rich, multi-hop SPARQL queries
+            - It provides enough instances to exceed the minimum 30 triples requirement
+            - It mirrors the real-world structure of philanthropic reporting, making the KG semantically meaningful
