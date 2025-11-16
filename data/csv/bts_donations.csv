@@ -1,0 +1,8 @@
+donation_id,donor_label,donor_type,donation_label,amount_usd,donation_date,org_name,org_type,issue_key,campaign_label,country
+D1,RM,Member,"Youth education donation to UNICEF",100000,2020-09-01,"UNICEF","UN Agency","children-rights","Love Myself","Global"
+D2,BTS,Group,"Love Myself campaign contribution",1000000,2021-03-05,"UNICEF","UN Agency","anti-violence","Love Myself","Global"
+D3,J-Hope,Member,"Flood relief support via Hope Bridge",100000,2022-08-20,"Hope Bridge Korea Disaster Relief Association","Charity","disaster-relief","", "South Korea"
+D4,Suga,Member,"COVID-19 relief donation in Daegu",100000,2020-03-11,"Daegu Social Welfare Community Chest","Charity","health","", "South Korea"
+D5,Jimin,Member,"Education support for Busan students",88000,2023-02-01,"Busan Metropolitan City Office of Education","Government","education","", "South Korea"
+D6,Jungkook,Member,"Support for children's hospital in Seoul",100000,2023-11-01,"Seoul National University Children's Hospital","Hospital","health","", "South Korea"
+D7,V,Member,"Art and culture sponsorship donation",100000,2021-12-24,"Korean Committee for UNICEF","Charity","culture","", "South Korea"
