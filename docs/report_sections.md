@@ -292,3 +292,150 @@
             - It supports rich, multi-hop SPARQL queries
             - It provides enough instances to exceed the minimum 30 triples requirement
             - It mirrors the real-world structure of philanthropic reporting, making the KG semantically meaningful
+
+7.  RML Mapping for CSV Uplift
+
+    To transform the tabular donation data into RDF and populate the knowledge graph, an RML mapping file bts_donations_rml.ttl was created.
+    This mapping uses the RML vocabulary (for describing data sources and mappings) and the R2RML vocabulary (for subject maps, predicate-object maps, class assertions, and template IRIs).
+
+    The mapping converts each row in data/csv/bts_donations.csv into fully modelled semantic data, generating instances of:
+
+        - bts:Donation
+        - bts:Organization
+        - bts:SocialIssue
+        - bts:Campaign
+
+    and linking them through object properties from the ontology such as bts:donatedTo, bts:addressesIssue, bts:partOfCampaign, and bts:madeBy.
+
+    7.1. Prefixes Used in the RML Mapping
+
+        The following namespaces are used in the mapping file:
+
+        ---------------------------------------------------------------------------------------------
+        | Prefix   | Purpose                                                                        |
+        | -------- | ------------------------------------------------------------------------------ |
+        | **rml:** | Core RML vocabulary for describing logical sources and reference formulations. |
+        | **rr:**  | R2RML vocabulary for subject maps, templates, predicate-object maps.           |
+        | **ql:**  | Reference formulation vocabulary (`ql:CSV` for CSV files).                     |
+        | **bts:** | Namespace of the BTS ontology created in this project.                         |
+        | **xsd:** | XML Schema datatypes used for typed literals.                                  |
+        ---------------------------------------------------------------------------------------------
+
+    These prefixes allow the mapping file to stay concise and readable while remaining standards-compliant.
+
+    7.2. Logical Source
+
+        All triples maps in bts_donations_rml.ttl read from the same logical source:
+            - Logical Source Name: <#DonationsSource>
+            - File: data/csv/bts_donations.csv
+            - Reference Formulation: ql:CSV
+
+        This is declared once and reused by each Triples Map.
+
+        <#DonationsSource> a rml:LogicalSource ;
+            rml:source "data/csv/bts_donations.csv" ;
+            rml:referenceFormulation ql:CSV .
+
+        Using a shared logical source ensures that:
+            - All entity types (Donations, Organizations, Social Issues, Campaigns)
+                → are generated from the same rows.
+            - No data duplication occurs.
+            - The mapping remains easier to maintain.
+
+    7.3. Donation Triples Map (map:DonationTriplesMap)
+
+        This is the central RML mapping, responsible for turning each CSV row into a bts:Donation instance.
+
+        7.3.1 Subject Map
+            Each row becomes one unique donation:
+                - Template:
+                    http://example.org/bts/donation/{donation_id}
+                - Class:
+                    bts:Donation
+            This ensures each donation has an IRI derived from the donation_id column.
+
+        7.3.2 Data Properties (Literal Values)
+
+            -------------------------------------------------------------
+            | Ontology Property      | CSV Column       | Datatype      |
+            | ---------------------- | ---------------- | ------------- |
+            | **bts:name**           | `donation_label` | string        |
+            | **bts:donationAmount** | `amount_usd`     | `xsd:decimal` |
+            | **bts:eventDate**      | `donation_date`  | `xsd:date`    |
+            -------------------------------------------------------------
+
+        This allows accurate time-based and numeric querying.
+
+        7.3.3 Linking Donations to Donors
+            bts:madeBy links each donation to a donor:
+                rr:template "http://example.org/bts/{donor_label}"
+
+            - If donor_label = RM → IRI becomes:
+                http://example.org/bts/RM
+            - If donor_label = BTS+BigHit → IRI becomes:
+                http://example.org/bts/BTS+BigHit
+
+        These donor individuals (Members or Group) are defined separately in the instance data
+
+        7.3.4 Linking Donations to Organizations
+
+            bts:donatedTo uses:
+                rr:template "http://example.org/bts/org/{org_name}"
+
+            This template:
+                - Creates a single Organization instance per unique org_name.
+                - Matches the subject template in the OrganizationTriplesMap.
+                - Ensures all donations to the same organization link to the same IRI.
+
+        7.3.5 Linking Donations to Social Issues
+
+            bts:addressesIssue uses:
+                rr:template "http://example.org/bts/issue/{issue_key}"
+
+            Since the Organization, Issue, and Campaign maps use the same template, no join conditions are needed—IRI alignment ensures correct linking.
+
+        7.3.6 Linking Donations to Campaigns
+
+            bts:partOfCampaign uses:
+                rr:template "http://example.org/bts/campaign/{campaign_label}"
+
+                - If campaign_label = "Love Myself" → A bts:Campaign instance is created.
+                - If campaign_label is blank → The campaign IRI becomes empty or neutral, so the donation is not treated as part of a campaign.
+
+    7.4. Organization Triples Map
+
+        This map creates an organization instance for each unique value of org_name.
+            - Subject Template:
+                http://example.org/bts/org/{org_name}
+            - Class:
+                bts:Organization
+            - Data Property:
+                bts:name ← org_name
+
+        Because this template matches the template used in the Donation Triples Map, all donations referencing the same organization automatically point to the same IRI.
+
+    7.5. Social Issue Triples Map
+
+        This map generates a bts:SocialIssue for each issue_key:
+            - Subject Template:
+                http://example.org/bts/issue/{issue_key}
+            - Class:
+                bts:SocialIssue
+            - Data Property:
+                bts:name ← issue_key
+
+        This consolidates all donations addressing the same issue (e.g., “health” or “education”) into reusable nodes.
+
+    7.6. Campaign Triples Map
+
+        This Triples Map generates campaign nodes such as:
+            - “Love Myself”
+            - (or other campaign names that may appear)
+            - Subject Template:
+                http://example.org/bts/campaign/{campaign_label}
+            - Class:
+                bts:Campaign
+            - Data Property:
+                bts:name ← campaign_label
+
+        If a row has an empty campaign field, it will still generate a placeholder IRI but will not affect query results unless explicitly selected.

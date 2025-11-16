@@ -1,38 +1,44 @@
-@prefix bts:   <http://example.org/bts#> .
-@prefix rr:    <http://www.w3.org/ns/r2rml#> .
-@prefix rml:   <http://semweb.mmlab.be/ns/rml#> .
-@prefix ql:    <http://semweb.mmlab.be/ns/ql#> .
-@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
-@prefix map:   <http://example.org/bts/mappings#> .
+@prefix bts:  <http://example.org/bts#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr:  <http://www.w3.org/ns/r2rml#> .
+@prefix ql:  <http://semweb.mmlab.be/ns/ql#> .
 
 #################################################################
-# Logical source: the CSV file with BTS donations
+# Logical Source
 #################################################################
 
-map:DonationSource a rml:LogicalSource ;
+# All Triples Maps below read from the same CSV file:
+# data/csv/bts_donations.csv
+
+<#DonationsSource> a rml:LogicalSource ;
     rml:source "data/csv/bts_donations.csv" ;
     rml:referenceFormulation ql:CSV .
 
 #################################################################
-# Triples Map: Donations
+# Triples Map: Donation
 #################################################################
 
-map:DonationTriplesMap a rr:TriplesMap ;
-    rml:logicalSource map:DonationSource ;
+<#DonationTriplesMap> a rr:TriplesMap ;
+    rml:logicalSource <#DonationsSource> ;
 
-    # Each row becomes a bts:Donation individual
+    # Each row becomes a unique Donation instance
     rr:subjectMap [
         rr:template "http://example.org/bts/donation/{donation_id}" ;
         rr:class bts:Donation
     ] ;
 
-    # Donation label as bts:name
+    # Donation label → bts:name
     rr:predicateObjectMap [
         rr:predicate bts:name ;
         rr:objectMap [ rml:reference "donation_label" ]
     ] ;
 
-    # Donation amount (using the USD column, cast to decimal)
+    # Amount in USD → bts:donationAmount
     rr:predicateObjectMap [
         rr:predicate bts:donationAmount ;
         rr:objectMap [
@@ -41,100 +47,99 @@ map:DonationTriplesMap a rr:TriplesMap ;
         ]
     ] ;
 
-    # Link to donor (member or group) via IRI based on donor_label.
-    # Assumes individuals such as bts:RM, bts:Suga, bts:BTS exist in ontology.
+    # Donation date → bts:eventDate
     rr:predicateObjectMap [
-        rr:predicate bts:madeBy ;
+        rr:predicate bts:eventDate ;
         rr:objectMap [
-            rr:template "http://example.org/bts#{donor_label}"
+            rml:reference "donation_date" ;
+            rr:datatype xsd:date
         ]
     ] ;
 
-    # Link to recipient organization (uses OrganizationTriplesMap)
+    # Link to Organization instance
     rr:predicateObjectMap [
         rr:predicate bts:donatedTo ;
         rr:objectMap [
-            rr:parentTriplesMap map:OrganizationTriplesMap ;
-            rr:joinCondition [
-                rr:child  "org_name" ;
-                rr:parent "org_name"
-            ]
+            rr:template "http://example.org/bts/org/{org_name}"
         ]
     ] ;
 
-    # Link to social issue (uses SocialIssueTriplesMap)
+    # Link to SocialIssue instance
     rr:predicateObjectMap [
         rr:predicate bts:addressesIssue ;
         rr:objectMap [
-            rr:parentTriplesMap map:SocialIssueTriplesMap ;
-            rr:joinCondition [
-                rr:child  "issue_key" ;
-                rr:parent "issue_key"
-            ]
+            rr:template "http://example.org/bts/issue/{issue_key}"
         ]
     ] ;
 
-    # Optional link to campaign, if campaign_label is present
+    # Link to Campaign instance (if campaign_label non-empty, it becomes a real campaign;
+    # otherwise it will still generate an IRI but can be ignored in queries if desired)
     rr:predicateObjectMap [
         rr:predicate bts:partOfCampaign ;
         rr:objectMap [
-            rr:parentTriplesMap map:CampaignTriplesMap ;
-            rr:joinCondition [
-                rr:child  "campaign_label" ;
-                rr:parent "campaign_label"
-            ]
+            rr:template "http://example.org/bts/campaign/{campaign_label}"
+        ]
+    ] ;
+
+    # Link to Donor (Member or Group). We assume individuals with IRIs
+    # like bts:RM, bts:Suga, bts:BTS etc. will be defined separately in the instances file.
+    rr:predicateObjectMap [
+        rr:predicate bts:madeBy ;
+        rr:objectMap [
+            rr:template "http://example.org/bts/{donor_label}"
         ]
     ] .
 
 #################################################################
-# Triples Map: Organizations
+# Triples Map: Organization
 #################################################################
 
-map:OrganizationTriplesMap a rr:TriplesMap ;
-    rml:logicalSource map:DonationSource ;
+<#OrganizationTriplesMap> a rr:TriplesMap ;
+    rml:logicalSource <#DonationsSource> ;
 
+    # One Organization per org_name (same template as in Donation map)
     rr:subjectMap [
         rr:template "http://example.org/bts/org/{org_name}" ;
         rr:class bts:Organization
     ] ;
 
-    # Organization name as bts:name
+    # Organization name → bts:name
     rr:predicateObjectMap [
         rr:predicate bts:name ;
         rr:objectMap [ rml:reference "org_name" ]
     ] .
 
 #################################################################
-# Triples Map: Social Issues
+# Triples Map: Social Issue
 #################################################################
 
-map:SocialIssueTriplesMap a rr:TriplesMap ;
-    rml:logicalSource map:DonationSource ;
+<#IssueTriplesMap> a rr:TriplesMap ;
+    rml:logicalSource <#DonationsSource> ;
 
     rr:subjectMap [
         rr:template "http://example.org/bts/issue/{issue_key}" ;
         rr:class bts:SocialIssue
     ] ;
 
-    # Use issue_key as a simple label
+    # Use issue_key as a simple label (e.g. "health", "education")
     rr:predicateObjectMap [
         rr:predicate bts:name ;
         rr:objectMap [ rml:reference "issue_key" ]
     ] .
 
 #################################################################
-# Triples Map: Campaigns
+# Triples Map: Campaign
 #################################################################
 
-map:CampaignTriplesMap a rr:TriplesMap ;
-    rml:logicalSource map:DonationSource ;
+<#CampaignTriplesMap> a rr:TriplesMap ;
+    rml:logicalSource <#DonationsSource> ;
 
     rr:subjectMap [
         rr:template "http://example.org/bts/campaign/{campaign_label}" ;
         rr:class bts:Campaign
     ] ;
 
-    # Campaign label as name
+    # Campaign label (e.g., "Love Myself") → bts:name
     rr:predicateObjectMap [
         rr:predicate bts:name ;
         rr:objectMap [ rml:reference "campaign_label" ]
