@@ -439,3 +439,96 @@
                 bts:name ← campaign_label
 
         If a row has an empty campaign field, it will still generate a placeholder IRI but will not affect query results unless explicitly selected.
+
+8.  Ontology Instance Data
+
+    In addition to the data uplifted from bts_donations.csv via RML, a set of core instances was manually created to populate key entities in the BTS Knowledge Graph. This instance data focuses on the BTS group, its members, significant music releases, major speech events, awards, record achievements, and a representative fan project. The instances are stored in the file:
+    ontology/bts-instances.ttl
+    and were imported into GraphDB alongside the ontology schema and the RML-generated triples.
+
+    8.1. Group and Member Instances
+
+        The central group entity is represented as:
+            - bts:BTS – an individual of class bts:Group, with a bts:name of “BTS”.
+        Each member is represented as an instance of bts:Member:
+            - bts:RM, bts:Jin, bts:Suga, bts:JHope, bts:Jimin, bts:V, bts:Jungkook
+        For each member:
+            - bts:name provides a human-readable label.
+            - bts:memberOf links the member to bts:BTS.
+        The inverse direction is modelled using:
+            - bts:hasMember assertions from bts:BTS to each member.
+        These instances exercise the bts:hasMember / bts:memberOf inverse properties and satisfy the cardinality restriction that a bts:Group must have at least seven members.
+
+    8.2 Music Releases: Albums and Songs
+
+        To ground the bts:MusicRelease, bts:Album, and bts:Song classes, the following releases were modelled:
+            - bts:LoveYourself_Her – an instance of bts:Album, with:
+                -> bts:name = “Love Yourself: Her”
+                -> bts:releaseDate = 2017-09-18
+                -> bts:hasPart links the album to individual song instances, such as bts:DNA and bts:MicDrop.
+                -> bts:featuresMember links the album to all seven members, representing group participation.
+            - bts:DNA – an instance of bts:Song, with:
+                -> bts:name = “DNA”
+                -> bts:releaseDate = 2017-09-18
+                -> bts:featuresMember linking, for example, RM and Jungkook as featured performers.
+            - bts:MicDrop – an instance of bts:Song, with:
+                -> bts:name = “MIC Drop”
+                -> bts:releaseDate = 2017-09-18
+                -> bts:featuresMember linking to SUGA, j-hope, and RM.
+        These instances demonstrate:
+            - The use of the bts:hasPart transitive property for album–song structure.
+            - The bts:featuresMember property for modelling creative participation.
+
+    8.3 Speech Events
+
+        To capture BTS’s global influence through speeches, two major speech events at the United Nations were modelled:
+            - bts:UNGA2018Speech – an instance of bts:SpeechEvent, with:
+                -> bts:name = “UN General Assembly 2018 UNICEF Youth 2030 speech”
+                -> bts:eventDate = 2018-09-24
+            - bts:UNGA2021Speech – an instance of bts:SpeechEvent, with:
+                -> bts:name = “UN General Assembly 2021 SDG Moment speech”
+                -> bts:eventDate = 2021-09-20
+        The group instance bts:BTS is linked to these events via:
+            - bts:performedAt → bts:UNGA2018Speech, bts:UNGA2021Speech
+        This demonstrates the use of the bts:Event / bts:SpeechEvent hierarchy and provides concrete events that can be queried alongside donation and campaign data.
+
+    8.4 Awards
+
+        Several of BTS’s Billboard Music Awards were modelled as instances of bts:Award:
+            - bts:BBMAsTopSocialArtist2017
+            - bts:BBMAsTopSocialArtist2018
+            - bts:BBMAsTopSocialArtist2019
+        Each award instance includes:
+            - bts:name – the full award title.
+            - bts:awardYear – the year the award was received.
+        The group instance bts:BTS is linked to these awards by:
+            - bts:hasAward → each award instance.
+        This explicitly populates the bts:Award class and exercises the inverse relationship bts:hasAward / bts:awardedTo defined in the ontology.
+
+    8.5 Record Achievements
+
+        To represent some of BTS’s global records, the following instances of bts:RecordAchievement were added:
+            - bts:DNA_YouTube24hRecord – a record related to the “DNA” music video’s 24-hour view count
+            - bts:Butter_YouTube24hRecord – a record related to the “Butter” music video’s 24-hour view count.
+        Each record includes:
+            - bts:name – short description of the record.
+            - bts:recordValue – a textual summary of the achievement.
+        The record instances are linked to the relevant songs via:
+            - bts:hasRecord (e.g., bts:DNA bts:hasRecord bts:DNA_YouTube24hRecord).
+        These instances support queries about which releases are associated with notable global records, directly addressing the competency question about “records they have broken”.
+
+    8.6 Fan Project
+
+        To reflect the role of ARMY (the BTS fandom) in social impact, a representative fan-led project was included:
+            - bts:PurpleRibbonProject – an instance of bts:FanProject, with a bts:name describing the initiative.
+        This instance allows the knowledge graph to be extended in future with additional properties (e.g., associated social issues or organizations) and demonstrates that fan-organised activities are first-class citizens in the model, not just BTS-led actions.
+
+    8.7 Manual Instances and Uplifted Data
+
+        The manually created instances in bts-instances.ttl complement the uplifted donation data:
+            - Manual data populate key core entities (group, members, specific albums, speeches, awards, records).
+            - CSV+RML uplift populates a broad set of donation-related instances (donations, organizations, social issues, campaigns).
+        Together, they ensure that:
+            - There are well over 30 instance triples.
+            - At least one third of the instances are generated from CSV via RML, satisfying the assignment’s uplift requirement.
+            - The knowledge graph is rich enough to support the competency questions defined at the start of the project.
