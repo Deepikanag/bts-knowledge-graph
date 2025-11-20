@@ -1,13 +1,16 @@
 PREFIX bts:  <http://example.org/bts#>
 PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
 
-SELECT ?release ?name ?type ?date
+SELECT ?release ?label ?type ?date
 WHERE {
+  VALUES ?type { bts:Album bts:Song }
+
   ?release rdf:type ?type ;
-           bts:name ?name ;
            bts:releaseDate ?date .
 
-  FILTER (?type = bts:Album || ?type = bts:Song)
+  OPTIONAL { ?release bts:title ?title . }
+  OPTIONAL { ?release bts:name ?name . }
+
+  BIND (COALESCE(?title, ?name, "") AS ?label)
 }
-ORDER BY ?date
+ORDER BY ?date ?label

@@ -1,18 +1,37 @@
 PREFIX bts:  <http://example.org/bts#>
 PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
-SELECT ?donation ?donationLabel ?amount ?date ?orgName
+SELECT ?donation ?label ?amountUsd ?date ?orgName
 WHERE {
-  ?donation rdf:type bts:Donation ;
-            bts:name ?donationLabel ;
-            bts:donationAmount ?amount ;
-            bts:eventDate ?date ;
-            bts:donatedTo ?org ;
-            bts:partOfCampaign ?campaign .
+  ?donation rdf:type bts:Donation .
 
-  ?campaign bts:name ?campaignName .
-  ?org bts:name ?orgName .
+  OPTIONAL { ?donation bts:name ?name . }
+  OPTIONAL { ?donation bts:donationLabel ?literalLabel . }
+  BIND (COALESCE(?name, ?literalLabel) AS ?label)
 
-  FILTER (lcase(str(?campaignName)) = "love myself")
+  OPTIONAL { ?donation bts:amountUSD ?amountUsdLiteral . }
+  OPTIONAL { ?donation bts:donationAmount ?donationAmountLiteral . }
+  BIND (COALESCE(?amountUsdLiteral, ?donationAmountLiteral) AS ?amountUsd)
+
+  OPTIONAL { ?donation bts:eventDate ?eventDate . }
+  OPTIONAL { ?donation bts:donationDate ?donationDate . }
+  BIND (COALESCE(?eventDate, ?donationDate) AS ?date)
+
+  OPTIONAL {
+    ?donation bts:donatedTo ?org .
+    OPTIONAL { ?org bts:name ?orgName . }
+  }
+  OPTIONAL { ?donation bts:orgName ?orgName . }
+
+  {
+    ?donation bts:partOfCampaign ?campaign .
+    ?campaign bts:name ?campaignName .
+    FILTER (lcase(str(?campaignName)) = "love myself")
+  }
+  UNION
+  {
+    ?donation bts:campaignLabel ?campaignLabel .
+    FILTER (lcase(str(?campaignLabel)) = "love myself")
+  }
 }
 ORDER BY ?date

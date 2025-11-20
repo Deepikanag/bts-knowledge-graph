@@ -1,0 +1,82 @@
+@prefix bts: <http://example.org/bts#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/bts/tour/TOUR_REDBULLET>
+    a bts:Tour ;
+    bts:tourName "The Red Bullet Tour" ;
+    bts:tourType "Concert Tour" ;
+    bts:startDate "2014-10-17"^^xsd:date ;
+    bts:endDate "2015-08-29"^^xsd:date ;
+    bts:regions "Asia;Australia;North America;South America" ;
+    bts:memberLabel "BTS" ;
+    bts:notes "First international tour" .
+
+<http://example.org/bts/tour/TOUR_HYYH>
+    a bts:Tour ;
+    bts:tourName "The Most Beautiful Moment in Life On Stage" ;
+    bts:tourType "Concert Tour" ;
+    bts:startDate "2015-11-27"^^xsd:date ;
+    bts:endDate "2016-05-15"^^xsd:date ;
+    bts:regions "Asia" ;
+    bts:memberLabel "BTS" ;
+    bts:notes "HYYH Trilogy" .
+
+<http://example.org/bts/tour/TOUR_WINGS>
+    a bts:Tour ;
+    bts:tourName "Wings Tour" ;
+    bts:tourType "World Tour" ;
+    bts:startDate "2017-02-18"^^xsd:date ;
+    bts:endDate "2017-12-10"^^xsd:date ;
+    bts:regions "Asia;South America;North America;Europe" ;
+    bts:memberLabel "BTS" ;
+    bts:notes "Wings album promotion" .
+
+<http://example.org/bts/tour/TOUR_LOVEYOURSELF>
+    a bts:Tour ;
+    bts:tourName "Love Yourself World Tour" ;
+    bts:tourType "World Tour" ;
+    bts:startDate "2018-08-25"^^xsd:date ;
+    bts:endDate "2019-04-07"^^xsd:date ;
+    bts:regions "Asia;Europe;North America" ;
+    bts:memberLabel "BTS" ;
+    bts:notes "Massive global tour" .
+
+<http://example.org/bts/tour/TOUR_SPEAKYOURSELF>
+    a bts:Tour ;
+    bts:tourName "Speak Yourself Stadium Tour" ;
+    bts:tourType "Stadium Tour" ;
+    bts:startDate "2019-05-04"^^xsd:date ;
+    bts:endDate "2019-10-29"^^xsd:date ;
+    bts:regions "North America;Europe;Asia" ;
+    bts:memberLabel "BTS" ;
+    bts:notes "Extended Love Yourself" .
+
+<http://example.org/bts/tour/TOUR_PTD>
+    a bts:Tour ;
+    bts:tourName "Permission to Dance On Stage" ;
+    bts:tourType "Concert Series" ;
+    bts:startDate "2021-10-24"^^xsd:date ;
+    bts:endDate "2022-04-16"^^xsd:date ;
+    bts:regions "Online;USA;South Korea" ;
+    bts:memberLabel "BTS" ;
+    bts:notes "Post-pandemic shows" .
+
+<http://example.org/bts/tour/TOUR_SUGA_DDAY>
+    a bts:Tour ;
+    bts:tourName "D-DAY Tour" ;
+    bts:tourType "Solo Tour" ;
+    bts:startDate "2023-04-26"^^xsd:date ;
+    bts:endDate "2023-08-06"^^xsd:date ;
+    bts:regions "USA;Asia;Korea" ;
+    bts:memberLabel "Suga" ;
+    bts:notes "Solo tour as Agust D" .
+
+<http://example.org/bts/tour/TOUR_JK_GOLDENLIVE>
+    a bts:Tour ;
+    bts:tourName "GOLDEN Live On Stage" ;
+    bts:tourType "Special Showcase" ;
+    bts:startDate "2023-11-20"^^xsd:date ;
+    bts:endDate "2023-11-24"^^xsd:date ;
+    bts:regions "South Korea;Japan" ;
+    bts:memberLabel "Jungkook" ;
+    bts:notes "Golden album promo shows" .

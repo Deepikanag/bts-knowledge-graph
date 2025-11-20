@@ -1,0 +1,110 @@
+@prefix bts: <http://example.org/bts#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/bts/managementRelation/MGMT_BTS_BIGHIT>
+    a bts:ManagementRelation ;
+    bts:entityType "Group" ;
+    bts:entityLabel "BTS" ;
+    bts:companyName "BIGHIT MUSIC" ;
+    bts:companyRole "Managed By" ;
+    bts:startDate "2013-06-13"^^xsd:date ;
+    bts:endDate "Present"^^xsd:date ;
+    bts:ownershipType "management" ;
+    bts:ownershipDetail "" ;
+    bts:notes "Original contract under BigHit Entertainment" .
+
+<http://example.org/bts/managementRelation/MGMT_BIGHIT_HYBE>
+    a bts:ManagementRelation ;
+    bts:entityType "Company" ;
+    bts:entityLabel "BIGHIT MUSIC" ;
+    bts:companyName "HYBE" ;
+    bts:companyRole "Subsidiary Of" ;
+    bts:startDate "2021-03-01"^^xsd:date ;
+    bts:endDate "Present"^^xsd:date ;
+    bts:ownershipType "corporate" ;
+    bts:ownershipDetail "" ;
+    bts:notes "Label under HYBE" .
+
+<http://example.org/bts/managementRelation/MGMT_RM_HYBE>
+    a bts:ManagementRelation ;
+    bts:entityType "Member" ;
+    bts:entityLabel "RM" ;
+    bts:companyName "HYBE" ;
+    bts:companyRole "Shareholder" ;
+    bts:startDate "2020-10-15"^^xsd:date ;
+    bts:endDate "Present"^^xsd:date ;
+    bts:ownershipType "equity" ;
+    bts:ownershipDetail "68513 shares" ;
+    bts:notes "HYBE IPO shareholder" .
+
+<http://example.org/bts/managementRelation/MGMT_JIN_HYBE>
+    a bts:ManagementRelation ;
+    bts:entityType "Member" ;
+    bts:entityLabel "Jin" ;
+    bts:companyName "HYBE" ;
+    bts:companyRole "Shareholder" ;
+    bts:startDate "2020-10-15"^^xsd:date ;
+    bts:endDate "Present"^^xsd:date ;
+    bts:ownershipType "equity" ;
+    bts:ownershipDetail "68513 shares" ;
+    bts:notes "" .
+
+<http://example.org/bts/managementRelation/MGMT_SUGA_HYBE>
+    a bts:ManagementRelation ;
+    bts:entityType "Member" ;
+    bts:entityLabel "Suga" ;
+    bts:companyName "HYBE" ;
+    bts:companyRole "Shareholder" ;
+    bts:startDate "2020-10-15"^^xsd:date ;
+    bts:endDate "Present"^^xsd:date ;
+    bts:ownershipType "equity" ;
+    bts:ownershipDetail "68513 shares" ;
+    bts:notes "" .
+
+<http://example.org/bts/managementRelation/MGMT_JHOPE_HYBE>
+    a bts:ManagementRelation ;
+    bts:entityType "Member" ;
+    bts:entityLabel "J-Hope" ;
+    bts:companyName "HYBE" ;
+    bts:companyRole "Shareholder" ;
+    bts:startDate "2020-10-15"^^xsd:date ;
+    bts:endDate "Present"^^xsd:date ;
+    bts:ownershipType "equity" ;
+    bts:ownershipDetail "68513 shares" ;
+    bts:notes "" .
+
+<http://example.org/bts/managementRelation/MGMT_JIMIN_HYBE>
+    a bts:ManagementRelation ;
+    bts:entityType "Member" ;
+    bts:entityLabel "Jimin" ;
+    bts:companyName "HYBE" ;
+    bts:companyRole "Shareholder" ;
+    bts:startDate "2020-10-15"^^xsd:date ;
+    bts:endDate "Present"^^xsd:date ;
+    bts:ownershipType "equity" ;
+    bts:ownershipDetail "68513 shares" ;
+    bts:notes "" .
+
+<http://example.org/bts/managementRelation/MGMT_V_HYBE>
+    a bts:ManagementRelation ;
+    bts:entityType "Member" ;
+    bts:entityLabel "V" ;
+    bts:companyName "HYBE" ;
+    bts:companyRole "Shareholder" ;
+    bts:startDate "2020-10-15"^^xsd:date ;
+    bts:endDate "Present"^^xsd:date ;
+    bts:ownershipType "equity" ;
+    bts:ownershipDetail "68513 shares" ;
+    bts:notes "" .
+
+<http://example.org/bts/managementRelation/MGMT_JK_HYBE>
+    a bts:ManagementRelation ;
+    bts:entityType "Member" ;
+    bts:entityLabel "Jungkook" ;
+    bts:companyName "HYBE" ;
+    bts:companyRole "Shareholder" ;
+    bts:startDate "2020-10-15"^^xsd:date ;
+    bts:endDate "Present"^^xsd:date ;
+    bts:ownershipType "equity" ;
+    bts:ownershipDetail "68513 shares" ;
+    bts:notes "" .

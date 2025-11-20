@@ -1,0 +1,134 @@
+@prefix bts: <http://example.org/bts#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/bts/endorsement/BE_BTS_SAMSUNG>
+    a bts:BrandEndorsement ;
+    bts:entityType "Group" ;
+    bts:entityLabel "BTS" ;
+    bts:brandName "Samsung" ;
+    bts:industry "Electronics" ;
+    bts:role "Global Ambassador" ;
+    bts:contractStart "2020-02-01"^^xsd:date ;
+    bts:contractEnd "2021-12-31"^^xsd:date ;
+    bts:region "Global" ;
+    bts:notes "Galaxy S20, BTS Edition" .
+
+<http://example.org/bts/endorsement/BE_BTS_HYUNDAI>
+    a bts:BrandEndorsement ;
+    bts:entityType "Group" ;
+    bts:entityLabel "BTS" ;
+    bts:brandName "Hyundai" ;
+    bts:industry "Automotive" ;
+    bts:role "Global Ambassador" ;
+    bts:contractStart "2018-10-01"^^xsd:date ;
+    bts:contractEnd "2020-12-31"^^xsd:date ;
+    bts:region "Global" ;
+    bts:notes "Hydrogen campaign & Palisade promotion" .
+
+<http://example.org/bts/endorsement/BE_BTS_LV>
+    a bts:BrandEndorsement ;
+    bts:entityType "Group" ;
+    bts:entityLabel "BTS" ;
+    bts:brandName "Louis Vuitton" ;
+    bts:industry "Fashion" ;
+    bts:role "House Ambassador" ;
+    bts:contractStart "2021-04-01"^^xsd:date ;
+    bts:contractEnd "2023-12-31"^^xsd:date ;
+    bts:region "Global" ;
+    bts:notes "LV Menswear campaign" .
+
+<http://example.org/bts/endorsement/BE_JIMIN_DIOR>
+    a bts:BrandEndorsement ;
+    bts:entityType "Member" ;
+    bts:entityLabel "Jimin" ;
+    bts:brandName "Dior" ;
+    bts:industry "Fashion" ;
+    bts:role "Global Ambassador" ;
+    bts:contractStart "2023-01-01"^^xsd:date ;
+    bts:contractEnd ""^^xsd:date ;
+    bts:region "Global" ;
+    bts:notes "Dior Men" .
+
+<http://example.org/bts/endorsement/BE_JIMIN_TIFFANY>
+    a bts:BrandEndorsement ;
+    bts:entityType "Member" ;
+    bts:entityLabel "Jimin" ;
+    bts:brandName "Tiffany & Co." ;
+    bts:industry "Jewelry" ;
+    bts:role "House Ambassador" ;
+    bts:contractStart "2023-03-01"^^xsd:date ;
+    bts:contractEnd ""^^xsd:date ;
+    bts:region "Global" ;
+    bts:notes "Lock collection" .
+
+<http://example.org/bts/endorsement/BE_SUGA_VALENTINO>
+    a bts:BrandEndorsement ;
+    bts:entityType "Member" ;
+    bts:entityLabel "Suga" ;
+    bts:brandName "Valentino" ;
+    bts:industry "Fashion" ;
+    bts:role "Brand Ambassador" ;
+    bts:contractStart "2023-01-01"^^xsd:date ;
+    bts:contractEnd ""^^xsd:date ;
+    bts:region "Global" ;
+    bts:notes "Di.Vas campaign" .
+
+<http://example.org/bts/endorsement/BE_SUGA_NBA>
+    a bts:BrandEndorsement ;
+    bts:entityType "Member" ;
+    bts:entityLabel "Suga" ;
+    bts:brandName "NBA" ;
+    bts:industry "Sports" ;
+    bts:role "Cultural Ambassador" ;
+    bts:contractStart "2023-04-06"^^xsd:date ;
+    bts:contractEnd ""^^xsd:date ;
+    bts:region "Global" ;
+    bts:notes "NBA global collab" .
+
+<http://example.org/bts/endorsement/BE_V_CELINE>
+    a bts:BrandEndorsement ;
+    bts:entityType "Member" ;
+    bts:entityLabel "V" ;
+    bts:brandName "Celine" ;
+    bts:industry "Fashion" ;
+    bts:role "House Ambassador" ;
+    bts:contractStart "2023-03-01"^^xsd:date ;
+    bts:contractEnd ""^^xsd:date ;
+    bts:region "Global" ;
+    bts:notes "CELINE Boy" .
+
+<http://example.org/bts/endorsement/BE_JK_CK>
+    a bts:BrandEndorsement ;
+    bts:entityType "Member" ;
+    bts:entityLabel "Jungkook" ;
+    bts:brandName "Calvin Klein" ;
+    bts:industry "Fashion" ;
+    bts:role "Global Ambassador" ;
+    bts:contractStart "2023-03-27"^^xsd:date ;
+    bts:contractEnd ""^^xsd:date ;
+    bts:region "Global" ;
+    bts:notes "Jeans & Underwear" .
+
+<http://example.org/bts/endorsement/BE_JHOPE_LOUISVUITTON>
+    a bts:BrandEndorsement ;
+    bts:entityType "Member" ;
+    bts:entityLabel "J-Hope" ;
+    bts:brandName "Louis Vuitton" ;
+    bts:industry "Fashion" ;
+    bts:role "House Ambassador" ;
+    bts:contractStart "2023-02-01"^^xsd:date ;
+    bts:contractEnd ""^^xsd:date ;
+    bts:region "Global" ;
+    bts:notes "LV solo appointment" .
+
+<http://example.org/bts/endorsement/BE_RM_BOTTEGA>
+    a bts:BrandEndorsement ;
+    bts:entityType "Member" ;
+    bts:entityLabel "RM" ;
+    bts:brandName "Bottega Veneta" ;
+    bts:industry "Fashion" ;
+    bts:role "Global Ambassador" ;
+    bts:contractStart "2023-03-01"^^xsd:date ;
+    bts:contractEnd ""^^xsd:date ;
+    bts:region "Global" ;
+    bts:notes "Quiet luxury ambassador   " .

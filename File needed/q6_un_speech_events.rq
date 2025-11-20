@@ -1,0 +1,13 @@
+PREFIX bts:  <http://example.org/bts#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?event ?name ?date
+WHERE {
+  ?event rdf:type bts:SpeechEvent ;
+         bts:name ?name ;
+         bts:eventDate ?date .
+
+  FILTER (?date >= "2018-01-01"^^xsd:date && ?date <= "2025-12-31"^^xsd:date)
+}
+ORDER BY ?date

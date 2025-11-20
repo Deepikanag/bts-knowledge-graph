@@ -1,0 +1,45 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bts: <http://example.org/bts#> .
+@prefix map: <http://example.org/mapping/> .
+
+<#MVSource>
+    rml:source "data/csv/mv_data.csv" ;
+    rml:referenceFormulation ql:CSV .
+
+<#MVTriplesMap>
+    rml:logicalSource <#MVSource> ;
+    rr:subjectMap [
+        rr:template "http://example.org/bts/mv/{mv_id}" ;
+        rr:class bts:MusicVideo ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate bts:title ;
+        rr:objectMap [ rml:reference "title" ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate bts:linkedToSong ;
+        rr:objectMap [ rr:template "http://example.org/bts/song/{song_id}" ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate bts:releaseDate ;
+        rr:objectMap [ rml:reference "release_date" ; rr:datatype xsd:date ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate bts:director ;
+        rr:objectMap [ rml:reference "director" ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate bts:views24h ;
+        rr:objectMap [ rml:reference "views_24h_millions" ; rr:datatype xsd:decimal ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate bts:platformRecord ;
+        rr:objectMap [ rml:reference "platform_record" ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate bts:notes ;
+        rr:objectMap [ rml:reference "notes" ] ;
+    ] .

@@ -1,0 +1,62 @@
+@prefix bts: <http://example.org/bts#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/bts/fanProject/FP_PURPLERIBBON>
+    a bts:FanProject ;
+    bts:projectName "Purple Ribbon Project" ;
+    bts:fanCommunity "Global ARMY" ;
+    bts:country "Global" ;
+    bts:startDate "2017-11-01"^^xsd:date ;
+    bts:issueKey "respect-campaign" ;
+    bts:donationAmountUSD "0.0"^^xsd:decimal ;
+    bts:description "Encouraging safe fan behavior" .
+
+<http://example.org/bts/fanProject/FP_TREES4RM>
+    a bts:FanProject ;
+    bts:projectName "Trees for RM" ;
+    bts:fanCommunity "ARMY Brazil" ;
+    bts:country "Brazil" ;
+    bts:startDate "2019-09-12"^^xsd:date ;
+    bts:issueKey "environment" ;
+    bts:donationAmountUSD "5000.0"^^xsd:decimal ;
+    bts:description "Tree planting for RM birthday" .
+
+<http://example.org/bts/fanProject/FP_UNICEF_SUPPORT>
+    a bts:FanProject ;
+    bts:projectName "UNICEF ARMY Match Campaign" ;
+    bts:fanCommunity "Global ARMY" ;
+    bts:country "Global" ;
+    bts:startDate "2018-11-01"^^xsd:date ;
+    bts:issueKey "children-rights" ;
+    bts:donationAmountUSD "100000.0"^^xsd:decimal ;
+    bts:description "Donations to UNICEF Love Myself" .
+
+<http://example.org/bts/fanProject/FP_COVID_HEALTH>
+    a bts:FanProject ;
+    bts:projectName "ARMY Pandemic Relief" ;
+    bts:fanCommunity "ARMY India" ;
+    bts:country "India" ;
+    bts:startDate "2021-05-10"^^xsd:date ;
+    bts:issueKey "health" ;
+    bts:donationAmountUSD "30000.0"^^xsd:decimal ;
+    bts:description "COVID relief funding" .
+
+<http://example.org/bts/fanProject/FP_JK_BLOOD>
+    a bts:FanProject ;
+    bts:projectName "Jungkook Blood Donation Drive" ;
+    bts:fanCommunity "ARMY Korea" ;
+    bts:country "South Korea" ;
+    bts:startDate "2020-09-01"^^xsd:date ;
+    bts:issueKey "health" ;
+    bts:donationAmountUSD "0.0"^^xsd:decimal ;
+    bts:description "Voluntary blood drive" .
+
+<http://example.org/bts/fanProject/+-+->
+    a bts:FanProject ;
+    bts:projectName "" ;
+    bts:fanCommunity "" ;
+    bts:country "" ;
+    bts:startDate ""^^xsd:date ;
+    bts:issueKey "" ;
+    bts:donationAmountUSD ""^^xsd:decimal ;
+    bts:description "" .

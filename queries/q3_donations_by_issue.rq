@@ -1,12 +1,20 @@
 PREFIX bts:  <http://example.org/bts#>
 PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
-SELECT ?issue ?issueName (COUNT(?donation) AS ?donationCount)
+SELECT ?issueIdentifier ?issueLabel (COUNT(?donation) AS ?donationCount) (SUM(?amountUsd) AS ?totalUsd)
 WHERE {
-  ?donation rdf:type bts:Donation ;
-            bts:addressesIssue ?issue .
+  ?donation rdf:type bts:Donation .
+  OPTIONAL { ?donation bts:amountUSD ?amountUsd . }
 
-  OPTIONAL { ?issue bts:name ?issueName . }
+  OPTIONAL {
+    ?donation bts:addressesIssue ?issue .
+    OPTIONAL { ?issue bts:name ?issueName . }
+  }
+
+  OPTIONAL { ?donation bts:issueKey ?issueKey . }
+
+  BIND (COALESCE(STR(?issue), ?issueKey, "unknown") AS ?issueIdentifier)
+  BIND (COALESCE(?issueName, ?issueKey, "Unknown issue") AS ?issueLabel)
 }
-GROUP BY ?issue ?issueName
+GROUP BY ?issueIdentifier ?issueLabel
 ORDER BY DESC(?donationCount)

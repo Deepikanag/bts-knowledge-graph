@@ -1,0 +1,1660 @@
+@prefix bts: <http://example.org/bts#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/bts/song/1>
+    a bts:Song ;
+    bts:title "Intro: 2 Cool 4 Skool (feat. DJ Friz)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "DJ Friz" ;
+    bts:fromAlbum <http://example.org/bts/album/1> ;
+    bts:releaseDate "12-06-2013"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/2>
+    a bts:Song ;
+    bts:title "We Are Bulletproof Pt.2" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/1> ;
+    bts:releaseDate "12-06-2013"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/3>
+    a bts:Song ;
+    bts:title "Skit: Circle Room Talk" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/1> ;
+    bts:releaseDate "12-06-2013"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/4>
+    a bts:Song ;
+    bts:title "No More Dream" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/1> ;
+    bts:releaseDate "12-06-2013"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/5>
+    a bts:Song ;
+    bts:title "Interlude (그래도 좋은 날)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/1> ;
+    bts:releaseDate "12-06-2013"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/6>
+    a bts:Song ;
+    bts:title "좋아요 (Like)\",1,BTS,–,12-06-2013,No,Korean
+7,Outro: Circle Room Cypher\"" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/1> ;
+    bts:releaseDate "12-06-2013"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/10>
+    a bts:Song ;
+    bts:title "N.O" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/2> ;
+    bts:releaseDate "11-09-2013"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/11>
+    a bts:Song ;
+    bts:title "We On" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/2> ;
+    bts:releaseDate "11-09-2013"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/12>
+    a bts:Song ;
+    bts:title "Skit: R U Happy Now?" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/2> ;
+    bts:releaseDate "11-09-2013"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/13>
+    a bts:Song ;
+    bts:title "If I Ruled the World" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/2> ;
+    bts:releaseDate "11-09-2013"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/14>
+    a bts:Song ;
+    bts:title "Coffee" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/2> ;
+    bts:releaseDate "11-09-2013"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/15>
+    a bts:Song ;
+    bts:title "BTS Cypher Pt.1" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/2> ;
+    bts:releaseDate "11-09-2013"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/16>
+    a bts:Song ;
+    bts:title "Attack on Bangtan (진격의 방탄)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/2> ;
+    bts:releaseDate "11-09-2013"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/17>
+    a bts:Song ;
+    bts:title "팔도강산 (Paldogangsan) (Satoori Rap)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/2> ;
+    bts:releaseDate "11-09-2013"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/18>
+    a bts:Song ;
+    bts:title "Outro: Luv In Skool" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/2> ;
+    bts:releaseDate "11-09-2013"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/19>
+    a bts:Song ;
+    bts:title "Intro: Skool Luv Affair" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/3> ;
+    bts:releaseDate "12-02-2014"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/20>
+    a bts:Song ;
+    bts:title "상남자 (Boy In Luv)\",3,BTS,–,12-02-2014,Yes,Korean
+21,Skit: Soulmate\"" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/3> ;
+    bts:releaseDate "12-02-2014"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/22>
+    a bts:Song ;
+    bts:title "어디에서 왔는지 (Where Did You Come From)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/3> ;
+    bts:releaseDate "12-02-2014"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/23>
+    a bts:Song ;
+    bts:title "하루만 (Just One Day)\",3,BTS,–,12-02-2014,No,Korean
+24,Tomorrow,3,BTS,–,12-02-2014,No,Korean
+25,BTS Cypher Pt.2: Triptych\"" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/3> ;
+    bts:releaseDate "12-02-2014"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/26>
+    a bts:Song ;
+    bts:title "등골브레이커 (Spine Breaker)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/3> ;
+    bts:releaseDate "12-02-2014"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/27>
+    a bts:Song ;
+    bts:title "Jump" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/3> ;
+    bts:releaseDate "12-02-2014"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/28>
+    a bts:Song ;
+    bts:title "Outro: Propose" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/3> ;
+    bts:releaseDate "12-02-2014"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/29>
+    a bts:Song ;
+    bts:title "Miss Right" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/4> ;
+    bts:releaseDate "14-05-2014"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/30>
+    a bts:Song ;
+    bts:title "좋아요 (Slow Jam Remix)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/4> ;
+    bts:releaseDate "14-05-2014"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/31>
+    a bts:Song ;
+    bts:title "Intro: What Am I To You" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/5> ;
+    bts:releaseDate "19-08-2014"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/32>
+    a bts:Song ;
+    bts:title "Danger" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/5> ;
+    bts:releaseDate "19-08-2014"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/33>
+    a bts:Song ;
+    bts:title "호르몬 전쟁 (War of Hormone)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/5> ;
+    bts:releaseDate "19-08-2014"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/34>
+    a bts:Song ;
+    bts:title "힙합성애자 (Hip Hop Lover)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/5> ;
+    bts:releaseDate "19-08-2014"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/35>
+    a bts:Song ;
+    bts:title "Let Me Know" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/5> ;
+    bts:releaseDate "19-08-2014"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/36>
+    a bts:Song ;
+    bts:title "Rain" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/5> ;
+    bts:releaseDate "19-08-2014"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/37>
+    a bts:Song ;
+    bts:title "BTS Cypher Pt.3: Killer (feat. Supreme Boi)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "Supreme Boi" ;
+    bts:fromAlbum <http://example.org/bts/album/5> ;
+    bts:releaseDate "19-08-2014"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/38>
+    a bts:Song ;
+    bts:title "Interlude: 뭐해 (What Are You Doing)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/5> ;
+    bts:releaseDate "19-08-2014"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/39>
+    a bts:Song ;
+    bts:title "핸드폰 좀 꺼줄래요 (Could You Turn Off Your Cell Phone?)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/5> ;
+    bts:releaseDate "19-08-2014"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/40>
+    a bts:Song ;
+    bts:title "이불킥 (Embarrassed) (Blanket Kick)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/5> ;
+    bts:releaseDate "19-08-2014"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/41>
+    a bts:Song ;
+    bts:title "24/7=Heaven (이상하지 않은가?)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/5> ;
+    bts:releaseDate "19-08-2014"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/42>
+    a bts:Song ;
+    bts:title "여기 봐 (Look Here)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/5> ;
+    bts:releaseDate "19-08-2014"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/43>
+    a bts:Song ;
+    bts:title "2학년 (2nd Grade)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/5> ;
+    bts:releaseDate "19-08-2014"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/44>
+    a bts:Song ;
+    bts:title "Outro: 그게 말이 돼? (Does That Make Sense?)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/5> ;
+    bts:releaseDate "19-08-2014"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/45>
+    a bts:Song ;
+    bts:title "INTRO (Wake Up) (Intro)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/6> ;
+    bts:releaseDate "24-12-2014"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Japanese" .
+
+<http://example.org/bts/song/46>
+    a bts:Song ;
+    bts:title "The Stars" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/6> ;
+    bts:releaseDate "24-12-2014"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Japanese" .
+
+<http://example.org/bts/song/47>
+    a bts:Song ;
+    bts:title "Wake Up" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/6> ;
+    bts:releaseDate "24-12-2014"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Japanese" .
+
+<http://example.org/bts/song/48>
+    a bts:Song ;
+    bts:title "Intro: 화양연화 (The Most Beautiful Moment in Life)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/7> ;
+    bts:releaseDate "29-04-2015"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/49>
+    a bts:Song ;
+    bts:title "I Need U" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/7> ;
+    bts:releaseDate "29-04-2015"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/50>
+    a bts:Song ;
+    bts:title "잡아줘 (Hold Me Tight)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/7> ;
+    bts:releaseDate "29-04-2015"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/51>
+    a bts:Song ;
+    bts:title "SKIT: Expectation!" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/7> ;
+    bts:releaseDate "29-04-2015"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/52>
+    a bts:Song ;
+    bts:title "쩔어 (Dope)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/7> ;
+    bts:releaseDate "29-04-2015"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/53>
+    a bts:Song ;
+    bts:title "흥탄소년단 (Boyz With Fun)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/7> ;
+    bts:releaseDate "29-04-2015"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/54>
+    a bts:Song ;
+    bts:title "Converse High" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/7> ;
+    bts:releaseDate "29-04-2015"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/57>
+    a bts:Song ;
+    bts:title "Intro: Never Mind\"" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/8> ;
+    bts:releaseDate "30-11-2015"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/58>
+    a bts:Song ;
+    bts:title "Run" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/8> ;
+    bts:releaseDate "30-11-2015"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/59>
+    a bts:Song ;
+    bts:title "Butterfly" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/8> ;
+    bts:releaseDate "30-11-2015"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/60>
+    a bts:Song ;
+    bts:title "Whalien 52" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/8> ;
+    bts:releaseDate "30-11-2015"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/61>
+    a bts:Song ;
+    bts:title "Ma City" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/8> ;
+    bts:releaseDate "30-11-2015"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/62>
+    a bts:Song ;
+    bts:title "뱁새 (Silver Spoon / Baepsae)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/8> ;
+    bts:releaseDate "30-11-2015"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/63>
+    a bts:Song ;
+    bts:title "SKIT: One Night in a Strange City8" ;
+    bts:primaryArtist "–" ;
+    bts:featuringArtist "30-11-2015" ;
+    bts:fromAlbum <http://example.org/bts/album/BTS> ;
+    bts:releaseDate "No"^^xsd:date ;
+    bts:isTitleTrack "Korean" ;
+    bts:language "" .
+
+<http://example.org/bts/song/64>
+    a bts:Song ;
+    bts:title "고엽 (Autumn Leaves) (Dead Leaves)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/8> ;
+    bts:releaseDate "30-11-2015"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/65>
+    a bts:Song ;
+    bts:title "Outro: House Of Cards (Full Length Edition)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/8> ;
+    bts:releaseDate "30-11-2015"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/66>
+    a bts:Song ;
+    bts:title "EPILOGUE: Young Forever" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/9> ;
+    bts:releaseDate "02-05-2016"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/67>
+    a bts:Song ;
+    bts:title "불타오르네 (Fire)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/9> ;
+    bts:releaseDate "02-05-2016"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/68>
+    a bts:Song ;
+    bts:title "Save ME" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/9> ;
+    bts:releaseDate "02-05-2016"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/69>
+    a bts:Song ;
+    bts:title "Introduction: Youth" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/10> ;
+    bts:releaseDate "07-09-2016"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Japanese" .
+
+<http://example.org/bts/song/70>
+    a bts:Song ;
+    bts:title "Good Day (いい日)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/10> ;
+    bts:releaseDate "07-09-2016"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Japanese" .
+
+<http://example.org/bts/song/71>
+    a bts:Song ;
+    bts:title "Wishing on a Star" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/10> ;
+    bts:releaseDate "07-09-2016"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Japanese" .
+
+<http://example.org/bts/song/72>
+    a bts:Song ;
+    bts:title "Intro: Boy Meets Evil (Solo by j-hope)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/11> ;
+    bts:releaseDate "10-10-2016"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/73>
+    a bts:Song ;
+    bts:title "피 땀 눈물 (Blood Sweat & Tears)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/11> ;
+    bts:releaseDate "10-10-2016"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/74>
+    a bts:Song ;
+    bts:title "Begin (Jungkook Solo)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/11> ;
+    bts:releaseDate "10-10-2016"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/75>
+    a bts:Song ;
+    bts:title "Lie (Jimin Solo)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/11> ;
+    bts:releaseDate "10-10-2016"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/76>
+    a bts:Song ;
+    bts:title "Stigma (V Solo)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/11> ;
+    bts:releaseDate "10-10-2016"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/77>
+    a bts:Song ;
+    bts:title "First Love (SUGA Solo)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/11> ;
+    bts:releaseDate "10-10-2016"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/78>
+    a bts:Song ;
+    bts:title "Reflection (RM Solo)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/11> ;
+    bts:releaseDate "10-10-2016"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/79>
+    a bts:Song ;
+    bts:title "MAMA (j-hope Solo)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/11> ;
+    bts:releaseDate "10-10-2016"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/80>
+    a bts:Song ;
+    bts:title "Awake (Jin Solo)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/11> ;
+    bts:releaseDate "10-10-2016"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/81>
+    a bts:Song ;
+    bts:title "Lost (Vocal Line)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/11> ;
+    bts:releaseDate "10-10-2016"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/82>
+    a bts:Song ;
+    bts:title "BTS Cypher 4" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/11> ;
+    bts:releaseDate "10-10-2016"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/83>
+    a bts:Song ;
+    bts:title "Am I Wrong" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/11> ;
+    bts:releaseDate "10-10-2016"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/84>
+    a bts:Song ;
+    bts:title "21세기 소녀 (21st Century Girl)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/11> ;
+    bts:releaseDate "10-10-2016"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/85>
+    a bts:Song ;
+    bts:title "둘! 셋! (2! 3!) (Still Wishing For Better Days)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/11> ;
+    bts:releaseDate "10-10-2016"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/86>
+    a bts:Song ;
+    bts:title "Interlude: Wings (Boyz II Men ver.)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/11> ;
+    bts:releaseDate "10-10-2016"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/87>
+    a bts:Song ;
+    bts:title "봄날 (Spring Day)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/12> ;
+    bts:releaseDate "13-02-2017"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/88>
+    a bts:Song ;
+    bts:title "Not Today" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/12> ;
+    bts:releaseDate "13-02-2017"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/89>
+    a bts:Song ;
+    bts:title "Outro: Wings (Extended Version)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/12> ;
+    bts:releaseDate "13-02-2017"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/90>
+    a bts:Song ;
+    bts:title "A Supplementary Story: You Never Walk Alone" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/12> ;
+    bts:releaseDate "13-02-2017"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/91>
+    a bts:Song ;
+    bts:title "Intro: Serendipity (Jimin Solo)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/13> ;
+    bts:releaseDate "18-09-2017"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/92>
+    a bts:Song ;
+    bts:title "DNA" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/13> ;
+    bts:releaseDate "18-09-2017"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/93>
+    a bts:Song ;
+    bts:title "Best of Me" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/13> ;
+    bts:releaseDate "18-09-2017"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/94>
+    a bts:Song ;
+    bts:title "보조개 (Dimple) (Illegal)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/13> ;
+    bts:releaseDate "18-09-2017"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/95>
+    a bts:Song ;
+    bts:title "Pied Piper" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/13> ;
+    bts:releaseDate "18-09-2017"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/96>
+    a bts:Song ;
+    bts:title "Skit: Billboard Music Award Speech" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/13> ;
+    bts:releaseDate "18-09-2017"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/97>
+    a bts:Song ;
+    bts:title "MIC Drop" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/13> ;
+    bts:releaseDate "18-09-2017"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/98>
+    a bts:Song ;
+    bts:title "고민보다 Go (Go Go)\",13,BTS,–,18-09-2017,No,Korean
+99,Outro: Her\"" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/13> ;
+    bts:releaseDate "18-09-2017"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/100>
+    a bts:Song ;
+    bts:title "Sea (Hidden Track)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/13> ;
+    bts:releaseDate "18-09-2017"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/101>
+    a bts:Song ;
+    bts:title "Intro: Singularity (V Solo)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/14> ;
+    bts:releaseDate "18-05-2018"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/102>
+    a bts:Song ;
+    bts:title "Fake Love" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/14> ;
+    bts:releaseDate "18-05-2018"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/103>
+    a bts:Song ;
+    bts:title "전하지 못한 진심 (The Truth Untold)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "Steve Aoki (producer)" ;
+    bts:fromAlbum <http://example.org/bts/album/14> ;
+    bts:releaseDate "18-05-2018"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/104>
+    a bts:Song ;
+    bts:title "134340" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/14> ;
+    bts:releaseDate "18-05-2018"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/105>
+    a bts:Song ;
+    bts:title "낙원 (Paradise)\",14,BTS,–,18-05-2018,No,Korean
+106,Love Maze,14,BTS,–,18-05-2018,No,Korean
+107,Magic Shop,14,BTS,–,18-05-2018,No,Korean
+108,Airplane Pt.2\"" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/14> ;
+    bts:releaseDate "18-05-2018"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/109>
+    a bts:Song ;
+    bts:title "Anpanman" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/14> ;
+    bts:releaseDate "18-05-2018"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/110>
+    a bts:Song ;
+    bts:title "So What" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/14> ;
+    bts:releaseDate "18-05-2018"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/111>
+    a bts:Song ;
+    bts:title "Outro: Tear" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/14> ;
+    bts:releaseDate "18-05-2018"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/112>
+    a bts:Song ;
+    bts:title "Euphoria (Jungkook Solo)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/15> ;
+    bts:releaseDate "24-08-2018"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/113>
+    a bts:Song ;
+    bts:title "Trivia 起 : Just Dance (j-hope Solo)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/15> ;
+    bts:releaseDate "24-08-2018"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/114>
+    a bts:Song ;
+    bts:title "Trivia 承 : Love (RM Solo)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/15> ;
+    bts:releaseDate "24-08-2018"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/115>
+    a bts:Song ;
+    bts:title "Trivia 轉 : Seesaw (SUGA Solo)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/15> ;
+    bts:releaseDate "24-08-2018"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/116>
+    a bts:Song ;
+    bts:title "I'm Fine" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/15> ;
+    bts:releaseDate "24-08-2018"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/117>
+    a bts:Song ;
+    bts:title "IDOL" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/15> ;
+    bts:releaseDate "24-08-2018"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/118>
+    a bts:Song ;
+    bts:title "Answer: Love Myself" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/15> ;
+    bts:releaseDate "24-08-2018"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/119>
+    a bts:Song ;
+    bts:title "IDOL (feat. Nicki Minaj)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "Nicki Minaj" ;
+    bts:fromAlbum <http://example.org/bts/album/15> ;
+    bts:releaseDate "24-08-2018"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean/English" .
+
+<http://example.org/bts/song/120>
+    a bts:Song ;
+    bts:title "Intro: Ringwanderung (Instrumental)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/16> ;
+    bts:releaseDate "04-04-2018"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Japanese" .
+
+<http://example.org/bts/song/121>
+    a bts:Song ;
+    bts:title "Don't Leave Me" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/16> ;
+    bts:releaseDate "04-04-2018"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Japanese" .
+
+<http://example.org/bts/song/122>
+    a bts:Song ;
+    bts:title "Let Go" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/16> ;
+    bts:releaseDate "04-04-2018"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Japanese" .
+
+<http://example.org/bts/song/123>
+    a bts:Song ;
+    bts:title "Crystal Snow" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/16> ;
+    bts:releaseDate "06-12-2017"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Japanese" .
+
+<http://example.org/bts/song/124>
+    a bts:Song ;
+    bts:title "Heartbeat" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/17> ;
+    bts:releaseDate "28-06-2019"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Korean/English" .
+
+<http://example.org/bts/song/125>
+    a bts:Song ;
+    bts:title "Dream Glow (Jin, Jimin, Jungkook unit) (feat. Charli XCX)" ;
+    bts:primaryArtist "BTS (Jin/Jimin/Jungkook)" ;
+    bts:featuringArtist "Charli XCX" ;
+    bts:fromAlbum <http://example.org/bts/album/17> ;
+    bts:releaseDate "07-06-2019"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "English/Korean" .
+
+<http://example.org/bts/song/126>
+    a bts:Song ;
+    bts:title "A Brand New Day (V, j-hope unit) (feat. Zara Larsson)" ;
+    bts:primaryArtist "BTS (V/j-hope)" ;
+    bts:featuringArtist "Zara Larsson" ;
+    bts:fromAlbum <http://example.org/bts/album/17> ;
+    bts:releaseDate "14-06-2019"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean/English" .
+
+<http://example.org/bts/song/127>
+    a bts:Song ;
+    bts:title "All Night (RM, SUGA unit) (feat. Juice WRLD)" ;
+    bts:primaryArtist "BTS (RM/SUGA)" ;
+    bts:featuringArtist "Juice WRLD" ;
+    bts:fromAlbum <http://example.org/bts/album/17> ;
+    bts:releaseDate "21-06-2019"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "English" .
+
+<http://example.org/bts/song/128>
+    a bts:Song ;
+    bts:title "Intro: Persona (RM Solo)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/18> ;
+    bts:releaseDate "12-04-2019"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/129>
+    a bts:Song ;
+    bts:title "Boy With Luv (feat. Halsey)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "Halsey" ;
+    bts:fromAlbum <http://example.org/bts/album/18> ;
+    bts:releaseDate "12-04-2019"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/130>
+    a bts:Song ;
+    bts:title "소우주 (Mikrokosmos)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/18> ;
+    bts:releaseDate "12-04-2019"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/131>
+    a bts:Song ;
+    bts:title "Make It Right" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/18> ;
+    bts:releaseDate "12-04-2019"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/132>
+    a bts:Song ;
+    bts:title "HOME" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/18> ;
+    bts:releaseDate "12-04-2019"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/133>
+    a bts:Song ;
+    bts:title "Jamais Vu (Jin, J-Hope, Jungkook unit)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/18> ;
+    bts:releaseDate "12-04-2019"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/134>
+    a bts:Song ;
+    bts:title "Dionysus" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/18> ;
+    bts:releaseDate "12-04-2019"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/135>
+    a bts:Song ;
+    bts:title "Interlude: Shadow (SUGA Solo)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/19> ;
+    bts:releaseDate "21-02-2020"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/136>
+    a bts:Song ;
+    bts:title "Black Swan" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/19> ;
+    bts:releaseDate "21-02-2020"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/137>
+    a bts:Song ;
+    bts:title "Filter (Jimin Solo)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/19> ;
+    bts:releaseDate "21-02-2020"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/138>
+    a bts:Song ;
+    bts:title "시차 (My Time) (Jungkook Solo)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/19> ;
+    bts:releaseDate "21-02-2020"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/139>
+    a bts:Song ;
+    bts:title "Loud­er than Bombs" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/19> ;
+    bts:releaseDate "21-02-2020"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean/English" .
+
+<http://example.org/bts/song/140>
+    a bts:Song ;
+    bts:title "ON" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/19> ;
+    bts:releaseDate "21-02-2020"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/141>
+    a bts:Song ;
+    bts:title "욱 (Ugh!) (Rap line unit)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/19> ;
+    bts:releaseDate "21-02-2020"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/142>
+    a bts:Song ;
+    bts:title "00:00 (Zero O’Clock) (Vocal line unit)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/19> ;
+    bts:releaseDate "21-02-2020"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/143>
+    a bts:Song ;
+    bts:title "Inner Child (V Solo)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/19> ;
+    bts:releaseDate "21-02-2020"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/144>
+    a bts:Song ;
+    bts:title "친구 (Friends) (Jimin & V duet)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/19> ;
+    bts:releaseDate "21-02-2020"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/145>
+    a bts:Song ;
+    bts:title "Moon (Jin Solo)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/19> ;
+    bts:releaseDate "21-02-2020"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/146>
+    a bts:Song ;
+    bts:title "Respect (RM & SUGA duet)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/19> ;
+    bts:releaseDate "21-02-2020"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/147>
+    a bts:Song ;
+    bts:title "We Are Bulletproof: The Eternal" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/19> ;
+    bts:releaseDate "21-02-2020"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/148>
+    a bts:Song ;
+    bts:title "Outro: Ego (j-hope Solo)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/19> ;
+    bts:releaseDate "21-02-2020"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/149>
+    a bts:Song ;
+    bts:title "ON (feat. Sia) (Alternative ver.)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "Sia" ;
+    bts:fromAlbum <http://example.org/bts/album/19> ;
+    bts:releaseDate "21-02-2020"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "English" .
+
+<http://example.org/bts/song/150>
+    a bts:Song ;
+    bts:title "Intro: Calling" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/20> ;
+    bts:releaseDate "15-07-2020"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Japanese" .
+
+<http://example.org/bts/song/151>
+    a bts:Song ;
+    bts:title "Stay Gold" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/20> ;
+    bts:releaseDate "19-06-2020"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Japanese" .
+
+<http://example.org/bts/song/152>
+    a bts:Song ;
+    bts:title "Your Eyes Tell (Jungkook Solo)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/20> ;
+    bts:releaseDate "15-07-2020"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Japanese" .
+
+<http://example.org/bts/song/153>
+    a bts:Song ;
+    bts:title "Outro: The Journey" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/20> ;
+    bts:releaseDate "15-07-2020"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Japanese" .
+
+<http://example.org/bts/song/154>
+    a bts:Song ;
+    bts:title "Life Goes On" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/21> ;
+    bts:releaseDate "20-11-2020"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/155>
+    a bts:Song ;
+    bts:title "내 방을 여행하는 법 (Fly To My Room)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/21> ;
+    bts:releaseDate "20-11-2020"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/156>
+    a bts:Song ;
+    bts:title "Blue & Grey" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/21> ;
+    bts:releaseDate "20-11-2020"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/157>
+    a bts:Song ;
+    bts:title "Skit" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/21> ;
+    bts:releaseDate "20-11-2020"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/158>
+    a bts:Song ;
+    bts:title "잠시 (Telepathy)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/21> ;
+    bts:releaseDate "20-11-2020"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/159>
+    a bts:Song ;
+    bts:title "병 (Dis-ease)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/21> ;
+    bts:releaseDate "20-11-2020"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/160>
+    a bts:Song ;
+    bts:title "Stay" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/21> ;
+    bts:releaseDate "20-11-2020"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean/English" .
+
+<http://example.org/bts/song/161>
+    a bts:Song ;
+    bts:title "Dynamite" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/21> ;
+    bts:releaseDate "21-08-2020"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "English" .
+
+<http://example.org/bts/song/162>
+    a bts:Song ;
+    bts:title "Lights" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/22> ;
+    bts:releaseDate "03-07-2019"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Japanese" .
+
+<http://example.org/bts/song/163>
+    a bts:Song ;
+    bts:title "Film Out" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/22> ;
+    bts:releaseDate "02-04-2021"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Japanese" .
+
+<http://example.org/bts/song/164>
+    a bts:Song ;
+    bts:title "Butter" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/23> ;
+    bts:releaseDate "21-05-2021"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "English" .
+
+<http://example.org/bts/song/165>
+    a bts:Song ;
+    bts:title "Permission to Dance" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/23> ;
+    bts:releaseDate "09-07-2021"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "English" .
+
+<http://example.org/bts/song/166>
+    a bts:Song ;
+    bts:title "Born Singer" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/24> ;
+    bts:releaseDate "10-06-2022"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/167>
+    a bts:Song ;
+    bts:title "Yet To Come (The Most Beautiful Moment)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/24> ;
+    bts:releaseDate "10-06-2022"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/168>
+    a bts:Song ;
+    bts:title "Run BTS" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/24> ;
+    bts:releaseDate "10-06-2022"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/169>
+    a bts:Song ;
+    bts:title "For Youth" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/24> ;
+    bts:releaseDate "10-06-2022"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/170>
+    a bts:Song ;
+    bts:title "Young Love (Demo)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/24> ;
+    bts:releaseDate "10-06-2022"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/171>
+    a bts:Song ;
+    bts:title "Quotation Mark (Demo)" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/24> ;
+    bts:releaseDate "10-06-2022"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/172>
+    a bts:Song ;
+    bts:title "Take Two" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/28> ;
+    bts:releaseDate "09-06-2023"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/173>
+    a bts:Song ;
+    bts:title "The Planet" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/29> ;
+    bts:releaseDate "12-05-2023"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Korean" .
+
+<http://example.org/bts/song/175>
+    a bts:Song ;
+    bts:title "My Universe" ;
+    bts:primaryArtist "Coldplay" ;
+    bts:featuringArtist "BTS" ;
+    bts:fromAlbum <http://example.org/bts/album/31> ;
+    bts:releaseDate "24-09-2021"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "English" .
+
+<http://example.org/bts/song/176>
+    a bts:Song ;
+    bts:title "Savage Love (Laxed – Siren Beat) [Remix]" ;
+    bts:primaryArtist "Jawsh 685 & Jason Derulo" ;
+    bts:featuringArtist "BTS" ;
+    bts:fromAlbum <http://example.org/bts/album/32> ;
+    bts:releaseDate "02-10-2020"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "English" .
+
+<http://example.org/bts/song/177>
+    a bts:Song ;
+    bts:title "Waste It On Me" ;
+    bts:primaryArtist "Steve Aoki" ;
+    bts:featuringArtist "BTS" ;
+    bts:fromAlbum <http://example.org/bts/album/33> ;
+    bts:releaseDate "25-10-2018"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "English" .
+
+<http://example.org/bts/song/178>
+    a bts:Song ;
+    bts:title "Come Back Home" ;
+    bts:primaryArtist "BTS" ;
+    bts:featuringArtist "–" ;
+    bts:fromAlbum <http://example.org/bts/album/34> ;
+    bts:releaseDate "04-07-2017"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Korean" .

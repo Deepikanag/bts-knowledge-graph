@@ -1,0 +1,25 @@
+PREFIX bts:  <http://example.org/bts#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?endorsement ?brand ?entity ?entityDisplay ?entityType ?role ?industry ?region ?start ?end ?notes
+WHERE {
+  ?endorsement rdf:type bts:BrandEndorsement ;
+               bts:brandName ?brand ;
+               bts:role ?role .
+
+  OPTIONAL {
+    ?endorsement bts:endorsedBy ?entity .
+    OPTIONAL { ?entity bts:name ?entityName . }
+  }
+
+  OPTIONAL { ?endorsement bts:entityLabel ?entityLabel . }
+  OPTIONAL { ?endorsement bts:entityType ?entityType . }
+  OPTIONAL { ?endorsement bts:industry ?industry . }
+  OPTIONAL { ?endorsement bts:region ?region . }
+  OPTIONAL { ?endorsement bts:contractStart ?start . }
+  OPTIONAL { ?endorsement bts:contractEnd ?end . }
+  OPTIONAL { ?endorsement bts:notes ?notes . }
+
+  BIND (COALESCE(?entityName, ?entityLabel, "BTS") AS ?entityDisplay)
+}
+ORDER BY ?entityDisplay ?brand

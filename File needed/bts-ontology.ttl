@@ -1,0 +1,75 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bts: <http://example.org/bts#> .
+
+# === Core Classes ===
+bts:Donation a rdfs:Class .
+bts:Organization a rdfs:Class .
+bts:SocialIssue a rdfs:Class .
+bts:Campaign a rdfs:Class .
+bts:Member a rdfs:Class .
+bts:Group a rdfs:Class .
+
+# === Extended Classes ===
+bts:Album a rdfs:Class .
+bts:Song a rdfs:Class .
+bts:SoloWork a rdfs:Class .
+bts:Tour a rdfs:Class .
+bts:MusicVideo a rdfs:Class .
+bts:BrandEndorsement a rdfs:Class .
+bts:ManagementRelationship a rdfs:Class .
+bts:FanProject a rdfs:Class .
+bts:Award a rdfs:Class .
+
+# === Properties – Core ===
+bts:name a rdf:Property ; rdfs:domain bts:Donation, bts:Organization, bts:Campaign ; rdfs:range xsd:string .
+bts:donationAmount a rdf:Property ; rdfs:domain bts:Donation, bts:FanProject ; rdfs:range xsd:decimal .
+bts:madeBy a rdf:Property ; rdfs:domain bts:Donation ; rdfs:range rdfs:Resource .
+bts:donatedTo a rdf:Property ; rdfs:domain bts:Donation ; rdfs:range bts:Organization .
+bts:addressesIssue a rdf:Property ; rdfs:domain bts:Donation, bts:FanProject ; rdfs:range bts:SocialIssue .
+bts:partOfCampaign a rdf:Property ; rdfs:domain bts:Donation ; rdfs:range bts:Campaign .
+
+# === Properties – Albums & Songs ===
+bts:title a rdf:Property ; rdfs:domain bts:Album, bts:Song, bts:SoloWork ; rdfs:range xsd:string .
+bts:releaseDate a rdf:Property ; rdfs:domain bts:Album, bts:Song, bts:SoloWork ; rdfs:range xsd:date .
+bts:albumCategory a rdf:Property ; rdfs:domain bts:Album ; rdfs:range xsd:string .
+bts:language a rdf:Property ; rdfs:domain bts:Album, bts:Song ; rdfs:range xsd:string .
+bts:label a rdf:Property ; rdfs:domain bts:Album ; rdfs:range xsd:string .
+bts:createdBy a rdf:Property ; rdfs:domain bts:Album ; rdfs:range rdfs:Resource .
+bts:duration a rdf:Property ; rdfs:domain bts:Song ; rdfs:range xsd:string .
+bts:album a rdf:Property ; rdfs:domain bts:Song ; rdfs:range bts:Album .
+
+# === Properties – Solo & Tours ===
+bts:performedBy a rdf:Property ; rdfs:domain bts:SoloWork, bts:Tour ; rdfs:range rdfs:Resource .
+bts:category a rdf:Property ; rdfs:domain bts:SoloWork ; rdfs:range xsd:string .
+bts:tourName a rdf:Property ; rdfs:domain bts:Tour ; rdfs:range xsd:string .
+bts:tourType a rdf:Property ; rdfs:domain bts:Tour ; rdfs:range xsd:string .
+bts:startDate a rdf:Property ; rdfs:domain bts:Tour, bts:BrandEndorsement, bts:ManagementRelationship ; rdfs:range xsd:date .
+bts:endDate a rdf:Property ; rdfs:domain bts:Tour, bts:BrandEndorsement, bts:ManagementRelationship ; rdfs:range xsd:date .
+bts:regions a rdf:Property ; rdfs:domain bts:Tour ; rdfs:range xsd:string .
+
+# === Properties – Music Videos ===
+bts:linkedToSong a rdf:Property ; rdfs:domain bts:MusicVideo ; rdfs:range bts:Song .
+bts:director a rdf:Property ; rdfs:domain bts:MusicVideo ; rdfs:range xsd:string .
+bts:views24h a rdf:Property ; rdfs:domain bts:MusicVideo ; rdfs:range xsd:decimal .
+bts:platformRecord a rdf:Property ; rdfs:domain bts:MusicVideo ; rdfs:range xsd:string .
+
+# === Properties – Brand Endorsement ===
+bts:endorsedBy a rdf:Property ; rdfs:domain bts:BrandEndorsement ; rdfs:range rdfs:Resource .
+bts:brandName a rdf:Property ; rdfs:domain bts:BrandEndorsement ; rdfs:range xsd:string .
+bts:industry a rdf:Property ; rdfs:domain bts:BrandEndorsement ; rdfs:range xsd:string .
+bts:role a rdf:Property ; rdfs:domain bts:BrandEndorsement ; rdfs:range xsd:string .
+bts:region a rdf:Property ; rdfs:domain bts:BrandEndorsement ; rdfs:range xsd:string .
+
+# === Properties – Management ===
+bts:managedEntity a rdf:Property ; rdfs:domain bts:ManagementRelationship ; rdfs:range rdfs:Resource .
+bts:companyName a rdf:Property ; rdfs:domain bts:ManagementRelationship ; rdfs:range xsd:string .
+bts:companyRole a rdf:Property ; rdfs:domain bts:ManagementRelationship ; rdfs:range xsd:string .
+bts:ownershipType a rdf:Property ; rdfs:domain bts:ManagementRelationship ; rdfs:range xsd:string .
+bts:ownershipDetail a rdf:Property ; rdfs:domain bts:ManagementRelationship ; rdfs:range xsd:string .
+
+# === Properties – Fan Projects ===
+bts:projectName a rdf:Property ; rdfs:domain bts:FanProject ; rdfs:range xsd:string .
+bts:organizedBy a rdf:Property ; rdfs:domain bts:FanProject ; rdfs:range xsd:string .
+bts:description a rdf:Property ; rdfs:domain bts:FanProject ; rdfs:range xsd:string .

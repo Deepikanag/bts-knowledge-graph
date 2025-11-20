@@ -1,10 +1,12 @@
 PREFIX bts:  <http://example.org/bts#>
 PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
-SELECT ?song ?songName ?record ?recordName ?recordValue
+SELECT ?song ?songLabel ?record ?recordName ?recordValue
 WHERE {
-  ?song rdf:type bts:Song ;
-        bts:name ?songName .
+  ?song rdf:type bts:Song .
+  OPTIONAL { ?song bts:title ?title . }
+  OPTIONAL { ?song bts:name ?legacyName . }
+  BIND (COALESCE(?title, ?legacyName) AS ?songLabel)
 
   OPTIONAL {
     ?song bts:hasRecord ?record .
@@ -12,4 +14,4 @@ WHERE {
             bts:recordValue ?recordValue .
   }
 }
-ORDER BY ?songName
+ORDER BY ?songLabel

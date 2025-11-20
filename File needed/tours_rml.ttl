@@ -1,0 +1,45 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bts: <http://example.org/bts#> .
+@prefix map: <http://example.org/mapping/> .
+
+<#TourSource>
+    rml:source "data/csv/tours.csv" ;
+    rml:referenceFormulation ql:CSV .
+
+<#TourTriplesMap>
+    rml:logicalSource <#TourSource> ;
+    rr:subjectMap [
+        rr:template "http://example.org/bts/tour/{tour_id}" ;
+        rr:class bts:Tour ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate bts:tourName ;
+        rr:objectMap [ rml:reference "tour_name" ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate bts:tourType ;
+        rr:objectMap [ rml:reference "tour_type" ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate bts:startDate ;
+        rr:objectMap [ rml:reference "start_date" ; rr:datatype xsd:date ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate bts:endDate ;
+        rr:objectMap [ rml:reference "end_date" ; rr:datatype xsd:date ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate bts:regions ;
+        rr:objectMap [ rml:reference "regions" ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate bts:performedBy ;
+        rr:objectMap [ rr:template "http://example.org/bts/{member_label}" ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate bts:notes ;
+        rr:objectMap [ rml:reference "notes" ] ;
+    ] .

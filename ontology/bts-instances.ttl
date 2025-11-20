@@ -46,13 +46,72 @@ bts:Jungkook a bts:Member ;
     bts:name "Jungkook" ;
     bts:memberOf bts:BTS .
 
+bts:BigHitMusic a bts:Organization ;
+    bts:name "Big Hit Music" .
+
 #################################################################
-# Music Releases: One Album and Two Songs
+# Social Issues, Campaigns, and Partner Organizations
+#################################################################
+
+<http://example.org/bts/issue/health> a bts:SocialIssue ;
+    bts:name "health" .
+
+<http://example.org/bts/issue/education> a bts:SocialIssue ;
+    bts:name "education" .
+
+<http://example.org/bts/issue/disaster-relief> a bts:SocialIssue ;
+    bts:name "disaster-relief" .
+
+<http://example.org/bts/issue/anti-violence> a bts:SocialIssue ;
+    bts:name "anti-violence" .
+
+<http://example.org/bts/issue/anti-racism> a bts:SocialIssue ;
+    bts:name "anti-racism" .
+
+<http://example.org/bts/issue/children-rights> a bts:SocialIssue ;
+    bts:name "children-rights" .
+
+<http://example.org/bts/issue/food-security> a bts:SocialIssue ;
+    bts:name "food-security" .
+
+<http://example.org/bts/campaign/love-myself> a bts:Campaign ;
+    bts:name "Love Myself" .
+
+<http://example.org/bts/campaign/blm> a bts:Campaign ;
+    bts:name "Black Lives Matter Support" .
+
+<http://example.org/bts/campaign/child-fund> a bts:Campaign ;
+    bts:name "ChildFund Green Noble Club" .
+
+<http://example.org/bts/campaign/unicef-korea-response> a bts:Campaign ;
+    bts:name "UNICEF Korea Emergency Response" .
+
+<http://example.org/bts/campaign/snu-children-hospital> a bts:Campaign ;
+    bts:name "SNU Children's Hospital Support" .
+
+<http://example.org/bts/org/unicef-korea> a bts:Organization ;
+    bts:name "UNICEF Korea" .
+
+<http://example.org/bts/org/black-lives-matter-foundation> a bts:Organization ;
+    bts:name "Black Lives Matter Foundation" .
+
+<http://example.org/bts/org/childfund-korea> a bts:Organization ;
+    bts:name "ChildFund Korea" .
+
+<http://example.org/bts/org/seoul-national-university-childrens-hospital> a bts:Organization ;
+    bts:name "Seoul National University Children's Hospital" .
+
+#################################################################
+# Music Releases Aligned with CSV/Generated Data
 #################################################################
 
 bts:LoveYourself_Her a bts:Album ;
-    bts:name "Love Yourself: Her" ;
+    bts:title "Love Yourself: Her" ;
     bts:releaseDate "2017-09-18"^^xsd:date ;
+    bts:albumCategory "mini-album" ;
+    bts:language "Korean" ;
+    bts:label "Big Hit Entertainment" ;
+    bts:createdBy bts:BTS ;
     bts:hasPart bts:DNA ,
                 bts:MicDrop ;
     bts:featuresMember bts:RM ,
@@ -63,18 +122,148 @@ bts:LoveYourself_Her a bts:Album ;
                        bts:V ,
                        bts:Jungkook .
 
+bts:MapOfTheSoul7 a bts:Album ;
+    bts:title "Map of the Soul: 7" ;
+    bts:releaseDate "2020-02-21"^^xsd:date ;
+    bts:albumCategory "studio" ;
+    bts:language "Korean" ;
+    bts:label "Big Hit Entertainment" ;
+    bts:createdBy bts:BTS ;
+    bts:hasPart bts:BlackSwan ,
+                bts:ON ;
+    bts:featuresMember bts:RM ,
+                       bts:Jin ,
+                       bts:Suga ,
+                       bts:JHope ,
+                       bts:Jimin ,
+                       bts:V ,
+                       bts:Jungkook .
+
+bts:DynamiteSingle a bts:Album ;
+    bts:title "Dynamite (Single)" ;
+    bts:releaseDate "2020-08-21"^^xsd:date ;
+    bts:albumCategory "single" ;
+    bts:language "English" ;
+    bts:label "Big Hit Entertainment / Columbia" ;
+    bts:createdBy bts:BTS ;
+    bts:hasPart bts:Dynamite .
+
+bts:ButterSingle a bts:Album ;
+    bts:title "Butter" ;
+    bts:releaseDate "2021-07-09"^^xsd:date ;
+    bts:albumCategory "single" ;
+    bts:language "English" ;
+    bts:label "Big Hit Entertainment" ;
+    bts:createdBy bts:BTS ;
+    bts:hasPart bts:Butter .
+
+bts:Proof a bts:Album ;
+    bts:title "Proof" ;
+    bts:releaseDate "2022-06-10"^^xsd:date ;
+    bts:albumCategory "compilation" ;
+    bts:language "Korean" ;
+    bts:label "Big Hit Entertainment" ;
+    bts:createdBy bts:BTS ;
+    bts:hasPart bts:YetToCome ,
+                bts:RunBTS .
+
 bts:DNA a bts:Song ;
-    bts:name "DNA" ;
+    bts:title "DNA" ;
+    bts:primaryArtist "BTS" ;
+    bts:album bts:LoveYourself_Her ;
     bts:releaseDate "2017-09-18"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Korean" ;
     bts:featuresMember bts:RM ,
                        bts:Jungkook .
 
 bts:MicDrop a bts:Song ;
-    bts:name "MIC Drop" ;
+    bts:title "MIC Drop" ;
+    bts:primaryArtist "BTS" ;
+    bts:album bts:LoveYourself_Her ;
     bts:releaseDate "2017-09-18"^^xsd:date ;
+    bts:isTitleTrack "No" ;
+    bts:language "Korean" ;
     bts:featuresMember bts:Suga ,
                        bts:JHope ,
                        bts:RM .
+
+bts:BlackSwan a bts:Song ;
+    bts:title "Black Swan" ;
+    bts:primaryArtist "BTS" ;
+    bts:album bts:MapOfTheSoul7 ;
+    bts:releaseDate "2020-02-21"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Korean" ;
+    bts:featuresMember bts:Jimin ,
+                       bts:Jungkook .
+
+bts:ON a bts:Song ;
+    bts:title "ON" ;
+    bts:primaryArtist "BTS" ;
+    bts:album bts:MapOfTheSoul7 ;
+    bts:releaseDate "2020-02-21"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Korean" ;
+    bts:featuresMember bts:RM ,
+                       bts:JHope ,
+                       bts:Suga .
+
+bts:Dynamite a bts:Song ;
+    bts:title "Dynamite" ;
+    bts:primaryArtist "BTS" ;
+    bts:album bts:DynamiteSingle ;
+    bts:releaseDate "2020-08-21"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "English" ;
+    bts:featuresMember bts:Jimin ,
+                       bts:Jungkook .
+
+bts:Butter a bts:Song ;
+    bts:title "Butter" ;
+    bts:primaryArtist "BTS" ;
+    bts:album bts:ButterSingle ;
+    bts:releaseDate "2021-05-21"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "English" ;
+    bts:featuresMember bts:Jimin ,
+                       bts:V ,
+                       bts:Jungkook .
+
+bts:YetToCome a bts:Song ;
+    bts:title "Yet To Come (The Most Beautiful Moment)" ;
+    bts:primaryArtist "BTS" ;
+    bts:album bts:Proof ;
+    bts:releaseDate "2022-06-10"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Korean" ;
+    bts:featuresMember bts:V ,
+                       bts:Jungkook .
+
+bts:RunBTS a bts:Song ;
+    bts:title "Run BTS" ;
+    bts:primaryArtist "BTS" ;
+    bts:album bts:Proof ;
+    bts:releaseDate "2022-06-10"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Korean" ;
+    bts:featuresMember bts:RM ,
+                       bts:JHope ,
+                       bts:Suga .
+
+bts:TakeTwo a bts:Song ;
+    bts:title "Take Two" ;
+    bts:primaryArtist "BTS" ;
+    bts:releaseDate "2023-06-09"^^xsd:date ;
+    bts:isTitleTrack "Yes" ;
+    bts:language "Korean" ;
+    bts:featuresMember bts:RM ,
+                       bts:Jin ,
+                       bts:Suga ,
+                       bts:JHope ,
+                       bts:Jimin ,
+                       bts:V ,
+                       bts:Jungkook .
 
 #################################################################
 # Events and Speech Events
@@ -88,7 +277,6 @@ bts:UNGA2021Speech a bts:SpeechEvent ;
     bts:name "UN General Assembly 2021 SDG Moment speech" ;
     bts:eventDate "2021-09-20"^^xsd:date .
 
-# BTS performed at both speech events
 bts:BTS
     bts:performedAt bts:UNGA2018Speech ,
                     bts:UNGA2021Speech .
@@ -127,24 +315,100 @@ bts:Butter_YouTube24hRecord a bts:RecordAchievement ;
     bts:recordValue "One of the most-viewed music videos in first 24 hours on YouTube (2021)" .
 
 bts:DNA bts:hasRecord bts:DNA_YouTube24hRecord .
-bts:Butter_YouTube24hRecord a bts:RecordAchievement .
+bts:Butter bts:hasRecord bts:Butter_YouTube24hRecord .
+
+#################################################################
+# Brand Endorsements (aligned with data/generated/brand_endorsements_instances.ttl)
+#################################################################
+
+<http://example.org/bts/endorsement/BE_BTS_SAMSUNG>
+    a bts:BrandEndorsement ;
+    bts:endorsedBy bts:BTS ;
+    bts:brandName "Samsung" ;
+    bts:industry "Electronics" ;
+    bts:role "Global Ambassador" ;
+    bts:startDate "2020-02-01"^^xsd:date ;
+    bts:endDate "2021-12-31"^^xsd:date ;
+    bts:region "Global" ;
+    rdfs:comment "Galaxy S20 BTS Edition launch" .
+
+<http://example.org/bts/endorsement/BE_JIMIN_DIOR>
+    a bts:BrandEndorsement ;
+    bts:endorsedBy bts:Jimin ;
+    bts:brandName "Dior" ;
+    bts:industry "Fashion" ;
+    bts:role "Global Ambassador" ;
+    bts:startDate "2023-01-01"^^xsd:date ;
+    bts:region "Global" ;
+    rdfs:comment "Dior Men couture campaigns" .
+
+<http://example.org/bts/endorsement/BE_SUGA_NBA>
+    a bts:BrandEndorsement ;
+    bts:endorsedBy bts:Suga ;
+    bts:brandName "NBA" ;
+    bts:industry "Sports" ;
+    bts:role "Cultural Ambassador" ;
+    bts:startDate "2023-04-06"^^xsd:date ;
+    bts:region "Global" ;
+    rdfs:comment "NBA global collaboration and content" .
+
+#################################################################
+# Donations (aligned with data/generated/bts_donations_instances.ttl)
+#################################################################
+
+bts:Donation_LoveMyself2017 a bts:Donation ;
+    bts:name "Initial Love Myself UNICEF fund pledge" ;
+    bts:donationAmount "439575"^^xsd:decimal ;
+    bts:eventDate "2017-11-01"^^xsd:date ;
+    bts:madeBy bts:BTS ,
+               bts:BigHitMusic ;
+    bts:donatedTo <http://example.org/bts/org/unicef-korea> ;
+    bts:addressesIssue <http://example.org/bts/issue/anti-violence> ;
+    bts:partOfCampaign <http://example.org/bts/campaign/love-myself> .
+
+bts:Donation_BLM2020 a bts:Donation ;
+    bts:name "Donation to Black Lives Matter movement" ;
+    bts:donationAmount "1000000"^^xsd:decimal ;
+    bts:eventDate "2020-06-01"^^xsd:date ;
+    bts:madeBy bts:BTS ,
+               bts:BigHitMusic ;
+    bts:donatedTo <http://example.org/bts/org/black-lives-matter-foundation> ;
+    bts:addressesIssue <http://example.org/bts/issue/anti-racism> ;
+    bts:partOfCampaign <http://example.org/bts/campaign/blm> .
+
+bts:Donation_JHopeChildFund2021 a bts:Donation ;
+    bts:name "Children's support via ChildFund Korea" ;
+    bts:donationAmount "77000"^^xsd:decimal ;
+    bts:eventDate "2021-05-04"^^xsd:date ;
+    bts:madeBy bts:JHope ;
+    bts:donatedTo <http://example.org/bts/org/childfund-korea> ;
+    bts:addressesIssue <http://example.org/bts/issue/children-rights> ;
+    bts:partOfCampaign <http://example.org/bts/campaign/child-fund> .
+
+bts:Donation_JiminEarthquake2023 a bts:Donation ;
+    bts:name "Donation for Turkey/Syria earthquake relief" ;
+    bts:donationAmount "77000"^^xsd:decimal ;
+    bts:eventDate "2023-02-15"^^xsd:date ;
+    bts:madeBy bts:Jimin ;
+    bts:donatedTo <http://example.org/bts/org/unicef-korea> ;
+    bts:addressesIssue <http://example.org/bts/issue/disaster-relief> ;
+    bts:partOfCampaign <http://example.org/bts/campaign/unicef-korea-response> .
+
+bts:Donation_JungkookSNU2023 a bts:Donation ;
+    bts:name "Donation to Seoul children's hospital" ;
+    bts:donationAmount "770000"^^xsd:decimal ;
+    bts:eventDate "2023-11-01"^^xsd:date ;
+    bts:madeBy bts:Jungkook ;
+    bts:donatedTo <http://example.org/bts/org/seoul-national-university-childrens-hospital> ;
+    bts:addressesIssue <http://example.org/bts/issue/health> ;
+    bts:partOfCampaign <http://example.org/bts/campaign/snu-children-hospital> .
 
 #################################################################
 # Fan Project Example
 #################################################################
 
 bts:PurpleRibbonProject a bts:FanProject ;
-    bts:name "Purple Ribbon Project" .
-
-#################################################################
-# Social Issues (optional manual definitions to complement RML)
-#################################################################
-
-<http://example.org/bts/issue/health> a bts:SocialIssue ;
-    bts:name "health" .
-
-<http://example.org/bts/issue/education> a bts:SocialIssue ;
-    bts:name "education" .
-
-<http://example.org/bts/issue/disaster-relief> a bts:SocialIssue ;
-    bts:name "disaster-relief" .
+    bts:projectName "Purple Ribbon Project" ;
+    bts:organizedBy "ARMY airport volunteers" ;
+    bts:description "Fans provide ribbons and guidance to keep crowds safe when BTS arrives at major events." ;
+    bts:addressesIssue <http://example.org/bts/issue/health> .

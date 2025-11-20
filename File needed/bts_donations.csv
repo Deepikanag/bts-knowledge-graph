@@ -1,0 +1,19 @@
+donation_id,donor_label,donor_type,donation_label,amount_krw,amount_usd,donation_date,org_name,org_type,issue_key,campaign_label,country
+D2015_1,BTS,Group,"Rice donation at K-Star Road opening",0,0,2015-04-01,"Local charities (K-Star Road)","Charity","food-security","K_STAR_ROAD",South Korea
+D2017_1,BTS+BigHit,Group,"Donation to Sewol Ferry families group",100000000,87915,2017-01-01,"4/16 Sewol Families for Truth and A Safer Society","Charity","disaster-relief","SEWOL_FERRY",South Korea
+D2017_2,BTS+BigHit,Group,"Initial Love Myself UNICEF fund pledge",500000000,439575,2017-11-01,"UNICEF Korea","UN Agency","anti-violence","Love Myself",South Korea
+D2018_1,BTS,Group,"Donation to ALS hospital building fund",0,0,2018-06-01,"ALS hospital building fund","Hospital","health","ALS_FUND",South Korea
+D2019_1,Suga,Member,"Donation to Korea Pediatric Cancer Foundation",100000000,83000,2019-03-11,"Korea Pediatric Cancer Foundation","Charity","health","KPCF",South Korea
+D2020_1,Suga,Member,"COVID-19 relief in Daegu",100000000,83000,2020-02-20,"Daegu Social Welfare Community Chest","Charity","health","DSWCC",South Korea
+D2020_2,BTS+BigHit,Group,"Donation to Black Lives Matter movement",0,1000000,2020-06-01,"Black Lives Matter Foundation","NGO","anti-racism","BLM",United States
+D2020_3,Jimin,Member,"Support for students in Jeollanam-do",100000000,85000,2020-07-01,"Jeonnam Future Education Foundation","Government","education","JEONNAM_EDU",South Korea
+D2021_1,Suga,Member,"Donation for child cancer patients in Daegu",100000000,88000,2021-03-11,"Keimyung University Dongsan Medical Center","Hospital","health","KEIMYUNG_MEDICAL",South Korea
+D2021_2,Jimin,Member,"Donation to Rotary polio vaccine campaign",100000000,88000,2021-09-23,"Rotary District 3590","NGO","health","ROTARY",South Korea
+D2021_3,Jimin,Member,"ChildFund Green Noble Club donations (cumulative)",100000000,88000,2021-10-13,"ChildFund Korea","Charity","children-rights","CHILD_FUND",South Korea
+D2021_4,J-Hope,Member,"Children's support via ChildFund Korea",100000000,77000,2021-05-04,"ChildFund Korea","Charity","children-rights","CHILD_FUND",Tanzania
+D2022_1,Suga,Member,"Wildfire relief donation via Hope Bridge",0,83000,2022-03-09,"Hope Bridge Korea Disaster Relief Association","Charity","disaster-relief","HOPE_BRIDGE",South Korea
+D2023_1,Jimin,Member,"Donation for Turkey/Syria earthquake relief",100000000,77000,2023-02-15,"UNICEF Korea","UN Agency","disaster-relief","UNICEF_KOREA",Turkey/Syria
+D2023_2,Jungkook,Member,"Donation to Seoul children’s hospital",1000000000,770000,2023-11-01,"Seoul National University Children's Hospital","Hospital","health","SNU_CHILDREN_HOSPITAL",South Korea
+D2023_3,BTS+BigHit,Group,"Love Myself campaign appreciation donation",1000000000,874000,2023-09-22,"UNICEF Korea","UN Agency","anti-violence","Love Myself",South Korea
+D2025_1,Suga,Member,"Donation for Ulsan/Gyeongbuk/Gyeongnam wildfire relief",100000000,77000,2025-03-27,"Korean Red Cross","Charity","disaster-relief","KOREAN_RED_CROSS",South Korea
+D2025_2,RM,Member,"Birthday donations to two medical centers",200000000,150000,2025-09-12,"Seoul Asan Medical Center & Korea University Medical Center","Hospital","health","ASAN_MEDICAL_CENTER",South Korea

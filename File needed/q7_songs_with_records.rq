@@ -1,0 +1,15 @@
+PREFIX bts:  <http://example.org/bts#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?song ?songName ?record ?recordName ?recordValue
+WHERE {
+  ?song rdf:type bts:Song ;
+        bts:name ?songName .
+
+  OPTIONAL {
+    ?song bts:hasRecord ?record .
+    ?record bts:name ?recordName ;
+            bts:recordValue ?recordValue .
+  }
+}
+ORDER BY ?songName

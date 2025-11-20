@@ -1,13 +1,22 @@
 PREFIX bts:  <http://example.org/bts#>
 PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
-SELECT ?donor ?donorName (SUM(?amount) AS ?totalUsd)
+SELECT ?donor ?donorDisplay (SUM(?amountValue) AS ?totalUsd)
 WHERE {
-  ?donation rdf:type bts:Donation ;
-            bts:madeBy ?donor ;
-            bts:donationAmount ?amount .
+  ?donation rdf:type bts:Donation .
 
-  OPTIONAL { ?donor bts:name ?donorName . }
+  OPTIONAL { ?donation bts:amountUSD ?amountUsdLiteral . }
+  OPTIONAL { ?donation bts:donationAmount ?donationAmountLiteral . }
+  BIND (COALESCE(?amountUsdLiteral, ?donationAmountLiteral, 0) AS ?amountValue)
+
+  OPTIONAL {
+    ?donation bts:madeBy ?donor .
+    OPTIONAL { ?donor bts:name ?donorName . }
+  }
+
+  OPTIONAL { ?donation bts:donorLabel ?donorLabel . }
+
+  BIND (COALESCE(?donorName, ?donorLabel, "Unknown donor") AS ?donorDisplay)
 }
-GROUP BY ?donor ?donorName
+GROUP BY ?donor ?donorDisplay
 ORDER BY DESC(?totalUsd)

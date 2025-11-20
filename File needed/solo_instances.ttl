@@ -1,0 +1,1082 @@
+@prefix bts: <http://example.org/bts#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/bts/solo/1>
+    a bts:SoloRelease ;
+    bts:title "Animal (Jo Kwon feat. j-hope)" ;
+    bts:memberLabel "j-hope, Jo Kwon" ;
+    bts:releaseDate "2012-06-25"^^xsd:date ;
+    bts:releaseType "Collaboration" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "Jo Kwon single; j-hope’s first pre-debut feature" .
+
+<http://example.org/bts/solo/2>
+    a bts:SoloRelease ;
+    bts:title "A Perfect Christmas (RM & Jung Kook with Lim Jeong Hee, etc.)" ;
+    bts:memberLabel "RM, Jungkook, Jo Kwon, Lim Jeong Hee, Joo Hee" ;
+    bts:releaseDate "2013-12-18"^^xsd:date ;
+    bts:releaseType "Collaboration" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "BigHit artists collaboration (Seasonal song)" .
+
+<http://example.org/bts/solo/3>
+    a bts:SoloRelease ;
+    bts:title "P.D.D (Please Don’t Die) (Warren G feat. RM)" ;
+    bts:memberLabel "RM, Warren G" ;
+    bts:releaseDate "2015-03-04"^^xsd:date ;
+    bts:releaseType "Collaboration" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "English" ;
+    bts:notes "Warren G single featuring RM" .
+
+<http://example.org/bts/solo/4>
+    a bts:SoloRelease ;
+    bts:title "Bucku Bucku (부끄부끄) (MFBTY feat. RM)" ;
+    bts:memberLabel "RM, MFBTY" ;
+    bts:releaseDate "2015-03-19"^^xsd:date ;
+    bts:releaseType "Collaboration" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean/English" ;
+    bts:notes "MFBTY (Tiger JK/Yoonmirae) track ft. RM" .
+
+<http://example.org/bts/solo/5>
+    a bts:SoloRelease ;
+    bts:title "U (Primary feat. RM & Kwon Jin-ah)" ;
+    bts:memberLabel "RM, Primary, Kwon Jin-ah" ;
+    bts:releaseDate "2015-04-07"^^xsd:date ;
+    bts:releaseType "Collaboration" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "Primary’s single featuring RM (later on album)" .
+
+<http://example.org/bts/solo/6>
+    a bts:SoloRelease ;
+    bts:title "ProMeTheUs (Yankie feat. RM, etc.)" ;
+    bts:memberLabel "RM, Yankie" ;
+    bts:releaseDate "2015-05-27"^^xsd:date ;
+    bts:releaseType "Collaboration" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "Yankie track feat. RM and others" .
+
+<http://example.org/bts/solo/7>
+    a bts:SoloRelease ;
+    bts:title "Fantastic (RM feat. Mandy Ventrice) (Marvel OST)" ;
+    bts:memberLabel "RM, Mandy Ventrice" ;
+    bts:releaseDate "2015-08-04"^^xsd:date ;
+    bts:releaseType "OST Single" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "English" ;
+    bts:notes "Fantastic Four OST theme (Korean release)" .
+
+<http://example.org/bts/solo/8>
+    a bts:SoloRelease ;
+    bts:title "Intro: DT Suga (feat. DJ Friz)" ;
+    bts:memberLabel "SUGA, DJ Friz" ;
+    bts:releaseDate "2016-08-16"^^xsd:date ;
+    bts:releaseType "Mixtape Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from Agust D mixtape (Agust D’s intro)" .
+
+<http://example.org/bts/solo/9>
+    a bts:SoloRelease ;
+    bts:title "Agust D" ;
+    bts:memberLabel "SUGA" ;
+    bts:releaseDate "2016-08-16"^^xsd:date ;
+    bts:releaseType "Mixtape Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from Agust D mixtape" .
+
+<http://example.org/bts/solo/10>
+    a bts:SoloRelease ;
+    bts:title "Give It To Me" ;
+    bts:memberLabel "SUGA" ;
+    bts:releaseDate "2016-08-16"^^xsd:date ;
+    bts:releaseType "Mixtape Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from Agust D mixtape" .
+
+<http://example.org/bts/solo/11>
+    a bts:SoloRelease ;
+    bts:title "Skit: 하소연 (Overflow)" ;
+    bts:memberLabel "SUGA" ;
+    bts:releaseDate "2016-08-16"^^xsd:date ;
+    bts:releaseType "Mixtape Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "skit track from Agust D mixtape" .
+
+<http://example.org/bts/solo/12>
+    a bts:SoloRelease ;
+    bts:title "724148" ;
+    bts:memberLabel "SUGA" ;
+    bts:releaseDate "2016-08-16"^^xsd:date ;
+    bts:releaseType "Mixtape Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from Agust D mixtape (title is Daegu tel. area code)" .
+
+<http://example.org/bts/solo/13>
+    a bts:SoloRelease ;
+    bts:title "140503 새벽에 (140503 at Dawn)" ;
+    bts:memberLabel "SUGA" ;
+    bts:releaseDate "2016-08-16"^^xsd:date ;
+    bts:releaseType "Mixtape Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from Agust D mixtape" .
+
+<http://example.org/bts/solo/14>
+    a bts:SoloRelease ;
+    bts:title "The Last" ;
+    bts:memberLabel "SUGA" ;
+    bts:releaseDate "2016-08-16"^^xsd:date ;
+    bts:releaseType "Mixtape Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from Agust D mixtape" .
+
+<http://example.org/bts/solo/15>
+    a bts:SoloRelease ;
+    bts:title "Tony Montana (feat. Yankie)" ;
+    bts:memberLabel "SUGA, Yankie" ;
+    bts:releaseDate "2016-08-16"^^xsd:date ;
+    bts:releaseType "Mixtape Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from Agust D mixtape" .
+
+<http://example.org/bts/solo/16>
+    a bts:SoloRelease ;
+    bts:title "Interlude: Dream, Reality" ;
+    bts:memberLabel "SUGA" ;
+    bts:releaseDate "2016-08-16"^^xsd:date ;
+    bts:releaseType "Mixtape Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from Agust D mixtape (instrumental interlude)" .
+
+<http://example.org/bts/solo/17>
+    a bts:SoloRelease ;
+    bts:title "So Far Away (feat. Suran)" ;
+    bts:memberLabel "SUGA, Suran" ;
+    bts:releaseDate "2016-08-16"^^xsd:date ;
+    bts:releaseType "Mixtape Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from Agust D mixtape (Outro track ft. Suran)" .
+
+<http://example.org/bts/solo/18>
+    a bts:SoloRelease ;
+    bts:title "It’s Definitely You (Jin & V) (Hwarang OST)" ;
+    bts:memberLabel "Jin, V" ;
+    bts:releaseDate "2016-12-19"^^xsd:date ;
+    bts:releaseType "OST" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "Hwarang drama OST duet" .
+
+<http://example.org/bts/solo/19>
+    a bts:SoloRelease ;
+    bts:title "Change (RM & Wale)" ;
+    bts:memberLabel "RM, Wale" ;
+    bts:releaseDate "2017-03-19"^^xsd:date ;
+    bts:releaseType "Collaboration" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "English" ;
+    bts:notes "RM x Wale digital single" .
+
+<http://example.org/bts/solo/20>
+    a bts:SoloRelease ;
+    bts:title "Gajah (Gaeko feat. RM)" ;
+    bts:memberLabel "RM, Gaeko" ;
+    bts:releaseDate "2017-04-05"^^xsd:date ;
+    bts:releaseType "Collaboration" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "Gaeko’s album track featuring RM" .
+
+<http://example.org/bts/solo/21>
+    a bts:SoloRelease ;
+    bts:title "Champion (Remix) (Fall Out Boy feat. RM)" ;
+    bts:memberLabel "RM, Fall Out Boy" ;
+    bts:releaseDate "2017-12-15"^^xsd:date ;
+    bts:releaseType "Collaboration" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "English" ;
+    bts:notes "RM featured on Fall Out Boy’s remix" .
+
+<http://example.org/bts/solo/22>
+    a bts:SoloRelease ;
+    bts:title "Hope World" ;
+    bts:memberLabel "j-hope" ;
+    bts:releaseDate "2018-03-02"^^xsd:date ;
+    bts:releaseType "Mixtape Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean/English" ;
+    bts:notes "from Hope World mixtape (Intro track)" .
+
+<http://example.org/bts/solo/23>
+    a bts:SoloRelease ;
+    bts:title "P.O.P (Piece of Peace) Pt.1" ;
+    bts:memberLabel "j-hope" ;
+    bts:releaseDate "2018-03-02"^^xsd:date ;
+    bts:releaseType "Mixtape Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from Hope World mixtape" .
+
+<http://example.org/bts/solo/24>
+    a bts:SoloRelease ;
+    bts:title "Daydream (백일몽)" ;
+    bts:memberLabel "j-hope" ;
+    bts:releaseDate "2018-03-02"^^xsd:date ;
+    bts:releaseType "Mixtape Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from Hope World (Title track)" .
+
+<http://example.org/bts/solo/25>
+    a bts:SoloRelease ;
+    bts:title "Base Line" ;
+    bts:memberLabel "j-hope" ;
+    bts:releaseDate "2018-03-02"^^xsd:date ;
+    bts:releaseType "Mixtape Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from Hope World mixtape" .
+
+<http://example.org/bts/solo/26>
+    a bts:SoloRelease ;
+    bts:title "HANGSANG (feat. Supreme Boi)" ;
+    bts:memberLabel "j-hope, Supreme Boi" ;
+    bts:releaseDate "2018-03-02"^^xsd:date ;
+    bts:releaseType "Mixtape Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from Hope World mixtape" .
+
+<http://example.org/bts/solo/27>
+    a bts:SoloRelease ;
+    bts:title "Airplane" ;
+    bts:memberLabel "j-hope" ;
+    bts:releaseDate "2018-03-02"^^xsd:date ;
+    bts:releaseType "Mixtape Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from Hope World mixtape" .
+
+<http://example.org/bts/solo/28>
+    a bts:SoloRelease ;
+    bts:title "Blue Side (Outro)" ;
+    bts:memberLabel "j-hope" ;
+    bts:releaseDate "2018-03-02"^^xsd:date ;
+    bts:releaseType "Mixtape Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from Hope World mixtape (outro)" .
+
+<http://example.org/bts/solo/29>
+    a bts:SoloRelease ;
+    bts:title "Tokyo" ;
+    bts:memberLabel "RM" ;
+    bts:releaseDate "2018-10-23"^^xsd:date ;
+    bts:releaseType "Playlist (Mixtape) Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "English" ;
+    bts:notes "from mono." .
+
+<http://example.org/bts/solo/30>
+    a bts:SoloRelease ;
+    bts:title "Seoul (Prod. HONNE)" ;
+    bts:memberLabel "RM" ;
+    bts:releaseDate "2018-10-23"^^xsd:date ;
+    bts:releaseType "Playlist Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean/English" ;
+    bts:notes "from mono." .
+
+<http://example.org/bts/solo/31>
+    a bts:SoloRelease ;
+    bts:title "Moonchild" ;
+    bts:memberLabel "RM" ;
+    bts:releaseDate "2018-10-23"^^xsd:date ;
+    bts:releaseType "Playlist Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "English" ;
+    bts:notes "from mono." .
+
+<http://example.org/bts/solo/32>
+    a bts:SoloRelease ;
+    bts:title "Badbye (with eAeon)" ;
+    bts:memberLabel "RM, eAeon" ;
+    bts:releaseDate "2018-10-23"^^xsd:date ;
+    bts:releaseType "Playlist Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from mono." .
+
+<http://example.org/bts/solo/33>
+    a bts:SoloRelease ;
+    bts:title "Uhgood (어긋)" ;
+    bts:memberLabel "RM" ;
+    bts:releaseDate "2018-10-23"^^xsd:date ;
+    bts:releaseType "Playlist Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from mono." .
+
+<http://example.org/bts/solo/34>
+    a bts:SoloRelease ;
+    bts:title "Everythingoes (지나가) (feat. Nell)" ;
+    bts:memberLabel "RM, Nell" ;
+    bts:releaseDate "2018-10-23"^^xsd:date ;
+    bts:releaseType "Playlist Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from mono." .
+
+<http://example.org/bts/solo/35>
+    a bts:SoloRelease ;
+    bts:title "Forever Rain" ;
+    bts:memberLabel "RM" ;
+    bts:releaseDate "2018-10-23"^^xsd:date ;
+    bts:releaseType "Playlist Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from mono." .
+
+<http://example.org/bts/solo/36>
+    a bts:SoloRelease ;
+    bts:title "Promise (약속) (Jimin Solo)" ;
+    bts:memberLabel "Jimin" ;
+    bts:releaseDate "2018-12-31"^^xsd:date ;
+    bts:releaseType "Digital Single" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "Self-composed solo song" .
+
+<http://example.org/bts/solo/37>
+    a bts:SoloRelease ;
+    bts:title "Song Request (이소라 feat. SUGA)" ;
+    bts:memberLabel "SUGA, Lee Sora" ;
+    bts:releaseDate "2019-01-22"^^xsd:date ;
+    bts:releaseType "Collaboration" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "Lee Sora ballad featuring SUGA" .
+
+<http://example.org/bts/solo/38>
+    a bts:SoloRelease ;
+    bts:title "Crying Over You (HONNE feat. RM & Beka)" ;
+    bts:memberLabel "RM, HONNE, Beka" ;
+    bts:releaseDate "2019-03-27"^^xsd:date ;
+    bts:releaseType "Collaboration" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "English" ;
+    bts:notes "HONNE single ft. RM" .
+
+<http://example.org/bts/solo/39>
+    a bts:SoloRelease ;
+    bts:title "Chicken Noodle Soup (feat. Becky G)" ;
+    bts:memberLabel "j-hope, Becky G" ;
+    bts:releaseDate "2019-09-27"^^xsd:date ;
+    bts:releaseType "Single" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean/English" ;
+    bts:notes "j-hope solo single" .
+
+<http://example.org/bts/solo/40>
+    a bts:SoloRelease ;
+    bts:title "SUGA’s Interlude (Halsey feat. SUGA)" ;
+    bts:memberLabel "SUGA, Halsey" ;
+    bts:releaseDate "2019-12-06"^^xsd:date ;
+    bts:releaseType "Collaboration" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "English" ;
+    bts:notes "Halsey album track ft. SUGA" .
+
+<http://example.org/bts/solo/41>
+    a bts:SoloRelease ;
+    bts:title "Winter Flower (Younha feat. RM)" ;
+    bts:memberLabel "RM, Younha" ;
+    bts:releaseDate "2020-01-06"^^xsd:date ;
+    bts:releaseType "Collaboration" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "Younha song ft. RM" .
+
+<http://example.org/bts/solo/42>
+    a bts:SoloRelease ;
+    bts:title "Sweet Night (V Solo, Itaewon Class OST)" ;
+    bts:memberLabel "V" ;
+    bts:releaseDate "2020-03-13"^^xsd:date ;
+    bts:releaseType "OST" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "English" ;
+    bts:notes "All-English OST" .
+
+<http://example.org/bts/solo/43>
+    a bts:SoloRelease ;
+    bts:title "Eight (에잇) (IU feat. SUGA)" ;
+    bts:memberLabel "SUGA, IU" ;
+    bts:releaseDate "2020-05-06"^^xsd:date ;
+    bts:releaseType "Collaboration" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "IU digital single ft. SUGA" .
+
+<http://example.org/bts/solo/44>
+    a bts:SoloRelease ;
+    bts:title "Moonlight" ;
+    bts:memberLabel "SUGA" ;
+    bts:releaseDate "2020-05-22"^^xsd:date ;
+    bts:releaseType "Mixtape Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from D-2" .
+
+<http://example.org/bts/solo/45>
+    a bts:SoloRelease ;
+    bts:title "Daechwita" ;
+    bts:memberLabel "SUGA" ;
+    bts:releaseDate "2020-05-22"^^xsd:date ;
+    bts:releaseType "Mixtape Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from D-2 (Title track)" .
+
+<http://example.org/bts/solo/46>
+    a bts:SoloRelease ;
+    bts:title "What Do You Think?" ;
+    bts:memberLabel "SUGA" ;
+    bts:releaseDate "2020-05-22"^^xsd:date ;
+    bts:releaseType "Mixtape Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from D-2" .
+
+<http://example.org/bts/solo/47>
+    a bts:SoloRelease ;
+    bts:title "Strange (feat. RM)" ;
+    bts:memberLabel "SUGA, RM" ;
+    bts:releaseDate "2020-05-22"^^xsd:date ;
+    bts:releaseType "Mixtape Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from D-2" .
+
+<http://example.org/bts/solo/48>
+    a bts:SoloRelease ;
+    bts:title "28 (feat. NiiHWA)" ;
+    bts:memberLabel "SUGA, NiiHWA" ;
+    bts:releaseDate "2020-05-22"^^xsd:date ;
+    bts:releaseType "Mixtape Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from D-2" .
+
+<http://example.org/bts/solo/49>
+    a bts:SoloRelease ;
+    bts:title "Burn It (feat. MAX)" ;
+    bts:memberLabel "SUGA, MAX" ;
+    bts:releaseDate "2020-05-22"^^xsd:date ;
+    bts:releaseType "Mixtape Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "English/Korean" ;
+    bts:notes "from D-2" .
+
+<http://example.org/bts/solo/50>
+    a bts:SoloRelease ;
+    bts:title "People" ;
+    bts:memberLabel "SUGA" ;
+    bts:releaseDate "2020-05-22"^^xsd:date ;
+    bts:releaseType "Mixtape Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from D-2" .
+
+<http://example.org/bts/solo/51>
+    a bts:SoloRelease ;
+    bts:title "Honsool (혼술)" ;
+    bts:memberLabel "SUGA" ;
+    bts:releaseDate "2020-05-22"^^xsd:date ;
+    bts:releaseType "Mixtape Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from D-2" .
+
+<http://example.org/bts/solo/52>
+    a bts:SoloRelease ;
+    bts:title "Interlude: Set Me Free" ;
+    bts:memberLabel "SUGA" ;
+    bts:releaseDate "2020-05-22"^^xsd:date ;
+    bts:releaseType "Mixtape Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from D-2" .
+
+<http://example.org/bts/solo/53>
+    a bts:SoloRelease ;
+    bts:title "Dear My Friend (feat. Kim Jong-wan of Nell)" ;
+    bts:memberLabel "SUGA, Kim Jong-wan" ;
+    bts:releaseDate "2020-05-22"^^xsd:date ;
+    bts:releaseType "Mixtape Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from D-2" .
+
+<http://example.org/bts/solo/54>
+    a bts:SoloRelease ;
+    bts:title "Blueberry Eyes (MAX feat. SUGA)" ;
+    bts:memberLabel "SUGA, MAX" ;
+    bts:releaseDate "2020-09-15"^^xsd:date ;
+    bts:releaseType "Collaboration" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "English" ;
+    bts:notes "MAX single ft. SUGA" .
+
+<http://example.org/bts/solo/55>
+    a bts:SoloRelease ;
+    bts:title "Don’t (그러지 마) (eAeon feat. RM)" ;
+    bts:memberLabel "RM, eAeon" ;
+    bts:releaseDate "2021-04-30"^^xsd:date ;
+    bts:releaseType "Collaboration" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "eAeon album track ft. RM" .
+
+<http://example.org/bts/solo/56>
+    a bts:SoloRelease ;
+    bts:title "Yours (Jin Solo, Jirisan OST)" ;
+    bts:memberLabel "Jin" ;
+    bts:releaseDate "2021-11-07"^^xsd:date ;
+    bts:releaseType "OST" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "Jirisan OST" .
+
+<http://example.org/bts/solo/57>
+    a bts:SoloRelease ;
+    bts:title "Christmas Tree (V Solo, Our Beloved Summer OST)" ;
+    bts:memberLabel "V" ;
+    bts:releaseDate "2021-12-24"^^xsd:date ;
+    bts:releaseType "OST" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean/English" ;
+    bts:notes "Our Beloved Summer OST" .
+
+<http://example.org/bts/solo/58>
+    a bts:SoloRelease ;
+    bts:title "Stay Alive (Jungkook Solo, 7FATES: CHAKHO OST)" ;
+    bts:memberLabel "Jungkook" ;
+    bts:releaseDate "2022-02-11"^^xsd:date ;
+    bts:releaseType "OST" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "Webtoon OST (prod. SUGA)" .
+
+<http://example.org/bts/solo/59>
+    a bts:SoloRelease ;
+    bts:title "With You (Jimin & Ha Sung-woon)" ;
+    bts:memberLabel "Jimin, Ha Sung-woon" ;
+    bts:releaseDate "2022-04-24"^^xsd:date ;
+    bts:releaseType "OST" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "Our Blues OST" .
+
+<http://example.org/bts/solo/60>
+    a bts:SoloRelease ;
+    bts:title "That That (PSY feat. SUGA)" ;
+    bts:memberLabel "SUGA, PSY" ;
+    bts:releaseDate "2022-04-29"^^xsd:date ;
+    bts:releaseType "Collaboration" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "PSY comeback single ft. SUGA" .
+
+<http://example.org/bts/solo/61>
+    a bts:SoloRelease ;
+    bts:title "Left and Right (Charlie Puth feat. Jungkook)" ;
+    bts:memberLabel "Jungkook, Charlie Puth" ;
+    bts:releaseDate "2022-06-24"^^xsd:date ;
+    bts:releaseType "Collaboration" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "English" ;
+    bts:notes "Charlie Puth single ft Jungkook" .
+
+<http://example.org/bts/solo/62>
+    a bts:SoloRelease ;
+    bts:title "Rush Hour (Crush feat. j-hope)" ;
+    bts:memberLabel "j-hope, Crush" ;
+    bts:releaseDate "2022-09-22"^^xsd:date ;
+    bts:releaseType "Collaboration" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "Crush R&B single ft j-hope" .
+
+<http://example.org/bts/solo/63>
+    a bts:SoloRelease ;
+    bts:title "Sexy Nukim (섹시느낌) (Balming Tiger feat. RM)" ;
+    bts:memberLabel "RM, Balming Tiger" ;
+    bts:releaseDate "2022-09-15"^^xsd:date ;
+    bts:releaseType "Collaboration" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean/English" ;
+    bts:notes "Alt-hiphop single ft RM" .
+
+<http://example.org/bts/solo/64>
+    a bts:SoloRelease ;
+    bts:title "The Astronaut (Jin Solo)" ;
+    bts:memberLabel "Jin" ;
+    bts:releaseDate "2022-10-28"^^xsd:date ;
+    bts:releaseType "Single" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "English" ;
+    bts:notes "Jin solo single (Coldplay co-write)" .
+
+<http://example.org/bts/solo/65>
+    a bts:SoloRelease ;
+    bts:title "Dreamers (Jungkook Solo, FIFA World Cup 2022 OST)" ;
+    bts:memberLabel "Jungkook" ;
+    bts:releaseDate "2022-11-20"^^xsd:date ;
+    bts:releaseType "OST" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "English/Arabic" ;
+    bts:notes "World Cup soundtrack" .
+
+<http://example.org/bts/solo/66>
+    a bts:SoloRelease ;
+    bts:title "Yun (feat. Erykah Badu)" ;
+    bts:memberLabel "RM, Erykah Badu" ;
+    bts:releaseDate "2022-12-02"^^xsd:date ;
+    bts:releaseType "Album Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean/English" ;
+    bts:notes "from Indigo" .
+
+<http://example.org/bts/solo/67>
+    a bts:SoloRelease ;
+    bts:title "Still Life (feat. Anderson .Paak)" ;
+    bts:memberLabel "RM, Anderson .Paak" ;
+    bts:releaseDate "2022-12-02"^^xsd:date ;
+    bts:releaseType "Album Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "English" ;
+    bts:notes "from Indigo" .
+
+<http://example.org/bts/solo/68>
+    a bts:SoloRelease ;
+    bts:title "All Day (with Tablo)" ;
+    bts:memberLabel "RM, Tablo" ;
+    bts:releaseDate "2022-12-02"^^xsd:date ;
+    bts:releaseType "Album Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean/English" ;
+    bts:notes "from Indigo" .
+
+<http://example.org/bts/solo/69>
+    a bts:SoloRelease ;
+    bts:title "Forg_tful (건망증) (feat. Kim Sawol)" ;
+    bts:memberLabel "RM, Kim Sawol" ;
+    bts:releaseDate "2022-12-02"^^xsd:date ;
+    bts:releaseType "Album Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from Indigo" .
+
+<http://example.org/bts/solo/70>
+    a bts:SoloRelease ;
+    bts:title "Closer (feat. Paul Blanco & Mahalia)" ;
+    bts:memberLabel "RM, Paul Blanco, Mahalia" ;
+    bts:releaseDate "2022-12-02"^^xsd:date ;
+    bts:releaseType "Album Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "English" ;
+    bts:notes "from Indigo" .
+
+<http://example.org/bts/solo/71>
+    a bts:SoloRelease ;
+    bts:title "Change Pt.2" ;
+    bts:memberLabel "RM" ;
+    bts:releaseDate "2022-12-02"^^xsd:date ;
+    bts:releaseType "Album Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "English" ;
+    bts:notes "from Indigo" .
+
+<http://example.org/bts/solo/72>
+    a bts:SoloRelease ;
+    bts:title "Lonely" ;
+    bts:memberLabel "RM" ;
+    bts:releaseDate "2022-12-02"^^xsd:date ;
+    bts:releaseType "Album Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "English" ;
+    bts:notes "from Indigo" .
+
+<http://example.org/bts/solo/73>
+    a bts:SoloRelease ;
+    bts:title "Hectic (feat. Colde)" ;
+    bts:memberLabel "RM, Colde" ;
+    bts:releaseDate "2022-12-02"^^xsd:date ;
+    bts:releaseType "Album Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from Indigo" .
+
+<http://example.org/bts/solo/74>
+    a bts:SoloRelease ;
+    bts:title "Wild Flower (with youjeen)" ;
+    bts:memberLabel "RM, youjeen" ;
+    bts:releaseDate "2022-12-02"^^xsd:date ;
+    bts:releaseType "Album Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from Indigo (lead single)" .
+
+<http://example.org/bts/solo/75>
+    a bts:SoloRelease ;
+    bts:title "No.2 (feat. Park Ji-yoon)" ;
+    bts:memberLabel "RM, Park Ji-yoon" ;
+    bts:releaseDate "2022-12-02"^^xsd:date ;
+    bts:releaseType "Album Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from Indigo" .
+
+<http://example.org/bts/solo/76>
+    a bts:SoloRelease ;
+    bts:title "Vibe (Taeyang feat. Jimin)" ;
+    bts:memberLabel "Jimin, Taeyang" ;
+    bts:releaseDate "2023-01-13"^^xsd:date ;
+    bts:releaseType "Collaboration" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "Taeyang single ft Jimin" .
+
+<http://example.org/bts/solo/77>
+    a bts:SoloRelease ;
+    bts:title "Face-off" ;
+    bts:memberLabel "Jimin" ;
+    bts:releaseDate "2023-03-24"^^xsd:date ;
+    bts:releaseType "Album Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from FACE" .
+
+<http://example.org/bts/solo/78>
+    a bts:SoloRelease ;
+    bts:title "Interlude: Dive" ;
+    bts:memberLabel "Jimin" ;
+    bts:releaseDate "2023-03-24"^^xsd:date ;
+    bts:releaseType "Album Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Instrumental" ;
+    bts:notes "from FACE" .
+
+<http://example.org/bts/solo/79>
+    a bts:SoloRelease ;
+    bts:title "Like Crazy" ;
+    bts:memberLabel "Jimin" ;
+    bts:releaseDate "2023-03-24"^^xsd:date ;
+    bts:releaseType "Album Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from FACE (title track)" .
+
+<http://example.org/bts/solo/80>
+    a bts:SoloRelease ;
+    bts:title "Alone" ;
+    bts:memberLabel "Jimin" ;
+    bts:releaseDate "2023-03-24"^^xsd:date ;
+    bts:releaseType "Album Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from FACE" .
+
+<http://example.org/bts/solo/81>
+    a bts:SoloRelease ;
+    bts:title "Set Me Free Pt.2" ;
+    bts:memberLabel "Jimin" ;
+    bts:releaseDate "2023-03-17"^^xsd:date ;
+    bts:releaseType "Pre-release Single" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "FACE pre-release single" .
+
+<http://example.org/bts/solo/82>
+    a bts:SoloRelease ;
+    bts:title "on the street (with J. Cole)" ;
+    bts:memberLabel "j-hope, J. Cole" ;
+    bts:releaseDate "2023-03-03"^^xsd:date ;
+    bts:releaseType "Collaboration" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "English" ;
+    bts:notes "j-hope single ft J. Cole" .
+
+<http://example.org/bts/solo/83>
+    a bts:SoloRelease ;
+    bts:title "D-Day" ;
+    bts:memberLabel "SUGA" ;
+    bts:releaseDate "2023-04-21"^^xsd:date ;
+    bts:releaseType "Album Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from D-DAY" .
+
+<http://example.org/bts/solo/84>
+    a bts:SoloRelease ;
+    bts:title "Haegeum (해금)" ;
+    bts:memberLabel "SUGA" ;
+    bts:releaseDate "2023-04-21"^^xsd:date ;
+    bts:releaseType "Album Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from D-DAY (title track)" .
+
+<http://example.org/bts/solo/85>
+    a bts:SoloRelease ;
+    bts:title "HUH?! (feat. j-hope)" ;
+    bts:memberLabel "SUGA, j-hope" ;
+    bts:releaseDate "2023-04-21"^^xsd:date ;
+    bts:releaseType "Album Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from D-DAY" .
+
+<http://example.org/bts/solo/86>
+    a bts:SoloRelease ;
+    bts:title "Amygdala" ;
+    bts:memberLabel "SUGA" ;
+    bts:releaseDate "2023-04-21"^^xsd:date ;
+    bts:releaseType "Album Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from D-DAY" .
+
+<http://example.org/bts/solo/87>
+    a bts:SoloRelease ;
+    bts:title "SDL" ;
+    bts:memberLabel "SUGA" ;
+    bts:releaseDate "2023-04-21"^^xsd:date ;
+    bts:releaseType "Album Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from D-DAY" .
+
+<http://example.org/bts/solo/88>
+    a bts:SoloRelease ;
+    bts:title "People Pt.2 (feat. IU)" ;
+    bts:memberLabel "SUGA, IU" ;
+    bts:releaseDate "2023-04-07"^^xsd:date ;
+    bts:releaseType "Pre-release Single" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from D-DAY pre-release" .
+
+<http://example.org/bts/solo/89>
+    a bts:SoloRelease ;
+    bts:title "Polar Night (극야)" ;
+    bts:memberLabel "SUGA" ;
+    bts:releaseDate "2023-04-21"^^xsd:date ;
+    bts:releaseType "Album Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from D-DAY" .
+
+<http://example.org/bts/solo/90>
+    a bts:SoloRelease ;
+    bts:title "Interlude: Dawn" ;
+    bts:memberLabel "SUGA" ;
+    bts:releaseDate "2023-04-21"^^xsd:date ;
+    bts:releaseType "Album Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Instrumental" ;
+    bts:notes "from D-DAY" .
+
+<http://example.org/bts/solo/91>
+    a bts:SoloRelease ;
+    bts:title "Snooze (feat. Ryuichi Sakamoto & Woosung)" ;
+    bts:memberLabel "SUGA, Ryuichi Sakamoto, Woosung" ;
+    bts:releaseDate "2023-04-21"^^xsd:date ;
+    bts:releaseType "Album Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean/English" ;
+    bts:notes "from D-DAY" .
+
+<http://example.org/bts/solo/92>
+    a bts:SoloRelease ;
+    bts:title "Life Goes On (Agust D Solo ver.)" ;
+    bts:memberLabel "SUGA" ;
+    bts:releaseDate "2023-04-21"^^xsd:date ;
+    bts:releaseType "Album Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from D-DAY" .
+
+<http://example.org/bts/solo/93>
+    a bts:SoloRelease ;
+    bts:title "Angel Pt.1 (Kodak Black & NLE Choppa feat. Jimin, JVKE, Muni Long)" ;
+    bts:memberLabel "Jimin, Kodak Black, NLE Choppa, JVKE, Muni Long" ;
+    bts:releaseDate "2023-05-18"^^xsd:date ;
+    bts:releaseType "Collaboration" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "English" ;
+    bts:notes "Fast X soundtrack" .
+
+<http://example.org/bts/solo/94>
+    a bts:SoloRelease ;
+    bts:title "Seven (feat. Latto)" ;
+    bts:memberLabel "Jungkook, Latto" ;
+    bts:releaseDate "2023-07-14"^^xsd:date ;
+    bts:releaseType "Single" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "English" ;
+    bts:notes "Jungkook solo debut single" .
+
+<http://example.org/bts/solo/95>
+    a bts:SoloRelease ;
+    bts:title "Rainy Days" ;
+    bts:memberLabel "V" ;
+    bts:releaseDate "2023-08-11"^^xsd:date ;
+    bts:releaseType "Pre-release Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "English" ;
+    bts:notes "from Layover" .
+
+<http://example.org/bts/solo/96>
+    a bts:SoloRelease ;
+    bts:title "Blue" ;
+    bts:memberLabel "V" ;
+    bts:releaseDate "2023-09-08"^^xsd:date ;
+    bts:releaseType "Album Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "Korean" ;
+    bts:notes "from Layover" .
+
+<http://example.org/bts/solo/97>
+    a bts:SoloRelease ;
+    bts:title "Love Me Again" ;
+    bts:memberLabel "V" ;
+    bts:releaseDate "2023-08-11"^^xsd:date ;
+    bts:releaseType "Pre-release Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "English" ;
+    bts:notes "from Layover" .
+
+<http://example.org/bts/solo/98>
+    a bts:SoloRelease ;
+    bts:title "Slow Dancing" ;
+    bts:memberLabel "V" ;
+    bts:releaseDate "2023-09-08"^^xsd:date ;
+    bts:releaseType "Album Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "English" ;
+    bts:notes "from Layover (title track)" .
+
+<http://example.org/bts/solo/99>
+    a bts:SoloRelease ;
+    bts:title "For Us" ;
+    bts:memberLabel "V" ;
+    bts:releaseDate "2023-09-08"^^xsd:date ;
+    bts:releaseType "Album Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "English" ;
+    bts:notes "from Layover" .
+
+<http://example.org/bts/solo/100>
+    a bts:SoloRelease ;
+    bts:title "3D (feat. Jack Harlow)" ;
+    bts:memberLabel "Jungkook, Jack Harlow" ;
+    bts:releaseDate "2023-09-29"^^xsd:date ;
+    bts:releaseType "Single" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "English" ;
+    bts:notes "Jungkook second solo single" .
+
+<http://example.org/bts/solo/101>
+    a bts:SoloRelease ;
+    bts:title "Closer to You (feat. Major Lazer)" ;
+    bts:memberLabel "Jungkook, Major Lazer" ;
+    bts:releaseDate "2023-11-03"^^xsd:date ;
+    bts:releaseType "Album Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "English" ;
+    bts:notes "from GOLDEN" .
+
+<http://example.org/bts/solo/102>
+    a bts:SoloRelease ;
+    bts:title "Standing Next To You" ;
+    bts:memberLabel "Jungkook" ;
+    bts:releaseDate "2023-11-03"^^xsd:date ;
+    bts:releaseType "Album Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "English" ;
+    bts:notes "from GOLDEN" .
+
+<http://example.org/bts/solo/103>
+    a bts:SoloRelease ;
+    bts:title "Yes or No" ;
+    bts:memberLabel "Jungkook" ;
+    bts:releaseDate "2023-11-03"^^xsd:date ;
+    bts:releaseType "Album Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "English" ;
+    bts:notes "from GOLDEN" .
+
+<http://example.org/bts/solo/104>
+    a bts:SoloRelease ;
+    bts:title "Please Don’t Change" ;
+    bts:memberLabel "Jungkook" ;
+    bts:releaseDate "2023-11-03"^^xsd:date ;
+    bts:releaseType "Album Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "English" ;
+    bts:notes "from GOLDEN" .
+
+<http://example.org/bts/solo/105>
+    a bts:SoloRelease ;
+    bts:title "Hate You" ;
+    bts:memberLabel "Jungkook" ;
+    bts:releaseDate "2023-11-03"^^xsd:date ;
+    bts:releaseType "Album Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "English" ;
+    bts:notes "from GOLDEN" .
+
+<http://example.org/bts/solo/106>
+    a bts:SoloRelease ;
+    bts:title "Somebody" ;
+    bts:memberLabel "Jungkook" ;
+    bts:releaseDate "2023-11-03"^^xsd:date ;
+    bts:releaseType "Album Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "English" ;
+    bts:notes "from GOLDEN" .
+
+<http://example.org/bts/solo/107>
+    a bts:SoloRelease ;
+    bts:title "Too Sad to Dance" ;
+    bts:memberLabel "Jungkook" ;
+    bts:releaseDate "2023-11-03"^^xsd:date ;
+    bts:releaseType "Album Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "English" ;
+    bts:notes "from GOLDEN" .
+
+<http://example.org/bts/solo/108>
+    a bts:SoloRelease ;
+    bts:title "Shot Glass of Tears" ;
+    bts:memberLabel "Jungkook" ;
+    bts:releaseDate "2023-11-03"^^xsd:date ;
+    bts:releaseType "Album Track" ;
+    bts:linkedAlbum <http://example.org/bts/album/–> ;
+    bts:language "English" ;
+    bts:notes "from GOLDEN (closing track)" .

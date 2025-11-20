@@ -1,0 +1,150 @@
+@prefix bts:  <http://example.org/bts#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+#################################################################
+# Core Individuals: Group and Members
+#################################################################
+
+bts:BTS a bts:Group ;
+    bts:name "BTS" ;
+    bts:hasMember bts:RM ,
+                  bts:Jin ,
+                  bts:Suga ,
+                  bts:JHope ,
+                  bts:Jimin ,
+                  bts:V ,
+                  bts:Jungkook .
+
+bts:RM a bts:Member ;
+    bts:name "RM" ;
+    bts:memberOf bts:BTS .
+
+bts:Jin a bts:Member ;
+    bts:name "Jin" ;
+    bts:memberOf bts:BTS .
+
+bts:Suga a bts:Member ;
+    bts:name "SUGA" ;
+    bts:memberOf bts:BTS .
+
+bts:JHope a bts:Member ;
+    bts:name "j-hope" ;
+    bts:memberOf bts:BTS .
+
+bts:Jimin a bts:Member ;
+    bts:name "Jimin" ;
+    bts:memberOf bts:BTS .
+
+bts:V a bts:Member ;
+    bts:name "V" ;
+    bts:memberOf bts:BTS .
+
+bts:Jungkook a bts:Member ;
+    bts:name "Jungkook" ;
+    bts:memberOf bts:BTS .
+
+#################################################################
+# Music Releases: One Album and Two Songs
+#################################################################
+
+bts:LoveYourself_Her a bts:Album ;
+    bts:name "Love Yourself: Her" ;
+    bts:releaseDate "2017-09-18"^^xsd:date ;
+    bts:hasPart bts:DNA ,
+                bts:MicDrop ;
+    bts:featuresMember bts:RM ,
+                       bts:Jin ,
+                       bts:Suga ,
+                       bts:JHope ,
+                       bts:Jimin ,
+                       bts:V ,
+                       bts:Jungkook .
+
+bts:DNA a bts:Song ;
+    bts:name "DNA" ;
+    bts:releaseDate "2017-09-18"^^xsd:date ;
+    bts:featuresMember bts:RM ,
+                       bts:Jungkook .
+
+bts:MicDrop a bts:Song ;
+    bts:name "MIC Drop" ;
+    bts:releaseDate "2017-09-18"^^xsd:date ;
+    bts:featuresMember bts:Suga ,
+                       bts:JHope ,
+                       bts:RM .
+
+#################################################################
+# Events and Speech Events
+#################################################################
+
+bts:UNGA2018Speech a bts:SpeechEvent ;
+    bts:name "UN General Assembly 2018 UNICEF Youth 2030 speech" ;
+    bts:eventDate "2018-09-24"^^xsd:date .
+
+bts:UNGA2021Speech a bts:SpeechEvent ;
+    bts:name "UN General Assembly 2021 SDG Moment speech" ;
+    bts:eventDate "2021-09-20"^^xsd:date .
+
+# BTS performed at both speech events
+bts:BTS
+    bts:performedAt bts:UNGA2018Speech ,
+                    bts:UNGA2021Speech .
+
+#################################################################
+# Awards
+#################################################################
+
+bts:BBMAsTopSocialArtist2017 a bts:Award ;
+    bts:name "Billboard Music Awards - Top Social Artist 2017" ;
+    bts:awardYear "2017"^^xsd:gYear .
+
+bts:BBMAsTopSocialArtist2018 a bts:Award ;
+    bts:name "Billboard Music Awards - Top Social Artist 2018" ;
+    bts:awardYear "2018"^^xsd:gYear .
+
+bts:BBMAsTopSocialArtist2019 a bts:Award ;
+    bts:name "Billboard Music Awards - Top Social Artist 2019" ;
+    bts:awardYear "2019"^^xsd:gYear .
+
+bts:BTS
+    bts:hasAward bts:BBMAsTopSocialArtist2017 ,
+                 bts:BBMAsTopSocialArtist2018 ,
+                 bts:BBMAsTopSocialArtist2019 .
+
+#################################################################
+# Record Achievements
+#################################################################
+
+bts:DNA_YouTube24hRecord a bts:RecordAchievement ;
+    bts:name "YouTube 24-hour view record for 'DNA'" ;
+    bts:recordValue "Most-viewed K-pop group MV in first 24 hours on YouTube (2017)" .
+
+bts:Butter_YouTube24hRecord a bts:RecordAchievement ;
+    bts:name "YouTube 24-hour view record for 'Butter'" ;
+    bts:recordValue "One of the most-viewed music videos in first 24 hours on YouTube (2021)" .
+
+bts:DNA bts:hasRecord bts:DNA_YouTube24hRecord .
+bts:Butter_YouTube24hRecord a bts:RecordAchievement .
+
+#################################################################
+# Fan Project Example
+#################################################################
+
+bts:PurpleRibbonProject a bts:FanProject ;
+    bts:name "Purple Ribbon Project" .
+
+#################################################################
+# Social Issues (optional manual definitions to complement RML)
+#################################################################
+
+<http://example.org/bts/issue/health> a bts:SocialIssue ;
+    bts:name "health" .
+
+<http://example.org/bts/issue/education> a bts:SocialIssue ;
+    bts:name "education" .
+
+<http://example.org/bts/issue/disaster-relief> a bts:SocialIssue ;
+    bts:name "disaster-relief" .

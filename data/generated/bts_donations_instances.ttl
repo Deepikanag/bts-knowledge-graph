@@ -1,0 +1,254 @@
+@prefix bts: <http://example.org/bts#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/bts/donation/D2015_1>
+    a bts:Donation ;
+    bts:donorLabel "BTS" ;
+    bts:donorType "Group" ;
+    bts:donationLabel "Rice donation at K-Star Road opening" ;
+    bts:amountKRW "0"^^xsd:decimal ;
+    bts:amountUSD "0"^^xsd:decimal ;
+    bts:donationDate "2015-04-01"^^xsd:date ;
+    bts:orgName "Local charities (K-Star Road)" ;
+    bts:orgType "Charity" ;
+    bts:issueKey "food-security" ;
+    bts:campaignLabel "K_STAR_ROAD" ;
+    bts:country "South Korea" .
+
+<http://example.org/bts/donation/D2017_1>
+    a bts:Donation ;
+    bts:donorLabel "BTS+BigHit" ;
+    bts:donorType "Group" ;
+    bts:donationLabel "Donation to Sewol Ferry families group" ;
+    bts:amountKRW "100000000"^^xsd:decimal ;
+    bts:amountUSD "87915"^^xsd:decimal ;
+    bts:donationDate "2017-01-01"^^xsd:date ;
+    bts:orgName "4/16 Sewol Families for Truth and A Safer Society" ;
+    bts:orgType "Charity" ;
+    bts:issueKey "disaster-relief" ;
+    bts:campaignLabel "SEWOL_FERRY" ;
+    bts:country "South Korea" .
+
+<http://example.org/bts/donation/D2017_2>
+    a bts:Donation ;
+    bts:donorLabel "BTS+BigHit" ;
+    bts:donorType "Group" ;
+    bts:donationLabel "Initial Love Myself UNICEF fund pledge" ;
+    bts:amountKRW "500000000"^^xsd:decimal ;
+    bts:amountUSD "439575"^^xsd:decimal ;
+    bts:donationDate "2017-11-01"^^xsd:date ;
+    bts:orgName "UNICEF Korea" ;
+    bts:orgType "UN Agency" ;
+    bts:issueKey "anti-violence" ;
+    bts:campaignLabel "Love Myself" ;
+    bts:country "South Korea" .
+
+<http://example.org/bts/donation/D2018_1>
+    a bts:Donation ;
+    bts:donorLabel "BTS" ;
+    bts:donorType "Group" ;
+    bts:donationLabel "Donation to ALS hospital building fund" ;
+    bts:amountKRW "0"^^xsd:decimal ;
+    bts:amountUSD "0"^^xsd:decimal ;
+    bts:donationDate "2018-06-01"^^xsd:date ;
+    bts:orgName "ALS hospital building fund" ;
+    bts:orgType "Hospital" ;
+    bts:issueKey "health" ;
+    bts:campaignLabel "ALS_FUND" ;
+    bts:country "South Korea" .
+
+<http://example.org/bts/donation/D2019_1>
+    a bts:Donation ;
+    bts:donorLabel "Suga" ;
+    bts:donorType "Member" ;
+    bts:donationLabel "Donation to Korea Pediatric Cancer Foundation" ;
+    bts:amountKRW "100000000"^^xsd:decimal ;
+    bts:amountUSD "83000"^^xsd:decimal ;
+    bts:donationDate "2019-03-11"^^xsd:date ;
+    bts:orgName "Korea Pediatric Cancer Foundation" ;
+    bts:orgType "Charity" ;
+    bts:issueKey "health" ;
+    bts:campaignLabel "KPCF" ;
+    bts:country "South Korea" .
+
+<http://example.org/bts/donation/D2020_1>
+    a bts:Donation ;
+    bts:donorLabel "Suga" ;
+    bts:donorType "Member" ;
+    bts:donationLabel "COVID-19 relief in Daegu" ;
+    bts:amountKRW "100000000"^^xsd:decimal ;
+    bts:amountUSD "83000"^^xsd:decimal ;
+    bts:donationDate "2020-02-20"^^xsd:date ;
+    bts:orgName "Daegu Social Welfare Community Chest" ;
+    bts:orgType "Charity" ;
+    bts:issueKey "health" ;
+    bts:campaignLabel "DSWCC" ;
+    bts:country "South Korea" .
+
+<http://example.org/bts/donation/D2020_2>
+    a bts:Donation ;
+    bts:donorLabel "BTS+BigHit" ;
+    bts:donorType "Group" ;
+    bts:donationLabel "Donation to Black Lives Matter movement" ;
+    bts:amountKRW "0"^^xsd:decimal ;
+    bts:amountUSD "1000000"^^xsd:decimal ;
+    bts:donationDate "2020-06-01"^^xsd:date ;
+    bts:orgName "Black Lives Matter Foundation" ;
+    bts:orgType "NGO" ;
+    bts:issueKey "anti-racism" ;
+    bts:campaignLabel "BLM" ;
+    bts:country "United States" .
+
+<http://example.org/bts/donation/D2020_3>
+    a bts:Donation ;
+    bts:donorLabel "Jimin" ;
+    bts:donorType "Member" ;
+    bts:donationLabel "Support for students in Jeollanam-do" ;
+    bts:amountKRW "100000000"^^xsd:decimal ;
+    bts:amountUSD "85000"^^xsd:decimal ;
+    bts:donationDate "2020-07-01"^^xsd:date ;
+    bts:orgName "Jeonnam Future Education Foundation" ;
+    bts:orgType "Government" ;
+    bts:issueKey "education" ;
+    bts:campaignLabel "JEONNAM_EDU" ;
+    bts:country "South Korea" .
+
+<http://example.org/bts/donation/D2021_1>
+    a bts:Donation ;
+    bts:donorLabel "Suga" ;
+    bts:donorType "Member" ;
+    bts:donationLabel "Donation for child cancer patients in Daegu" ;
+    bts:amountKRW "100000000"^^xsd:decimal ;
+    bts:amountUSD "88000"^^xsd:decimal ;
+    bts:donationDate "2021-03-11"^^xsd:date ;
+    bts:orgName "Keimyung University Dongsan Medical Center" ;
+    bts:orgType "Hospital" ;
+    bts:issueKey "health" ;
+    bts:campaignLabel "KEIMYUNG_MEDICAL" ;
+    bts:country "South Korea" .
+
+<http://example.org/bts/donation/D2021_2>
+    a bts:Donation ;
+    bts:donorLabel "Jimin" ;
+    bts:donorType "Member" ;
+    bts:donationLabel "Donation to Rotary polio vaccine campaign" ;
+    bts:amountKRW "100000000"^^xsd:decimal ;
+    bts:amountUSD "88000"^^xsd:decimal ;
+    bts:donationDate "2021-09-23"^^xsd:date ;
+    bts:orgName "Rotary District 3590" ;
+    bts:orgType "NGO" ;
+    bts:issueKey "health" ;
+    bts:campaignLabel "ROTARY" ;
+    bts:country "South Korea" .
+
+<http://example.org/bts/donation/D2021_3>
+    a bts:Donation ;
+    bts:donorLabel "Jimin" ;
+    bts:donorType "Member" ;
+    bts:donationLabel "ChildFund Green Noble Club donations (cumulative)" ;
+    bts:amountKRW "100000000"^^xsd:decimal ;
+    bts:amountUSD "88000"^^xsd:decimal ;
+    bts:donationDate "2021-10-13"^^xsd:date ;
+    bts:orgName "ChildFund Korea" ;
+    bts:orgType "Charity" ;
+    bts:issueKey "children-rights" ;
+    bts:campaignLabel "CHILD_FUND" ;
+    bts:country "South Korea" .
+
+<http://example.org/bts/donation/D2021_4>
+    a bts:Donation ;
+    bts:donorLabel "J-Hope" ;
+    bts:donorType "Member" ;
+    bts:donationLabel "Children's support via ChildFund Korea" ;
+    bts:amountKRW "100000000"^^xsd:decimal ;
+    bts:amountUSD "77000"^^xsd:decimal ;
+    bts:donationDate "2021-05-04"^^xsd:date ;
+    bts:orgName "ChildFund Korea" ;
+    bts:orgType "Charity" ;
+    bts:issueKey "children-rights" ;
+    bts:campaignLabel "CHILD_FUND" ;
+    bts:country "Tanzania" .
+
+<http://example.org/bts/donation/D2022_1>
+    a bts:Donation ;
+    bts:donorLabel "Suga" ;
+    bts:donorType "Member" ;
+    bts:donationLabel "Wildfire relief donation via Hope Bridge" ;
+    bts:amountKRW "0"^^xsd:decimal ;
+    bts:amountUSD "83000"^^xsd:decimal ;
+    bts:donationDate "2022-03-09"^^xsd:date ;
+    bts:orgName "Hope Bridge Korea Disaster Relief Association" ;
+    bts:orgType "Charity" ;
+    bts:issueKey "disaster-relief" ;
+    bts:campaignLabel "HOPE_BRIDGE" ;
+    bts:country "South Korea" .
+
+<http://example.org/bts/donation/D2023_1>
+    a bts:Donation ;
+    bts:donorLabel "Jimin" ;
+    bts:donorType "Member" ;
+    bts:donationLabel "Donation for Turkey/Syria earthquake relief" ;
+    bts:amountKRW "100000000"^^xsd:decimal ;
+    bts:amountUSD "77000"^^xsd:decimal ;
+    bts:donationDate "2023-02-15"^^xsd:date ;
+    bts:orgName "UNICEF Korea" ;
+    bts:orgType "UN Agency" ;
+    bts:issueKey "disaster-relief" ;
+    bts:campaignLabel "UNICEF_KOREA" ;
+    bts:country "Turkey/Syria" .
+
+<http://example.org/bts/donation/D2023_2>
+    a bts:Donation ;
+    bts:donorLabel "Jungkook" ;
+    bts:donorType "Member" ;
+    bts:donationLabel "Donation to Seoul children’s hospital" ;
+    bts:amountKRW "1000000000"^^xsd:decimal ;
+    bts:amountUSD "770000"^^xsd:decimal ;
+    bts:donationDate "2023-11-01"^^xsd:date ;
+    bts:orgName "Seoul National University Children's Hospital" ;
+    bts:orgType "Hospital" ;
+    bts:issueKey "health" ;
+    bts:campaignLabel "SNU_CHILDREN_HOSPITAL" ;
+    bts:country "South Korea" .
+
+<http://example.org/bts/donation/D2023_3>
+    a bts:Donation ;
+    bts:donorLabel "BTS+BigHit" ;
+    bts:donorType "Group" ;
+    bts:donationLabel "Love Myself campaign appreciation donation" ;
+    bts:amountKRW "1000000000"^^xsd:decimal ;
+    bts:amountUSD "874000"^^xsd:decimal ;
+    bts:donationDate "2023-09-22"^^xsd:date ;
+    bts:orgName "UNICEF Korea" ;
+    bts:orgType "UN Agency" ;
+    bts:issueKey "anti-violence" ;
+    bts:campaignLabel "Love Myself" ;
+    bts:country "South Korea" .
+
+<http://example.org/bts/donation/D2025_1>
+    a bts:Donation ;
+    bts:donorLabel "Suga" ;
+    bts:donorType "Member" ;
+    bts:donationLabel "Donation for Ulsan/Gyeongbuk/Gyeongnam wildfire relief" ;
+    bts:amountKRW "100000000"^^xsd:decimal ;
+    bts:amountUSD "77000"^^xsd:decimal ;
+    bts:donationDate "2025-03-27"^^xsd:date ;
+    bts:orgName "Korean Red Cross" ;
+    bts:orgType "Charity" ;
+    bts:issueKey "disaster-relief" ;
+    bts:campaignLabel "KOREAN_RED_CROSS" ;
+    bts:country "South Korea" .
+
+<http://example.org/bts/donation/D2025_2>
+    a bts:Donation ;
+    bts:donorLabel "RM" ;
+    bts:donorType "Member" ;
+    bts:donationLabel "Birthday donations to two medical centers" ;
+    bts:amountKRW "200000000"^^xsd:decimal ;
+    bts:amountUSD "150000"^^xsd:decimal ;
+    bts:donationDate "2025-09-12"^^xsd:date ;
+    bts:orgName "Seoul Asan Medical Center & Korea University Medical Center" ;
+    bts:orgType "Hospital" ;
+    bts:issueKey "health" ;
+    bts:campaignLabel "ASAN_MEDICAL_CENTER" ;
+    bts:country "South Korea" .
