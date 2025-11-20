@@ -1,0 +1,18 @@
+PREFIX bts:  <http://example.org/bts#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?donation ?donationLabel ?amount ?date ?orgName
+WHERE {
+  ?donation rdf:type bts:Donation ;
+            bts:name ?donationLabel ;
+            bts:donationAmount ?amount ;
+            bts:eventDate ?date ;
+            bts:donatedTo ?org ;
+            bts:partOfCampaign ?campaign .
+
+  ?campaign bts:name ?campaignName .
+  ?org bts:name ?orgName .
+
+  FILTER (lcase(str(?campaignName)) = "love myself")
+}
+ORDER BY ?date

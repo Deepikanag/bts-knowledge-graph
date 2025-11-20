@@ -1,0 +1,13 @@
+PREFIX bts:  <http://example.org/bts#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?donor ?donorName (SUM(?amount) AS ?totalUsd)
+WHERE {
+  ?donation rdf:type bts:Donation ;
+            bts:madeBy ?donor ;
+            bts:donationAmount ?amount .
+
+  OPTIONAL { ?donor bts:name ?donorName . }
+}
+GROUP BY ?donor ?donorName
+ORDER BY DESC(?totalUsd)

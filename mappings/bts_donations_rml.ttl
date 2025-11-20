@@ -1,0 +1,92 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bts: <http://example.org/bts#> .
+@prefix map: <http://example.org/mapping/> .
+
+<#DonationSource>
+    rml:source "data/csv/bts_donations.csv" ;
+    rml:referenceFormulation ql:CSV .
+
+<#DonationTriplesMap>
+    rml:logicalSource <#DonationSource> ;
+    rr:subjectMap [
+        rr:template "http://example.org/bts/donation/{donation_id}" ;
+        rr:class bts:Donation ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate bts:name ;
+        rr:objectMap [ rml:reference "donation_label" ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate bts:donationAmount ;
+        rr:objectMap [ rml:reference "amount_usd" ; rr:datatype xsd:decimal ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate bts:madeBy ;
+        rr:objectMap [ rr:template "http://example.org/bts#{donor_label}" ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate bts:donatedTo ;
+        rr:objectMap [
+            rr:parentTriplesMap <#OrganizationTriplesMap> ;
+            rr:joinCondition [
+                rr:child "org_name" ;
+                rr:parent "org_name" ;
+            ]
+        ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate bts:addressesIssue ;
+        rr:objectMap [
+            rr:parentTriplesMap <#SocialIssueTriplesMap> ;
+            rr:joinCondition [
+                rr:child "issue_key" ;
+                rr:parent "issue_key" ;
+            ]
+        ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate bts:partOfCampaign ;
+        rr:objectMap [
+            rr:parentTriplesMap <#CampaignTriplesMap> ;
+            rr:joinCondition [
+                rr:child "campaign_label" ;
+                rr:parent "campaign_label" ;
+            ]
+        ] ;
+    ] .
+
+<#OrganizationTriplesMap>
+    rml:logicalSource <#DonationSource> ;
+    rr:subjectMap [
+        rr:template "http://example.org/bts/org/{org_name}" ;
+        rr:class bts:Organization ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate bts:name ;
+        rr:objectMap [ rml:reference "org_name" ] ;
+    ] .
+
+<#SocialIssueTriplesMap>
+    rml:logicalSource <#DonationSource> ;
+    rr:subjectMap [
+        rr:template "http://example.org/bts/issue/{issue_key}" ;
+        rr:class bts:SocialIssue ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate bts:name ;
+        rr:objectMap [ rml:reference "issue_key" ] ;
+    ] .
+
+<#CampaignTriplesMap>
+    rml:logicalSource <#DonationSource> ;
+    rr:subjectMap [
+        rr:template "http://example.org/bts/campaign/{campaign_label}" ;
+        rr:class bts:Campaign ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate bts:name ;
+        rr:objectMap [ rml:reference "campaign_label" ] ;
+    ] .

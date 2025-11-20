@@ -1,0 +1,12 @@
+endorsement_id,entity_type,entity_label,brand_name,industry,role,contract_start,contract_end,region,notes
+BE_BTS_SAMSUNG,Group,BTS,Samsung,Electronics,Global Ambassador,2020-02-01,2021-12-31,Global,"Galaxy S20, BTS Edition"
+BE_BTS_HYUNDAI,Group,BTS,Hyundai,Automotive,Global Ambassador,2018-10-01,2020-12-31,Global,"Hydrogen campaign & Palisade promotion"
+BE_BTS_LV,Group,BTS,Louis Vuitton,Fashion,House Ambassador,2021-04-01,2023-12-31,Global,"LV Menswear campaign"
+BE_JIMIN_DIOR,Member,Jimin,Dior,Fashion,Global Ambassador,2023-01-01,,Global,"Dior Men"
+BE_JIMIN_TIFFANY,Member,Jimin,Tiffany & Co.,Jewelry,House Ambassador,2023-03-01,,Global,"Lock collection"
+BE_SUGA_VALENTINO,Member,Suga,Valentino,Fashion,Brand Ambassador,2023-01-01,,Global,"Di.Vas campaign"
+BE_SUGA_NBA,Member,Suga,NBA,Sports,Cultural Ambassador,2023-04-06,,Global,"NBA global collab"
+BE_V_CELINE,Member,V,Celine,Fashion,House Ambassador,2023-03-01,,Global,"CELINE Boy"
+BE_JK_CK,Member,Jungkook,Calvin Klein,Fashion,Global Ambassador,2023-03-27,,Global,"Jeans & Underwear"
+BE_JHOPE_LOUISVUITTON,Member,J-Hope,Louis Vuitton,Fashion,House Ambassador,2023-02-01,,Global,"LV solo appointment"
+BE_RM_BOTTEGA,Member,RM,Bottega Veneta,Fashion,Global Ambassador,2023-03-01,,Global,"Quiet luxury ambassador"   

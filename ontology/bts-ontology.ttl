@@ -181,3 +181,249 @@ bts:Award rdfs:subClassOf [
     owl:onProperty bts:awardYear ;
     owl:cardinality "1"^^xsd:nonNegativeInteger
 ] .
+
+#################################################################
+# EXTENDED BTS KNOWLEDGE GRAPH ONTOLOGY
+# Group Topics • Individual Topics • Extra Topics
+#################################################################
+
+#################################################################
+# 1. GROUP DATA TOPICS
+#################################################################
+
+###############
+# 1A. Music
+###############
+
+bts:Album a owl:Class .
+bts:Song a owl:Class .
+bts:CollaborationRelease a owl:Class ;
+    rdfs:subClassOf bts:MusicRelease .
+
+# Properties
+bts:hasSong a owl:ObjectProperty ;
+    rdfs:domain bts:Album ;
+    rdfs:range bts:Song ;
+    rdfs:subPropertyOf bts:hasPart .
+
+bts:collaborationArtist a owl:ObjectProperty ;
+    rdfs:domain bts:CollaborationRelease ;
+    rdfs:range bts:Artist .
+
+bts:Artist a owl:Class .  # external artists like Halsey, Charlie Puth, etc.
+
+
+###############
+# 1B. Activities (Group)
+###############
+
+bts:Activity a owl:Class .
+bts:Concert a owl:Class ; rdfs:subClassOf bts:Activity .
+bts:Tour a owl:Class ; rdfs:subClassOf bts:Activity .
+bts:Speech a owl:Class ; rdfs:subClassOf bts:Activity .
+bts:Appearance a owl:Class ; rdfs:subClassOf bts:Activity .
+
+bts:occurredOn a owl:DatatypeProperty ;
+    rdfs:domain bts:Activity ;
+    rdfs:range xsd:date .
+
+bts:location a owl:DatatypeProperty .
+
+
+###############
+# 1C. Records & Achievements
+###############
+
+bts:ChartRecord a owl:Class ;
+    rdfs:subClassOf bts:RecordAchievement .
+
+bts:StreamingRecord a owl:Class ;
+    rdfs:subClassOf bts:RecordAchievement .
+
+bts:SocialMediaRecord a owl:Class ;
+    rdfs:subClassOf bts:RecordAchievement .
+
+bts:recordPlatform a owl:DatatypeProperty ;
+    rdfs:domain bts:RecordAchievement ;
+    rdfs:range xsd:string .
+
+
+###############
+# 1D. Brand Endorsements (Group + solo)
+###############
+
+bts:Brand a owl:Class .
+bts:Endorsement a owl:Class .
+
+# Who endorses the brand?
+bts:endorsesBrand a owl:ObjectProperty ;
+    rdfs:domain bts:Member, bts:Group ;
+    rdfs:range bts:Brand .
+
+bts:endorsementStart a owl:DatatypeProperty .
+bts:endorsementEnd a owl:DatatypeProperty .
+
+
+###############
+# 1E. Management
+###############
+
+bts:Company a owl:Class .
+bts:Subsidiary a owl:Class ; rdfs:subClassOf bts:Company .
+
+bts:managedBy a owl:ObjectProperty ;
+    rdfs:domain bts:Artist, bts:Group ;
+    rdfs:range bts:Company .
+
+bts:ownsSharesIn a owl:ObjectProperty ;
+    rdfs:domain bts:Member ;
+    rdfs:range bts:Company .
+
+bts:sharePercentage a owl:DatatypeProperty ;
+    rdfs:domain bts:Member ;
+    rdfs:range xsd:decimal .
+
+
+###############
+# 1F. Awards (group & solo)
+###############
+
+bts:AwardEvent a owl:Class .
+bts:SoloAward a owl:Class ; rdfs:subClassOf bts:Award .
+bts:GroupAward a owl:Class ; rdfs:subClassOf bts:Award .
+
+bts:receivedBy a owl:ObjectProperty ;
+    rdfs:domain bts:Award ;
+    rdfs:range bts:Group, bts:Member .
+
+bts:awardCategory a owl:DatatypeProperty .
+bts:awardYear a owl:DatatypeProperty .
+
+
+#################################################################
+# 2. INDIVIDUAL MEMBER TOPICS
+#################################################################
+
+###############
+# 2A. Solo Music
+###############
+
+bts:SoloAlbum a owl:Class ; rdfs:subClassOf bts:Album .
+bts:SoloSong a owl:Class ; rdfs:subClassOf bts:Song .
+
+bts:performedBy a owl:ObjectProperty ;
+    rdfs:domain bts:MusicRelease ;
+    rdfs:range bts:Member .
+
+
+###############
+# 2B. Individual Achievements
+###############
+
+bts:IndividualAchievement a owl:Class .
+
+bts:achievementType a owl:DatatypeProperty .
+bts:achievementDate a owl:DatatypeProperty .
+
+
+###############
+# 2C. Brand Ambassadorship (solo)
+###############
+
+bts:soloEndorsesBrand a owl:ObjectProperty ;
+    rdfs:domain bts:Member ;
+    rdfs:range bts:Brand .
+
+
+###############
+# 2D. Roles within the band
+###############
+
+bts:BandRole a owl:Class .
+
+bts:hasRole a owl:ObjectProperty ;
+    rdfs:domain bts:Member ;
+    rdfs:range bts:BandRole .
+
+# Examples: Leader, Main Vocalist, Main Dancer, Rapper, Producer, etc.
+
+
+###############
+# 2E. Philanthropy
+###############
+
+# Already have Donation, Campaign, Social Issue
+# Adding personal volunteer work / advocacy
+bts:VolunteerActivity a owl:Class .
+
+bts:participatesIn a owl:ObjectProperty ;
+    rdfs:domain bts:Member ;
+    rdfs:range bts:VolunteerActivity .
+
+
+###############
+# 2F. Shares / Ownership
+###############
+
+bts:shareholderOf a owl:ObjectProperty ;
+    rdfs:domain bts:Member ;
+    rdfs:range bts:Company .
+
+bts:shareCount a owl:DatatypeProperty ;
+    rdfs:range xsd:decimal .
+
+
+#################################################################
+# 3. EXTRA DATA TOPICS
+#################################################################
+
+###############
+# 3A. Tour Data
+###############
+
+bts:WorldTour a owl:Class ; rdfs:subClassOf bts:Activity .
+
+bts:TourStop a owl:Class .
+
+# Properties
+bts:hasTourStop a owl:ObjectProperty ;
+    rdfs:domain bts:WorldTour ;
+    rdfs:range bts:TourStop .
+
+bts:tourStopCity a owl:DatatypeProperty .
+bts:tourStopDate a owl:DatatypeProperty .
+
+
+###############
+# 3B. Music Video Data
+###############
+
+bts:MusicVideo a owl:Class .
+
+bts:mvForSong a owl:ObjectProperty ;
+    rdfs:domain bts:MusicVideo ;
+    rdfs:range bts:Song .
+
+bts:mvDirector a owl:DatatypeProperty .
+bts:mvReleaseDate a owl:DatatypeProperty .
+bts:mvViews24hr a owl:DatatypeProperty ; rdfs:range xsd:decimal .
+bts:mvLocation a owl:DatatypeProperty .
+
+
+###############
+# 3C. Fan Data
+###############
+
+bts:FanCommunity a owl:Class .
+bts:FanProject a owl:Class .
+
+bts:createdByFans a owl:ObjectProperty ;
+    rdfs:domain bts:FanProject ;
+    rdfs:range bts:FanCommunity .
+
+bts:fanCountry a owl:DatatypeProperty .
+bts:fanSizeEstimate a owl:DatatypeProperty ; rdfs:range xsd:integer .
+
+#################################################################
+# END EXTENDED ONTOLOGY
+#################################################################

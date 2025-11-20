@@ -1,0 +1,11 @@
+PREFIX bts:  <http://example.org/bts#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?award ?awardName ?year
+WHERE {
+  bts:BTS bts:hasAward ?award .
+
+  ?award bts:name ?awardName ;
+         bts:awardYear ?year .
+}
+ORDER BY ?year

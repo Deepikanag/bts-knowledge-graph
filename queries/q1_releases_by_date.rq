@@ -1,0 +1,13 @@
+PREFIX bts:  <http://example.org/bts#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?release ?name ?type ?date
+WHERE {
+  ?release rdf:type ?type ;
+           bts:name ?name ;
+           bts:releaseDate ?date .
+
+  FILTER (?type = bts:Album || ?type = bts:Song)
+}
+ORDER BY ?date

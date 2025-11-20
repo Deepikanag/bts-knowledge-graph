@@ -1,0 +1,12 @@
+PREFIX bts:  <http://example.org/bts#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?issue ?issueName (COUNT(?donation) AS ?donationCount)
+WHERE {
+  ?donation rdf:type bts:Donation ;
+            bts:addressesIssue ?issue .
+
+  OPTIONAL { ?issue bts:name ?issueName . }
+}
+GROUP BY ?issue ?issueName
+ORDER BY DESC(?donationCount)

@@ -1,0 +1,9 @@
+tour_id,tour_name,tour_type,start_date,end_date,regions,member_label,notes
+TOUR_REDBULLET,The Red Bullet Tour,Concert Tour,2014-10-17,2015-08-29,Asia;Australia;North America;South America,BTS,First international tour
+TOUR_HYYH,The Most Beautiful Moment in Life On Stage,Concert Tour,2015-11-27,2016-05-15,Asia,BTS,"HYYH Trilogy"
+TOUR_WINGS,Wings Tour,World Tour,2017-02-18,2017-12-10,Asia;South America;North America;Europe,BTS,"Wings album promotion"
+TOUR_LOVEYOURSELF,Love Yourself World Tour,World Tour,2018-08-25,2019-04-07,Asia;Europe;North America,BTS,Massive global tour
+TOUR_SPEAKYOURSELF,Speak Yourself Stadium Tour,Stadium Tour,2019-05-04,2019-10-29,North America;Europe;Asia,BTS,"Extended Love Yourself"
+TOUR_PTD,Permission to Dance On Stage,Concert Series,2021-10-24,2022-04-16,Online;USA;South Korea,BTS,"Post-pandemic shows"
+TOUR_SUGA_DDAY,D-DAY Tour,Solo Tour,2023-04-26,2023-08-06,USA;Asia;Korea,Suga,"Solo tour as Agust D"
+TOUR_JK_GOLDENLIVE,GOLDEN Live On Stage,Special Showcase,2023-11-20,2023-11-24,South Korea;Japan,Jungkook,"Golden album promo shows"
