@@ -1,0 +1,37 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bts: <http://example.org/bts#> .
+@prefix map: <http://example.org/mapping/> .
+
+<#SoloSource>
+    rml:source "data/csv/solo.csv" ;
+    rml:referenceFormulation ql:CSV .
+
+<#SoloTriplesMap>
+    rml:logicalSource <#SoloSource> ;
+    rr:subjectMap [
+        rr:template "http://example.org/bts/solo/{solo_id}" ;
+        rr:class bts:SoloWork ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate bts:title ;
+        rr:objectMap [ rml:reference "title" ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate bts:releaseDate ;
+        rr:objectMap [ rml:reference "release_date" ; rr:datatype xsd:date ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate bts:performedBy ;
+        rr:objectMap [ rr:template "http://example.org/bts/{artist_label}" ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate bts:category ;
+        rr:objectMap [ rml:reference "category" ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate bts:notes ;
+        rr:objectMap [ rml:reference "notes" ] ;
+    ] .

@@ -1,0 +1,234 @@
+@prefix bts: <http://example.org/bts#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/bts/album/BTS_ALB_001>
+    a bts:Album ;
+    bts:title "2 Cool 4 Skool" ;
+    bts:releaseDate "2013-06-12"^^xsd:date ;
+    bts:language "Korean" ;
+    bts:label "Big Hit Entertainment" ;
+    bts:albumCategory "single album" .
+
+<http://example.org/bts/album/BTS_ALB_002>
+    a bts:Album ;
+    bts:title "O!RUL8,2?" ;
+    bts:releaseDate "2013-09-11"^^xsd:date ;
+    bts:language "Korean" ;
+    bts:label "Big Hit Entertainment" ;
+    bts:albumCategory "mini-album" .
+
+<http://example.org/bts/album/BTS_ALB_003>
+    a bts:Album ;
+    bts:title "Skool Luv Affair" ;
+    bts:releaseDate "2014-02-12"^^xsd:date ;
+    bts:language "Korean" ;
+    bts:label "Big Hit Entertainment" ;
+    bts:albumCategory "mini-album" .
+
+<http://example.org/bts/album/BTS_ALB_004>
+    a bts:Album ;
+    bts:title "Skool Luv Affair Special Addition" ;
+    bts:releaseDate "2014-05-14"^^xsd:date ;
+    bts:language "Korean" ;
+    bts:label "Big Hit Entertainment" ;
+    bts:albumCategory "repackage" .
+
+<http://example.org/bts/album/BTS_ALB_005>
+    a bts:Album ;
+    bts:title "Dark & Wild" ;
+    bts:releaseDate "2014-08-19"^^xsd:date ;
+    bts:language "Korean" ;
+    bts:label "Big Hit Entertainment" ;
+    bts:albumCategory "studio" .
+
+<http://example.org/bts/album/BTS_ALB_006>
+    a bts:Album ;
+    bts:title "Wake Up" ;
+    bts:releaseDate "2014-12-24"^^xsd:date ;
+    bts:language "Japanese" ;
+    bts:label "Big Hit Entertainment" ;
+    bts:albumCategory "studio" .
+
+<http://example.org/bts/album/BTS_ALB_007>
+    a bts:Album ;
+    bts:title "The Most Beautiful Moment in Life Pt.1" ;
+    bts:releaseDate "2015-04-29"^^xsd:date ;
+    bts:language "Korean" ;
+    bts:label "Big Hit Entertainment" ;
+    bts:albumCategory "mini-album" .
+
+<http://example.org/bts/album/BTS_ALB_008>
+    a bts:Album ;
+    bts:title "The Most Beautiful Moment in Life Pt.2" ;
+    bts:releaseDate "2015-11-30"^^xsd:date ;
+    bts:language "Korean" ;
+    bts:label "Big Hit Entertainment" ;
+    bts:albumCategory "mini-album" .
+
+<http://example.org/bts/album/BTS_ALB_009>
+    a bts:Album ;
+    bts:title "The Most Beautiful Moment in Life: Young Forever" ;
+    bts:releaseDate "2016-05-02"^^xsd:date ;
+    bts:language "Korean" ;
+    bts:label "Big Hit Entertainment" ;
+    bts:albumCategory "compilation" .
+
+<http://example.org/bts/album/BTS_ALB_010>
+    a bts:Album ;
+    bts:title "Youth" ;
+    bts:releaseDate "2016-09-07"^^xsd:date ;
+    bts:language "Japanese" ;
+    bts:label "Big Hit Entertainment" ;
+    bts:albumCategory "studio" .
+
+<http://example.org/bts/album/BTS_ALB_011>
+    a bts:Album ;
+    bts:title "Wings" ;
+    bts:releaseDate "2016-10-10"^^xsd:date ;
+    bts:language "Korean" ;
+    bts:label "Big Hit Entertainment" ;
+    bts:albumCategory "studio" .
+
+<http://example.org/bts/album/BTS_ALB_012>
+    a bts:Album ;
+    bts:title "You Never Walk Alone" ;
+    bts:releaseDate "2017-02-13"^^xsd:date ;
+    bts:language "Korean" ;
+    bts:label "Big Hit Entertainment" ;
+    bts:albumCategory "repackage" .
+
+<http://example.org/bts/album/BTS_ALB_013>
+    a bts:Album ;
+    bts:title "The Best of 防弾少年団 (Korea Edition)" ;
+    bts:releaseDate "2017-01-06"^^xsd:date ;
+    bts:language "Japanese" ;
+    bts:label "Big Hit Entertainment" ;
+    bts:albumCategory "compilation" .
+
+<http://example.org/bts/album/BTS_ALB_014>
+    a bts:Album ;
+    bts:title "The Best of 防弾少年団 (Japan Edition)" ;
+    bts:releaseDate "2017-01-06"^^xsd:date ;
+    bts:language "Japanese" ;
+    bts:label "Big Hit Entertainment" ;
+    bts:albumCategory "compilation" .
+
+<http://example.org/bts/album/BTS_ALB_015>
+    a bts:Album ;
+    bts:title "Love Yourself: Her" ;
+    bts:releaseDate "2017-09-18"^^xsd:date ;
+    bts:language "Korean" ;
+    bts:label "Big Hit Entertainment" ;
+    bts:albumCategory "mini-album" .
+
+<http://example.org/bts/album/BTS_ALB_016>
+    a bts:Album ;
+    bts:title "Face Yourself" ;
+    bts:releaseDate "2018-04-04"^^xsd:date ;
+    bts:language "Japanese" ;
+    bts:label "Big Hit Entertainment" ;
+    bts:albumCategory "studio" .
+
+<http://example.org/bts/album/BTS_ALB_017>
+    a bts:Album ;
+    bts:title "Love Yourself: Tear" ;
+    bts:releaseDate "2018-05-18"^^xsd:date ;
+    bts:language "Korean" ;
+    bts:label "Big Hit Entertainment" ;
+    bts:albumCategory "studio" .
+
+<http://example.org/bts/album/BTS_ALB_018>
+    a bts:Album ;
+    bts:title "Love Yourself: Answer" ;
+    bts:releaseDate "2018-08-24"^^xsd:date ;
+    bts:language "Korean" ;
+    bts:label "Big Hit Entertainment" ;
+    bts:albumCategory "compilation" .
+
+<http://example.org/bts/album/BTS_ALB_019>
+    a bts:Album ;
+    bts:title "Map of the Soul: Persona" ;
+    bts:releaseDate "2019-04-12"^^xsd:date ;
+    bts:language "Korean" ;
+    bts:label "Big Hit Entertainment" ;
+    bts:albumCategory "mini-album" .
+
+<http://example.org/bts/album/BTS_ALB_020>
+    a bts:Album ;
+    bts:title "BTS World: Original Soundtrack" ;
+    bts:releaseDate "2019-06-28"^^xsd:date ;
+    bts:language "Korean" ;
+    bts:label "Big Hit Entertainment" ;
+    bts:albumCategory "soundtrack" .
+
+<http://example.org/bts/album/BTS_ALB_021>
+    a bts:Album ;
+    bts:title "Map of the Soul: 7" ;
+    bts:releaseDate "2020-02-21"^^xsd:date ;
+    bts:language "Korean" ;
+    bts:label "Big Hit Entertainment" ;
+    bts:albumCategory "studio" .
+
+<http://example.org/bts/album/BTS_ALB_022>
+    a bts:Album ;
+    bts:title "Map of the Soul: 7 – The Journey" ;
+    bts:releaseDate "2020-07-15"^^xsd:date ;
+    bts:language "Japanese" ;
+    bts:label "Big Hit Entertainment" ;
+    bts:albumCategory "studio" .
+
+<http://example.org/bts/album/BTS_ALB_023>
+    a bts:Album ;
+    bts:title "Dynamite (Single)" ;
+    bts:releaseDate "2020-08-21"^^xsd:date ;
+    bts:language "English" ;
+    bts:label "Big Hit Entertainment / Columbia" ;
+    bts:albumCategory "single" .
+
+<http://example.org/bts/album/BTS_ALB_024>
+    a bts:Album ;
+    bts:title "Be" ;
+    bts:releaseDate "2020-11-20"^^xsd:date ;
+    bts:language "Korean" ;
+    bts:label "Big Hit Entertainment" ;
+    bts:albumCategory "studio" .
+
+<http://example.org/bts/album/BTS_ALB_025>
+    a bts:Album ;
+    bts:title "BTS, The Best" ;
+    bts:releaseDate "2021-06-16"^^xsd:date ;
+    bts:language "Japanese" ;
+    bts:label "Big Hit Entertainment" ;
+    bts:albumCategory "compilation" .
+
+<http://example.org/bts/album/BTS_ALB_026>
+    a bts:Album ;
+    bts:title "Butter" ;
+    bts:releaseDate "2021-07-09"^^xsd:date ;
+    bts:language "English" ;
+    bts:label "Big Hit Entertainment" ;
+    bts:albumCategory "single" .
+
+<http://example.org/bts/album/BTS_ALB_027>
+    a bts:Album ;
+    bts:title "Proof" ;
+    bts:releaseDate "2022-06-10"^^xsd:date ;
+    bts:language "Korean" ;
+    bts:label "Big Hit Entertainment" ;
+    bts:albumCategory "compilation" .
+
+<http://example.org/bts/album/BTS_ALB_028>
+    a bts:Album ;
+    bts:title "2025 BTS Festa: Capsule Album Vol.1" ;
+    bts:releaseDate "2025-06-27"^^xsd:date ;
+    bts:language "Korean" ;
+    bts:label "Big Hit Entertainment" ;
+    bts:albumCategory "compilation" .
+
+<http://example.org/bts/album/BTS_ALB_029>
+    a bts:Album ;
+    bts:title "Permission to Dance on Stage – Live" ;
+    bts:releaseDate "2025-07-18"^^xsd:date ;
+    bts:language "Korean" ;
+    bts:label "Big Hit Entertainment" ;
+    bts:albumCategory "live" .

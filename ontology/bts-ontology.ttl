@@ -1,429 +1,75 @@
-@prefix bts:  <http://example.org/bts#> .
-@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix owl:  <http://www.w3.org/2002/07/owl#> .
-@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
-
-#################################################################
-# Classes
-#################################################################
-
-bts:Group a owl:Class .
-bts:Member a owl:Class .
-bts:MusicRelease a owl:Class .
-bts:Album a owl:Class ;
-    rdfs:subClassOf bts:MusicRelease .
-bts:Song a owl:Class ;
-    rdfs:subClassOf bts:MusicRelease .
-bts:Event a owl:Class .
-bts:SpeechEvent a owl:Class ;
-    rdfs:subClassOf bts:Event .
-bts:Campaign a owl:Class .
-bts:Donation a owl:Class .
-bts:Organization a owl:Class .
-bts:SocialIssue a owl:Class .
-bts:Award a owl:Class .
-bts:FanProject a owl:Class .
-bts:RecordAchievement a owl:Class .
-
-#################################################################
-# Object Properties
-#################################################################
-
-### Group–Member relationship (with inverse)
-bts:hasMember a owl:ObjectProperty ;
-    rdfs:domain bts:Group ;
-    rdfs:range  bts:Member ;
-    owl:inverseOf bts:memberOf .
-
-bts:memberOf a owl:ObjectProperty ;
-    rdfs:domain bts:Member ;
-    rdfs:range  bts:Group .
-
-### Music relationships
-bts:createdRelease a owl:ObjectProperty ;
-    rdfs:domain bts:Group ;
-    rdfs:range  bts:MusicRelease .
-
-bts:featuresMember a owl:ObjectProperty ;
-    rdfs:domain bts:MusicRelease ;
-    rdfs:range  bts:Member .
-
-### Events and performances
-bts:performedAt a owl:ObjectProperty ;
-    rdfs:domain bts:Group ;
-    rdfs:range  bts:Event .
-
-# Transitive: events / campaigns / projects made of parts
-bts:hasPart a owl:ObjectProperty , owl:TransitiveProperty .
-
-### Campaigns, issues, donations
-bts:partOfCampaign a owl:ObjectProperty ;
-    rdfs:domain bts:Event ;
-    rdfs:range  bts:Campaign .
-
-bts:targetsIssue a owl:ObjectProperty ;
-    rdfs:domain bts:Campaign ;
-    rdfs:range  bts:SocialIssue .
-
-bts:addressesIssue a owl:ObjectProperty ;
-    rdfs:domain bts:Donation ;
-    rdfs:range  bts:SocialIssue .
-
-bts:donatedTo a owl:ObjectProperty ;
-    rdfs:domain bts:Donation ;
-    rdfs:range  bts:Organization .
-
-bts:madeBy a owl:ObjectProperty ;
-    rdfs:domain bts:Donation ;
-    rdfs:range  bts:Member .
-
-### Awards & records
-bts:hasAward a owl:ObjectProperty ;
-    rdfs:domain bts:Group ;
-    rdfs:range  bts:Award ;
-    owl:inverseOf bts:awardedTo .
-
-bts:awardedTo a owl:ObjectProperty ;
-    rdfs:domain bts:Award ;
-    rdfs:range  bts:Group .
-
-bts:hasRecord a owl:ObjectProperty ;
-    rdfs:domain bts:MusicRelease ;
-    rdfs:range  bts:RecordAchievement .
-
-### Collaborations (symmetric)
-bts:collaboratesWith a owl:ObjectProperty , owl:SymmetricProperty ;
-    rdfs:domain bts:Organization ;
-    rdfs:range  bts:Organization .
-
-#################################################################
-# Data Properties
-#################################################################
-
-bts:name a owl:DatatypeProperty ;
-    rdfs:range xsd:string .
-
-bts:releaseDate a owl:DatatypeProperty ;
-    rdfs:domain bts:MusicRelease ;
-    rdfs:range xsd:date .
-
-bts:eventDate a owl:DatatypeProperty ;
-    rdfs:domain bts:Event ;
-    rdfs:range xsd:date .
-
-bts:donationAmount a owl:DatatypeProperty ;
-    rdfs:domain bts:Donation ;
-    rdfs:range xsd:decimal .
-
-bts:awardYear a owl:DatatypeProperty ;
-    rdfs:domain bts:Award ;
-    rdfs:range xsd:gYear .
-
-bts:recordValue a owl:DatatypeProperty ;
-    rdfs:domain bts:RecordAchievement ;
-    rdfs:range xsd:string .
-
-#################################################################
-# Cardinality Restrictions
-#################################################################
-
-### Object property cardinalities
-
-# A BTS group has at least 7 members.
-bts:Group rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty bts:hasMember ;
-    owl:minQualifiedCardinality "7"^^xsd:nonNegativeInteger ;
-    owl:onClass bts:Member
-] .
-
-# A donation must go to exactly one organization,
-# and must be made by at least one member.
-bts:Donation rdfs:subClassOf 
-    [ a owl:Restriction ;
-      owl:onProperty bts:donatedTo ;
-      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-      owl:onClass bts:Organization
-    ] ,
-    [ a owl:Restriction ;
-      owl:onProperty bts:madeBy ;
-      owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-      owl:onClass bts:Member
-    ] .
-
-### Data property cardinalities
-
-# Every music release has exactly one release date.
-bts:MusicRelease rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty bts:releaseDate ;
-    owl:cardinality "1"^^xsd:nonNegativeInteger
-] .
-
-# Every event has exactly one event date.
-bts:Event rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty bts:eventDate ;
-    owl:cardinality "1"^^xsd:nonNegativeInteger
-] .
-
-# Every donation has exactly one donation amount.
-bts:Donation rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty bts:donationAmount ;
-    owl:cardinality "1"^^xsd:nonNegativeInteger
-] .
-
-# Every award has exactly one award year.
-bts:Award rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty bts:awardYear ;
-    owl:cardinality "1"^^xsd:nonNegativeInteger
-] .
-
-#################################################################
-# EXTENDED BTS KNOWLEDGE GRAPH ONTOLOGY
-# Group Topics • Individual Topics • Extra Topics
-#################################################################
-
-#################################################################
-# 1. GROUP DATA TOPICS
-#################################################################
-
-###############
-# 1A. Music
-###############
-
-bts:Album a owl:Class .
-bts:Song a owl:Class .
-bts:CollaborationRelease a owl:Class ;
-    rdfs:subClassOf bts:MusicRelease .
-
-# Properties
-bts:hasSong a owl:ObjectProperty ;
-    rdfs:domain bts:Album ;
-    rdfs:range bts:Song ;
-    rdfs:subPropertyOf bts:hasPart .
-
-bts:collaborationArtist a owl:ObjectProperty ;
-    rdfs:domain bts:CollaborationRelease ;
-    rdfs:range bts:Artist .
-
-bts:Artist a owl:Class .  # external artists like Halsey, Charlie Puth, etc.
-
-
-###############
-# 1B. Activities (Group)
-###############
-
-bts:Activity a owl:Class .
-bts:Concert a owl:Class ; rdfs:subClassOf bts:Activity .
-bts:Tour a owl:Class ; rdfs:subClassOf bts:Activity .
-bts:Speech a owl:Class ; rdfs:subClassOf bts:Activity .
-bts:Appearance a owl:Class ; rdfs:subClassOf bts:Activity .
-
-bts:occurredOn a owl:DatatypeProperty ;
-    rdfs:domain bts:Activity ;
-    rdfs:range xsd:date .
-
-bts:location a owl:DatatypeProperty .
-
-
-###############
-# 1C. Records & Achievements
-###############
-
-bts:ChartRecord a owl:Class ;
-    rdfs:subClassOf bts:RecordAchievement .
-
-bts:StreamingRecord a owl:Class ;
-    rdfs:subClassOf bts:RecordAchievement .
-
-bts:SocialMediaRecord a owl:Class ;
-    rdfs:subClassOf bts:RecordAchievement .
-
-bts:recordPlatform a owl:DatatypeProperty ;
-    rdfs:domain bts:RecordAchievement ;
-    rdfs:range xsd:string .
-
-
-###############
-# 1D. Brand Endorsements (Group + solo)
-###############
-
-bts:Brand a owl:Class .
-bts:Endorsement a owl:Class .
-
-# Who endorses the brand?
-bts:endorsesBrand a owl:ObjectProperty ;
-    rdfs:domain bts:Member, bts:Group ;
-    rdfs:range bts:Brand .
-
-bts:endorsementStart a owl:DatatypeProperty .
-bts:endorsementEnd a owl:DatatypeProperty .
-
-
-###############
-# 1E. Management
-###############
-
-bts:Company a owl:Class .
-bts:Subsidiary a owl:Class ; rdfs:subClassOf bts:Company .
-
-bts:managedBy a owl:ObjectProperty ;
-    rdfs:domain bts:Artist, bts:Group ;
-    rdfs:range bts:Company .
-
-bts:ownsSharesIn a owl:ObjectProperty ;
-    rdfs:domain bts:Member ;
-    rdfs:range bts:Company .
-
-bts:sharePercentage a owl:DatatypeProperty ;
-    rdfs:domain bts:Member ;
-    rdfs:range xsd:decimal .
-
-
-###############
-# 1F. Awards (group & solo)
-###############
-
-bts:AwardEvent a owl:Class .
-bts:SoloAward a owl:Class ; rdfs:subClassOf bts:Award .
-bts:GroupAward a owl:Class ; rdfs:subClassOf bts:Award .
-
-bts:receivedBy a owl:ObjectProperty ;
-    rdfs:domain bts:Award ;
-    rdfs:range bts:Group, bts:Member .
-
-bts:awardCategory a owl:DatatypeProperty .
-bts:awardYear a owl:DatatypeProperty .
-
-
-#################################################################
-# 2. INDIVIDUAL MEMBER TOPICS
-#################################################################
-
-###############
-# 2A. Solo Music
-###############
-
-bts:SoloAlbum a owl:Class ; rdfs:subClassOf bts:Album .
-bts:SoloSong a owl:Class ; rdfs:subClassOf bts:Song .
-
-bts:performedBy a owl:ObjectProperty ;
-    rdfs:domain bts:MusicRelease ;
-    rdfs:range bts:Member .
-
-
-###############
-# 2B. Individual Achievements
-###############
-
-bts:IndividualAchievement a owl:Class .
-
-bts:achievementType a owl:DatatypeProperty .
-bts:achievementDate a owl:DatatypeProperty .
-
-
-###############
-# 2C. Brand Ambassadorship (solo)
-###############
-
-bts:soloEndorsesBrand a owl:ObjectProperty ;
-    rdfs:domain bts:Member ;
-    rdfs:range bts:Brand .
-
-
-###############
-# 2D. Roles within the band
-###############
-
-bts:BandRole a owl:Class .
-
-bts:hasRole a owl:ObjectProperty ;
-    rdfs:domain bts:Member ;
-    rdfs:range bts:BandRole .
-
-# Examples: Leader, Main Vocalist, Main Dancer, Rapper, Producer, etc.
-
-
-###############
-# 2E. Philanthropy
-###############
-
-# Already have Donation, Campaign, Social Issue
-# Adding personal volunteer work / advocacy
-bts:VolunteerActivity a owl:Class .
-
-bts:participatesIn a owl:ObjectProperty ;
-    rdfs:domain bts:Member ;
-    rdfs:range bts:VolunteerActivity .
-
-
-###############
-# 2F. Shares / Ownership
-###############
-
-bts:shareholderOf a owl:ObjectProperty ;
-    rdfs:domain bts:Member ;
-    rdfs:range bts:Company .
-
-bts:shareCount a owl:DatatypeProperty ;
-    rdfs:range xsd:decimal .
-
-
-#################################################################
-# 3. EXTRA DATA TOPICS
-#################################################################
-
-###############
-# 3A. Tour Data
-###############
-
-bts:WorldTour a owl:Class ; rdfs:subClassOf bts:Activity .
-
-bts:TourStop a owl:Class .
-
-# Properties
-bts:hasTourStop a owl:ObjectProperty ;
-    rdfs:domain bts:WorldTour ;
-    rdfs:range bts:TourStop .
-
-bts:tourStopCity a owl:DatatypeProperty .
-bts:tourStopDate a owl:DatatypeProperty .
-
-
-###############
-# 3B. Music Video Data
-###############
-
-bts:MusicVideo a owl:Class .
-
-bts:mvForSong a owl:ObjectProperty ;
-    rdfs:domain bts:MusicVideo ;
-    rdfs:range bts:Song .
-
-bts:mvDirector a owl:DatatypeProperty .
-bts:mvReleaseDate a owl:DatatypeProperty .
-bts:mvViews24hr a owl:DatatypeProperty ; rdfs:range xsd:decimal .
-bts:mvLocation a owl:DatatypeProperty .
-
-
-###############
-# 3C. Fan Data
-###############
-
-bts:FanCommunity a owl:Class .
-bts:FanProject a owl:Class .
-
-bts:createdByFans a owl:ObjectProperty ;
-    rdfs:domain bts:FanProject ;
-    rdfs:range bts:FanCommunity .
-
-bts:fanCountry a owl:DatatypeProperty .
-bts:fanSizeEstimate a owl:DatatypeProperty ; rdfs:range xsd:integer .
-
-#################################################################
-# END EXTENDED ONTOLOGY
-#################################################################
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bts: <http://example.org/bts#> .
+
+# === Core Classes ===
+bts:Donation a rdfs:Class .
+bts:Organization a rdfs:Class .
+bts:SocialIssue a rdfs:Class .
+bts:Campaign a rdfs:Class .
+bts:Member a rdfs:Class .
+bts:Group a rdfs:Class .
+
+# === Extended Classes ===
+bts:Album a rdfs:Class .
+bts:Song a rdfs:Class .
+bts:SoloWork a rdfs:Class .
+bts:Tour a rdfs:Class .
+bts:MusicVideo a rdfs:Class .
+bts:BrandEndorsement a rdfs:Class .
+bts:ManagementRelationship a rdfs:Class .
+bts:FanProject a rdfs:Class .
+bts:Award a rdfs:Class .
+
+# === Properties – Core ===
+bts:name a rdf:Property ; rdfs:domain bts:Donation, bts:Organization, bts:Campaign ; rdfs:range xsd:string .
+bts:donationAmount a rdf:Property ; rdfs:domain bts:Donation, bts:FanProject ; rdfs:range xsd:decimal .
+bts:madeBy a rdf:Property ; rdfs:domain bts:Donation ; rdfs:range rdfs:Resource .
+bts:donatedTo a rdf:Property ; rdfs:domain bts:Donation ; rdfs:range bts:Organization .
+bts:addressesIssue a rdf:Property ; rdfs:domain bts:Donation, bts:FanProject ; rdfs:range bts:SocialIssue .
+bts:partOfCampaign a rdf:Property ; rdfs:domain bts:Donation ; rdfs:range bts:Campaign .
+
+# === Properties – Albums & Songs ===
+bts:title a rdf:Property ; rdfs:domain bts:Album, bts:Song, bts:SoloWork ; rdfs:range xsd:string .
+bts:releaseDate a rdf:Property ; rdfs:domain bts:Album, bts:Song, bts:SoloWork ; rdfs:range xsd:date .
+bts:albumCategory a rdf:Property ; rdfs:domain bts:Album ; rdfs:range xsd:string .
+bts:language a rdf:Property ; rdfs:domain bts:Album, bts:Song ; rdfs:range xsd:string .
+bts:label a rdf:Property ; rdfs:domain bts:Album ; rdfs:range xsd:string .
+bts:createdBy a rdf:Property ; rdfs:domain bts:Album ; rdfs:range rdfs:Resource .
+bts:duration a rdf:Property ; rdfs:domain bts:Song ; rdfs:range xsd:string .
+bts:album a rdf:Property ; rdfs:domain bts:Song ; rdfs:range bts:Album .
+
+# === Properties – Solo & Tours ===
+bts:performedBy a rdf:Property ; rdfs:domain bts:SoloWork, bts:Tour ; rdfs:range rdfs:Resource .
+bts:category a rdf:Property ; rdfs:domain bts:SoloWork ; rdfs:range xsd:string .
+bts:tourName a rdf:Property ; rdfs:domain bts:Tour ; rdfs:range xsd:string .
+bts:tourType a rdf:Property ; rdfs:domain bts:Tour ; rdfs:range xsd:string .
+bts:startDate a rdf:Property ; rdfs:domain bts:Tour, bts:BrandEndorsement, bts:ManagementRelationship ; rdfs:range xsd:date .
+bts:endDate a rdf:Property ; rdfs:domain bts:Tour, bts:BrandEndorsement, bts:ManagementRelationship ; rdfs:range xsd:date .
+bts:regions a rdf:Property ; rdfs:domain bts:Tour ; rdfs:range xsd:string .
+
+# === Properties – Music Videos ===
+bts:linkedToSong a rdf:Property ; rdfs:domain bts:MusicVideo ; rdfs:range bts:Song .
+bts:director a rdf:Property ; rdfs:domain bts:MusicVideo ; rdfs:range xsd:string .
+bts:views24h a rdf:Property ; rdfs:domain bts:MusicVideo ; rdfs:range xsd:decimal .
+bts:platformRecord a rdf:Property ; rdfs:domain bts:MusicVideo ; rdfs:range xsd:string .
+
+# === Properties – Brand Endorsement ===
+bts:endorsedBy a rdf:Property ; rdfs:domain bts:BrandEndorsement ; rdfs:range rdfs:Resource .
+bts:brandName a rdf:Property ; rdfs:domain bts:BrandEndorsement ; rdfs:range xsd:string .
+bts:industry a rdf:Property ; rdfs:domain bts:BrandEndorsement ; rdfs:range xsd:string .
+bts:role a rdf:Property ; rdfs:domain bts:BrandEndorsement ; rdfs:range xsd:string .
+bts:region a rdf:Property ; rdfs:domain bts:BrandEndorsement ; rdfs:range xsd:string .
+
+# === Properties – Management ===
+bts:managedEntity a rdf:Property ; rdfs:domain bts:ManagementRelationship ; rdfs:range rdfs:Resource .
+bts:companyName a rdf:Property ; rdfs:domain bts:ManagementRelationship ; rdfs:range xsd:string .
+bts:companyRole a rdf:Property ; rdfs:domain bts:ManagementRelationship ; rdfs:range xsd:string .
+bts:ownershipType a rdf:Property ; rdfs:domain bts:ManagementRelationship ; rdfs:range xsd:string .
+bts:ownershipDetail a rdf:Property ; rdfs:domain bts:ManagementRelationship ; rdfs:range xsd:string .
+
+# === Properties – Fan Projects ===
+bts:projectName a rdf:Property ; rdfs:domain bts:FanProject ; rdfs:range xsd:string .
+bts:organizedBy a rdf:Property ; rdfs:domain bts:FanProject ; rdfs:range xsd:string .
+bts:description a rdf:Property ; rdfs:domain bts:FanProject ; rdfs:range xsd:string .

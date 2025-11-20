@@ -1,0 +1,41 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bts: <http://example.org/bts#> .
+@prefix map: <http://example.org/mapping/> .
+
+<#SongsSource>
+    rml:source "data/csv/songs.csv" ;
+    rml:referenceFormulation ql:CSV .
+
+<#SongTriplesMap>
+    rml:logicalSource <#SongsSource> ;
+    rr:subjectMap [
+        rr:template "http://example.org/bts/song/{song_id}" ;
+        rr:class bts:Song ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate bts:title ;
+        rr:objectMap [ rml:reference "title" ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate bts:album ;
+        rr:objectMap [ rr:template "http://example.org/bts/album/{album_id}" ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate bts:releaseDate ;
+        rr:objectMap [ rml:reference "release_date" ; rr:datatype xsd:date ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate bts:duration ;
+        rr:objectMap [ rml:reference "duration" ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate bts:language ;
+        rr:objectMap [ rml:reference "language" ] ;
+    ] ;
+    rr:predicateObjectMap [
+        rr:predicate bts:notes ;
+        rr:objectMap [ rml:reference "notes" ] ;
+    ] .

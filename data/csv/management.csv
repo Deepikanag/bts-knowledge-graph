@@ -1,10 +1,10 @@
 relation_id,entity_type,entity_label,company_name,company_role,start_date,end_date,ownership_type,ownership_detail,notes
-MGMT_BTS_BIGHIT,Group,BTS,BIGHIT MUSIC,Managed By,2013-06-13,,management,,Original contract under BigHit Entertainment
-MGMT_BIGHIT_HYBE,Company,BIGHIT MUSIC,HYBE,Subsidiary Of,2021-03-01,,corporate,,Label under HYBE
-MGMT_RM_HYBE,Member,RM,HYBE,Shareholder,2020-10-15,,equity,68513 shares,"HYBE IPO shareholder"
-MGMT_JIN_HYBE,Member,Jin,HYBE,Shareholder,2020-10-15,,equity,68513 shares,
-MGMT_SUGA_HYBE,Member,Suga,HYBE,Shareholder,2020-10-15,,equity,68513 shares,
-MGMT_JHOPE_HYBE,Member,J-Hope,HYBE,Shareholder,2020-10-15,,equity,68513 shares,
-MGMT_JIMIN_HYBE,Member,Jimin,HYBE,Shareholder,2020-10-15,,equity,68513 shares,
-MGMT_V_HYBE,Member,V,HYBE,Shareholder,2020-10-15,,equity,68513 shares,
-MGMT_JK_HYBE,Member,Jungkook,HYBE,Shareholder,2020-10-15,,equity,68513 shares,
+MGMT_BTS_BIGHIT,Group,BTS,BIGHIT MUSIC,Managed By,2013-06-13,Present,management,,Original contract under BigHit Entertainment
+MGMT_BIGHIT_HYBE,Company,BIGHIT MUSIC,HYBE,Subsidiary Of,2021-03-01,Present,corporate,,Label under HYBE
+MGMT_RM_HYBE,Member,RM,HYBE,Shareholder,2020-10-15,Present,equity,68513 shares,"HYBE IPO shareholder"
+MGMT_JIN_HYBE,Member,Jin,HYBE,Shareholder,2020-10-15,Present,equity,68513 shares,
+MGMT_SUGA_HYBE,Member,Suga,HYBE,Shareholder,2020-10-15,Present,equity,68513 shares,
+MGMT_JHOPE_HYBE,Member,J-Hope,HYBE,Shareholder,2020-10-15,Present,equity,68513 shares,
+MGMT_JIMIN_HYBE,Member,Jimin,HYBE,Shareholder,2020-10-15,Present,equity,68513 shares,
+MGMT_V_HYBE,Member,V,HYBE,Shareholder,2020-10-15,Present,equity,68513 shares,
+MGMT_JK_HYBE,Member,Jungkook,HYBE,Shareholder,2020-10-15,Present,equity,68513 shares,
